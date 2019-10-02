@@ -41,4 +41,4 @@ const mdp = dispatch => {
     };
 };
 
-export default connect(mdp, mdp)(Modal);
+export default connect(msp, mdp)(Modal);

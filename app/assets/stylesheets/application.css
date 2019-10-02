@@ -20,9 +20,10 @@
 
  body {
   font-family: "Roboto", sans-serif;
-
-  background-color: teal;
+  background-color: rgb(16, 174, 241);
 }
+
+/* HEADER */
 
 header {
   display: flex;
@@ -50,22 +51,127 @@ header {
 nav {
   display: flex;
   justify-content: flex-start;
-
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    text-decoration: none;
-    margin-top: 10px;
 
+nav button {
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  background: transparent;
+  text-decoration: none;
+  color: rgb(26, 46, 59);
+  text-transform: none;
+  cursor: pointer;
 }
 
-li {
+.button-signup {
+    font-weight: 700;
+    border: 1px solid lightgray;
+} 
+
+.button-signup:hover {
+    border: 1px solid black;
+}
+
+.button-login {
+    border: 0;
+      text-transform: none;
+}
+
+/* ---------------------------- */
+
+/* Modals */
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 450px;
+
+  background-color: #F2F4F5;
+}
+
+ .close-x {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+ }
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px;
+  background: white;
+}
+
+
+.login-form input {
+  /* width: 250px; */
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1em;
+  /* line-height: normal; */
+  border: 1px solid #D0D8DB;
+}
+input::placeholder {
+  color: lightgray;
+}
+
+.login-form .session-submit {
+  color: white;
+  background: #7FC400;
+  border-color: #7FC400;
+  height: 30px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* .login-form-box {
+   display: flex;
+   justify-content: center;
+ } */
+
+ .login-form-header {
+   margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  color: #1a2e3b;
+  /* border-bottom: 1px solid #D0D8DB; */
+  background-color: #F2F4F5;
+ }
+
+ .login-form-footer {
+   margin: 10px;
+  font-size: .7em;
+  text-align: center;
+ }
+
+
+
+/* OLD VERSION */
+/* li {
     padding: 15px;
     font-size: 1em;
 }
+
+
 
 li .login-signup {
     padding: 10px 20px 10px 20px;
@@ -79,5 +185,12 @@ a {
     text-decoration: none;
     color: rgb(26, 46, 59);
     cursor: pointer;
-}
+} */
 
+/* nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+} */

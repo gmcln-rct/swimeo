@@ -8,8 +8,8 @@ import { signup } from '../../actions/session_actions';
 const msp = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'signup',
-        navLink: <Link to="/login">Login Instead</Link>,
+        formType: 'Join with email',
+        navLink: <Link to="/login">Log in</Link>,
     };
 };
 
