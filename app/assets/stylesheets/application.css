@@ -15,8 +15,8 @@
  *= require_self
  */
 
-/* Header Font */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&display=swap');
+/* Main Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 /* Logo Font */
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
@@ -173,6 +173,57 @@ input::placeholder {
   color: rgb(16, 174, 241);
 }
 
+/* HEADER HERO */
+
+.hero-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+
+}
+
+.hero-header {
+  margin-top: 50px;
+  font-size: 5em;
+  font-weight: 700;
+  color: rgb(26, 46, 59);
+}
+
+.hero-subheader {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons button {
+  margin: 20px;
+  padding: 15px 40px 15px 40px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.hero-buttons-plan {
+  color: white;
+  background-color: rgb(216, 105, 149);
+}
+
+.hero-buttons-join {
+  color: rgb(26, 46, 59);
+  background-color: white;
+  border: 1px solid lightgray;
+}
 
 /* .login-form-box {
    display: flex;

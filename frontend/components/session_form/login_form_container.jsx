@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
+import {Link} from 'react-router-dom'
 import { login } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import SessionForm from './session_form';
@@ -11,7 +12,7 @@ const msp = ({ errors }) => {
         formSubmit: 'Log in with email',
         formFooter: 'Dont have an account?',
         formType: 'Log in',
-        // navLink: <Link to="/signup">Join</Link>,
+        navLink: <Link to="/signup">Join</Link>,
     };
 };
 

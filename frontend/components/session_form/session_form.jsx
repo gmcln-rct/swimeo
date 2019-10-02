@@ -38,7 +38,7 @@ class SessionForm extends React.Component {
             <div className="login-form-container">
                 <div className="login-form-header">{this.props.formHeader}</div>
                 <div onClick={this.props.closeModal} className="close-x">X</div>
-                {this.renderErrors()}
+ 
                 <br />
                 <hr />
                 <form onSubmit={this.handleSubmit} className="login-form">

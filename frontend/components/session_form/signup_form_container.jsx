@@ -4,6 +4,7 @@ import React from 'react';
 import SessionForm from './session_form';
 import { Link } from 'react-router-dom';
 import { signup } from '../../actions/session_actions';
+import { openModal, closeModal } from '../../actions/modal_actions';
 
 const msp = ({ errors }) => {
     return {
@@ -19,6 +20,8 @@ const msp = ({ errors }) => {
 const mdp = dispatch => {
     return {
         processForm: (user) => dispatch(signup(user)),
+
+        closeModal: () => dispatch(closeModal())
     };
 };
 
