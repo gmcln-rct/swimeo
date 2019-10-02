@@ -8,7 +8,10 @@ import { signup } from '../../actions/session_actions';
 const msp = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'Join with email',
+        formHeader: 'Join Swimeo',
+        formSubmit: 'Join with email',
+        formFooter: 'Already have an account?',
+        formType: 'Join',
         navLink: <Link to="/login">Log in</Link>,
     };
 };

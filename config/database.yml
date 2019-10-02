@@ -29,9 +29,9 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: swimeo
+  #first_last_name: swimeo
 
-  # The password associated with the postgres role (username).
+  # The password associated with the postgres role (first_last_name).
   #password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: swimeo_production
-  username: swimeo
+  first_last_name: swimeo
   password: <%= ENV['SWIMEO_DATABASE_PASSWORD'] %>

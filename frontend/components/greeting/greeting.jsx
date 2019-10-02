@@ -8,7 +8,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         <nav className="login-nav">
             <button className="button-signup" onClick={() => openModal('signup')}>Join</button>
             <button className="button-login" onClick={() => openModal('login')}>Login</button>
-
         </nav>
     );
     const personalGreeting = () => (

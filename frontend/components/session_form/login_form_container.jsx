@@ -7,7 +7,11 @@ import SessionForm from './session_form';
 const msp = ({ errors }) => {
     return {
         errors: errors.session,
-        formType: 'login',
+        formHeader: 'Log in to Swimeo',
+        formSubmit: 'Log in with email',
+        formFooter: 'Dont have an account?',
+        formType: 'Log in',
+        // navLink: <Link to="/signup">Join</Link>,
     };
 };
 

@@ -11,12 +11,15 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css?family=Griffy&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&display=swap');
+/* Header Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&display=swap');
+/* Logo Font */
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 
  body {
   font-family: "Roboto", sans-serif;
@@ -97,17 +100,19 @@ nav button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 350px;
+  width: 400px;
   height: 450px;
-
   background-color: #F2F4F5;
 }
 
  .close-x {
    position: absolute;
-   top: 5px;
-   right: 5px;
+   top: 10px;
+   right: 10px;
+   font-size: 1.5em;
+   font-weight: 700;
    cursor: pointer;
+   /* z-index: 2; */
  }
 
 .login-form {
@@ -115,55 +120,64 @@ nav button {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  margin: 5px;
+  margin: 10px;
+  padding: 10px;
   background: white;
 }
 
-
 .login-form input {
   /* width: 250px; */
-  height: 30px;
-  padding: 10px;
-  margin: 10px;
+  /* height: 30px; */
+  padding: 15px;
+  /* margin-top: 5px; */
   font-size: 1em;
   /* line-height: normal; */
   border: 1px solid #D0D8DB;
+  border-radius: 2px;
 }
 input::placeholder {
   color: lightgray;
 }
 
 .login-form .session-submit {
+  /* margin: px; */
+  padding: 15px;
   color: white;
   background: #7FC400;
   border-color: #7FC400;
-  height: 30px;
-  margin: 10px;
-  padding: 10px;
+  /* height: 30px; */
+  font-size: 1.1em;
+  font-weight: 700;
 }
+
+
+.login-form-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  color: #1a2e3b;
+  background-color: #F2F4F5;
+}
+
+.login-form-footer {
+  margin: 10px;
+  font-size: .9em;
+  text-align: center;
+  color: #4E5A5E;
+}
+
+.login-form-footer a {
+
+  color: rgb(16, 174, 241);
+}
+
 
 /* .login-form-box {
    display: flex;
    justify-content: center;
  } */
-
- .login-form-header {
-   margin-top: 20px;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center;
-  color: #1a2e3b;
-  /* border-bottom: 1px solid #D0D8DB; */
-  background-color: #F2F4F5;
- }
-
- .login-form-footer {
-   margin: 10px;
-  font-size: .7em;
-  text-align: center;
- }
-
-
 
 /* OLD VERSION */
 /* li {

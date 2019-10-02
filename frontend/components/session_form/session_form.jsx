@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         
-        this.state = {username: '', password: ''};
+        this.state = {first_last_name: '', email: '', password: ''};
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -35,14 +36,14 @@ class SessionForm extends React.Component {
     render() {
         return (
             <div className="login-form-container">
-                <div className="login-form-header">Join Swimeo</div>
-
+                <div className="login-form-header">{this.props.formHeader}</div>
+                <div onClick={this.props.closeModal} className="close-x">X</div>
+                {this.renderErrors()}
                 <br />
                 <hr />
                 <form onSubmit={this.handleSubmit} className="login-form">
 
                     {/* <div className="login-form"> */}
-                        <br />
 
                         <input type="text"
                             value={this.state.first_last_name}
@@ -51,7 +52,7 @@ class SessionForm extends React.Component {
                             placeholder="First and last name"
                             title="Please enter your name"
                             />
-                        <br/>
+<br/>
 
                         <input type="email"
                             value={this.state.email}
@@ -60,9 +61,7 @@ class SessionForm extends React.Component {
                             placeholder="Email address"
                             title="Please enter a valid email address"
                             />
-
-                        <br />
-
+<br/>
                         <input type="password"
                             value={this.state.password}
                             onChange={this.update('password')}
@@ -70,12 +69,17 @@ class SessionForm extends React.Component {
                             placeholder="Password"
                             title="Please enter a password"
                             />
+                            <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                         
-                                {this.renderErrors()}
                     {/* </div> */}
                 </form>
-                        <div className="login-form-footer">Already have an account? {this.props.navLink}</div>
+                        {this.renderErrors()}
+                <div className="login-form-footer">{this.props.formFooter} 
+                    {/* {this.props.navLink} */}
+                
+                    {/* <div onClick={this.props.otherForm} className="other-form">Barry</div> */}
+                </div>
             </div>
         );
     }
