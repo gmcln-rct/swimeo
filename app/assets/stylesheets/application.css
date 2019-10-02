@@ -72,7 +72,7 @@ li .login-signup {
     border: 1px solid lightgray;
 }
 li .login-signup:hover {
-    border: 1px solid #000;
+    border: 1px solid black;
 }
 
 a {
@@ -81,48 +81,3 @@ a {
     cursor: pointer;
 }
 
-/* header .logo {
-  border-right: 1px solid #ccc;
-  font-weight: 700;
-}
-
-.header-logo:hover {
-  background: #000;
-} */
-
-
-/* 
- header {
-     height: 100px;
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: white;
-     font-family: 'Roboto', sans-serif;
-     color: rgb(26,46,59);
- }
-
- h1 {
-     color: black;
-     font-family: sans-serif;
-     font-size: 1em;
- }
-
- #root {
-     margin-top: 40px;
-     color: maroon;
-font-family: 'Roboto', sans-serif;
-     font-size: 2em;
-     text-align: center;
-     
-     animation: blinkingText 0.8s infinite;
- }
-
- .blinking{
-    animation:blinkingText 2s infinite;
-}
-@keyframes blinkingText{
-    0%{     color: rgb(214, 44, 44);    }
-    /* 49%{    color: transparent; } */
-    50%{    color: transparent; }
-    /* 99%{    color:transparent;  } */
-    100%{   color: #fff;    }
-} */
