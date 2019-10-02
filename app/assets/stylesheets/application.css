@@ -13,3 +13,116 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Griffy&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+ body {
+  font-family: "Roboto", sans-serif;
+
+  background-color: teal;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #ccc;
+  font-size: 1em;
+  color: rgb(14,22,22);
+}
+
+#header-logo {
+    margin-left: 40px;
+    padding: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+}
+
+#header-logo:hover {
+    color: rgb(16, 174, 241);
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+
+li {
+    padding: 15px;
+    font-size: 1em;
+}
+
+li .login-signup {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgray;
+}
+li .login-signup:hover {
+    border: 1px solid #000;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(26, 46, 59);
+    cursor: pointer;
+}
+
+/* header .logo {
+  border-right: 1px solid #ccc;
+  font-weight: 700;
+}
+
+.header-logo:hover {
+  background: #000;
+} */
+
+
+/* 
+ header {
+     height: 100px;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: white;
+     font-family: 'Roboto', sans-serif;
+     color: rgb(26,46,59);
+ }
+
+ h1 {
+     color: black;
+     font-family: sans-serif;
+     font-size: 1em;
+ }
+
+ #root {
+     margin-top: 40px;
+     color: maroon;
+font-family: 'Roboto', sans-serif;
+     font-size: 2em;
+     text-align: center;
+     
+     animation: blinkingText 0.8s infinite;
+ }
+
+ .blinking{
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(214, 44, 44);    }
+    /* 49%{    color: transparent; } */
+    50%{    color: transparent; }
+    /* 99%{    color:transparent;  } */
+    100%{   color: #fff;    }
+} */
