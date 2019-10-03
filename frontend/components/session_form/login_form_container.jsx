@@ -17,14 +17,23 @@ const msp = ({ errors }) => {
 };
 
 const mdp = dispatch => {
+
+    const demoUserObj = {
+        email: 'demo@demo.com',
+        password: 'password',
+    };
+
     return {
         processForm: (user) => dispatch(login(user)),
+
         otherForm: (
             <button className='modal-footer-button' onClick={() => dispatch(openModal('signup'))}>
                 Join
             </button>
         ),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()),
+
+        demoUserLogin: () => dispatch(login(demoUserObj))
     };
 };
 

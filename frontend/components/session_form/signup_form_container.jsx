@@ -10,7 +10,6 @@ const msp = ({errors}) => {
     const errorsObj = {};
     errors.session.forEach(e => errorsObj[e.split(" ")[0]] = e);
 
-
     return {
         errors: errorsObj,
         formHeader: 'Join Swimeo',
@@ -22,7 +21,7 @@ const msp = ({errors}) => {
 };
 
 const mdp = dispatch => {
-    
+
     const demoUserObj = { 
         email: 'demo@demo.com',
         password: 'password',

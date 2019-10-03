@@ -25,6 +25,8 @@ class SessionForm extends React.Component {
     // Function to include first last name
 
     includeName(){
+        const nameClass = this.props.errors['First'] ? 'login-input-session-errors' : 'login-input';
+
         if (this.props.formType!=='Log in') {
             const inputClass = this.props.nameClass;
 
@@ -32,7 +34,7 @@ class SessionForm extends React.Component {
                     <input type="text"
                     value={this.state.first_last_name}
                     onChange={this.update('first_last_name')}
-                    className={inputClass}
+                    className={nameClass}
                     placeholder="First and last name"
                     title="Please enter your name"
                     /> 
@@ -55,13 +57,12 @@ class SessionForm extends React.Component {
                     ))}
                 </ul>
             );
-        // return errors[this.errors.match.params.error.id]
     }
 
-    // 
+
     render() {
         // Add error classes
-        const namelass = this.props.errors['First'] ? 'login-input-session-errors' : 'login-input';
+        const nameClass = this.props.errors['First'] ? 'login-input-session-errors' : 'login-input';
         const emailClass = this.props.errors['Email'] ? 'login-input-session-errors' : 'login-input';
         const passwordClass = this.props.errors['Password'] ? 'login-input-session-errors' : 'login-input';
 
@@ -77,7 +78,7 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form">
 
                         {/* Includes name if Join/Signup form */}
-                        {this.includeName(this.nameClass)}
+                        {this.includeName(nameClass)}
 
                         <br />
                         <input type="email"
@@ -97,6 +98,10 @@ class SessionForm extends React.Component {
                             title="Please enter a password"
                             />
                         <br/>
+                        <div className='form-errors'>
+                            {this.renderErrors()}
+                        </div>
+   
                         <input className="session-submit" type="submit" value={this.props.formType} />
 
                         <br/>
@@ -105,7 +110,7 @@ class SessionForm extends React.Component {
 
                 </form>
 
-                {this.renderErrors()}
+
                 <div className="login-form-footer">{this.props.formFooter} {this.props.otherForm}</div>
                 <div className='login-form-subfooter'>By joining Swimeo, you agree to our Terms of Swimming and Hydration Policy.</div>
             </div>

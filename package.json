@@ -1,5 +1,6 @@
 {
   "name": "swimeo",
+  "description": "Swimeo | We have got a thing for water videos",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.6.2",

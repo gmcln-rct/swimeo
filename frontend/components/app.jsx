@@ -7,7 +7,7 @@ import GreetingContainer from './greeting/greeting_container';
 // import SignupFormContainer from './session_form/signup_form_container.jsx';
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from './modal/modal';
-import Header from './header/header'
+import Header from './header/header_container'
 
 
 
