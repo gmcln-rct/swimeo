@@ -26,12 +26,13 @@ class SessionForm extends React.Component {
 
     includeName(){
         if (this.props.formType!=='Log in') {
-            return (
+            const inputClass = this.props.nameClass;
 
+            return (
                     <input type="text"
                     value={this.state.first_last_name}
                     onChange={this.update('first_last_name')}
-                    className="login-input"
+                    className={inputClass}
                     placeholder="First and last name"
                     title="Please enter your name"
                     /> 
@@ -43,25 +44,27 @@ class SessionForm extends React.Component {
     }
 
     renderErrors() {
-        // const emailClass = this.props.errors['email'] ? 'login-input session-errors' : 'login-input';
-        debugger
+        
         const errors = Object.values(this.props.errors)
-        return (
-            <ul>
-                {errors.map((error, i) => (
-                    <li key={`error-${i}`}>
-                        {error}
-                    </li>
-                ))}
-            </ul>
-        );
+            return (
+                <ul>
+                    {errors.map((error, i) => (
+                        <li key={`error-${i}`}>
+                            {error}
+                        </li>
+                    ))}
+                </ul>
+            );
+        // return errors[this.errors.match.params.error.id]
     }
 
     // 
     render() {
-        // let formNameClass = this.state.formErrors["first_last_name"] ? "form-name has-error" : "form-group"
-        const emailClass = this.props.errors['Email'] ? 'login-input session-errors' : 'login-input';
-        debugger
+        // Add error classes
+        const namelass = this.props.errors['First'] ? 'login-input-session-errors' : 'login-input';
+        const emailClass = this.props.errors['Email'] ? 'login-input-session-errors' : 'login-input';
+        const passwordClass = this.props.errors['Password'] ? 'login-input-session-errors' : 'login-input';
+
         return (
             <div className="login-form-container">
                 <div className="login-form-header">{this.props.formHeader}</div>
@@ -74,7 +77,7 @@ class SessionForm extends React.Component {
                 <form onSubmit={this.handleSubmit} className="login-form">
 
                         {/* Includes name if Join/Signup form */}
-                        {this.includeName()}
+                        {this.includeName(this.nameClass)}
 
                         <br />
                         <input type="email"
@@ -89,21 +92,19 @@ class SessionForm extends React.Component {
                         <input type="password"
                             value={this.state.password}
                             onChange={this.update('password')}
-                            className="login-input"
+                            className={passwordClass}
                             placeholder="Password"
                             title="Please enter a password"
                             />
                         <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
-                        {/* <input className="session-submit-demo" type="submit" value={this.props.demoUser} />
-                        <input className="session-submit-demo" type="submit" value={this.props.demoUser} /> */}
+
                         <br/>
                         {/* <input className="session-submit-demo" value='Log in as demo user' /> */}
-                        <button onClick={this.props.demoUserLogin}>Join as demo user</button>
-                    {/* onClick={this.props.demoUser}  */}
-                        
-                    {/* </div> */}
+                    <button onClick={this.props.demoUserLogin} className='session-submit-demo'>Join as demo user</button>
+
                 </form>
+
                 {this.renderErrors()}
                 <div className="login-form-footer">{this.props.formFooter} {this.props.otherForm}</div>
                 <div className='login-form-subfooter'>By joining Swimeo, you agree to our Terms of Swimming and Hydration Policy.</div>

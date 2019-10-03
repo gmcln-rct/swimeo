@@ -1,0 +1,145 @@
+/* ---------------------------------------------------- */
+
+/* MODALS */
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 400px; */
+  width: 25rem;
+  max-height: 35rem;
+  background-color: #F2F4F5;
+}
+
+ .close-x {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   font-size: 1.2em;
+   font-weight: 700;
+   opacity: .5;
+
+   cursor: pointer;
+
+   /* expand X button */
+    display:inline-block;
+    -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+    -moz-transform:scale(1.5,1); /* Firefox */
+    -ms-transform:scale(1.5,1); /* IE 9 */
+    -o-transform:scale(1.5,1); /* Opera */
+    transform:scale(1.5,1); /* W3C */
+   /* z-index: 2; */
+ }
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+}
+
+.login-form input, .login-form button {
+  /* width: 250px; */
+  /* height: 30px; */
+  padding: 15px;
+  /* margin-top: 5px; */
+  font-size: 1em;
+  /* line-height: normal; */
+  border: 1px solid #D0D8DB;
+  border-radius: 2px;
+}
+
+input::placeholder {
+  color: lightgray;
+}
+
+.login-form .session-submit {
+  padding: 15px;
+  color: white;
+  background: #7FC400;
+  border-color: #7FC400;
+  /* height: 30px; */
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.login-form .session-submit:hover {
+  background-color: #5A9E02;
+  border-color: #5A9E02;;
+}
+
+.login-form .session-submit-demo {
+  padding: 15px;
+  color: white;
+  background:  #4285f4;
+  /* height: 30px; */
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-form .session-submit-demo:hover {
+  background-color: #3367d6;
+}
+
+.login-form-header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  color: #1a2e3b;
+  background-color: #F2F4F5;
+}
+
+.login-form-footer {
+  margin: 10px;
+  font-size: .9em;
+  text-align: center;
+  color: #4E5A5E;
+}
+
+.modal-footer-button {
+  text-decoration: none;
+  color: #00ADEF;
+  border: 0;
+}
+
+.login-form-subfooter {
+  /* bottom: 20px; */
+  margin: 10px;
+  padding: 10px;
+  font-size: .7em;
+  text-align: center;
+  word-wrap: normal;
+
+}
+
+/* Errors */
+
+.login-input-session-errors {
+  border: 2px solid #FF4D4D !important;
+  /* background-color: red; */
+    background-image: url('error-red.png');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+
