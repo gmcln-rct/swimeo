@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
+import { openModal } from '../../actions/modal_actions';
 
 
 class Header extends React.Component {
@@ -7,7 +8,7 @@ class Header extends React.Component {
         super(props);
  
     }
-
+// const Header = ({ currentUser, logout, openModal }) => {
 
     render() {
         return (
@@ -20,7 +21,8 @@ class Header extends React.Component {
                 </div>
                 <div className='hero-buttons'>
                     <button className='hero-buttons-plan'>See plans</button>
-                    <button className='hero-buttons-join'>Join for free</button>
+                    {/* <button className='hero-buttons-join'>Join for free</button> */}
+                    <button className="hero-buttons-join" onClick={() => openModal('signup')}>Join for free</button>
 
                 </div>
             </section>

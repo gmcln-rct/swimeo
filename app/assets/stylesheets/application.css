@@ -20,6 +20,9 @@
 /* Logo Font */
 @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 
+/* Font Awesome */
+/* @import "font-awesome-sprockets";
+@import "font-awesome"; */
 
  body {
   font-family: "Roboto", sans-serif;
@@ -50,12 +53,10 @@ header {
     color: rgb(16, 174, 241);
 }
 
-
 nav {
   display: flex;
   justify-content: flex-start;
 }
-
 
 nav button {
   margin-top: 10px;
@@ -81,9 +82,9 @@ nav button {
       text-transform: none;
 }
 
-/* ---------------------------- */
+/* ---------------------------------------------------- */
 
-/* Modals */
+/* MODALS */
 
 .modal-background {
   position: fixed;
@@ -100,18 +101,29 @@ nav button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 450px;
+  /* width: 400px; */
+  width: 25rem;
+  max-height: 550px;
   background-color: #F2F4F5;
 }
 
  .close-x {
    position: absolute;
-   top: 10px;
-   right: 10px;
-   font-size: 1.5em;
+   top: 20px;
+   right: 20px;
+   font-size: 1.2em;
    font-weight: 700;
+   opacity: .5;
+
    cursor: pointer;
+
+   /* expand element */
+    display:inline-block;
+    -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+    -moz-transform:scale(1.5,1); /* Firefox */
+    -ms-transform:scale(1.5,1); /* IE 9 */
+    -o-transform:scale(1.5,1); /* Opera */
+    transform:scale(1.5,1); /* W3C */
    /* z-index: 2; */
  }
 
@@ -125,7 +137,7 @@ nav button {
   background: white;
 }
 
-.login-form input {
+.login-form input, .login-form button {
   /* width: 250px; */
   /* height: 30px; */
   padding: 15px;
@@ -135,12 +147,12 @@ nav button {
   border: 1px solid #D0D8DB;
   border-radius: 2px;
 }
+
 input::placeholder {
   color: lightgray;
 }
 
 .login-form .session-submit {
-  /* margin: px; */
   padding: 15px;
   color: white;
   background: #7FC400;
@@ -148,6 +160,25 @@ input::placeholder {
   /* height: 30px; */
   font-size: 1.1em;
   font-weight: 700;
+}
+
+.login-form .session-submit:hover {
+  background-color: #5A9E02;
+  border-color: #5A9E02;;
+}
+
+.login-form .session-submit-demo {
+  padding: 15px;
+  color: white;
+  background:  #4285f4;
+  /* height: 30px; */
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-form .session-submit-demo:hover {
+  background-color: #3367d6;
 }
 
 
@@ -168,10 +199,30 @@ input::placeholder {
   color: #4E5A5E;
 }
 
-.login-form-footer a {
-
-  color: rgb(16, 174, 241);
+.modal-footer-button {
+  text-decoration: none;
+  color: #00ADEF;
+  border: 0;
 }
+
+.login-form-subfooter {
+
+  /* bottom: 20px; */
+  margin: 10px;
+  padding: 10px;
+  font-size: .7em;
+  text-align: center;
+  word-wrap: normal;
+
+}
+
+.login-input .session-errors {
+  color: red;
+  border-color: red;
+  background-color: red;
+}
+
+/* ---------------------------------------------------- */
 
 /* HEADER HERO */
 
@@ -219,43 +270,17 @@ input::placeholder {
   background-color: rgb(216, 105, 149);
 }
 
+.hero-buttons-plan:hover {
+
+  background-color: rgb(177, 85, 122);
+}
+
 .hero-buttons-join {
   color: rgb(26, 46, 59);
   background-color: white;
   border: 1px solid lightgray;
 }
 
-/* .login-form-box {
-   display: flex;
-   justify-content: center;
- } */
-
-/* OLD VERSION */
-/* li {
-    padding: 15px;
-    font-size: 1em;
+.hero-buttons-join:hover {
+  border: 1px solid black;
 }
-
-
-
-li .login-signup {
-    padding: 10px 20px 10px 20px;
-    border: 1px solid lightgray;
-}
-li .login-signup:hover {
-    border: 1px solid black;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(26, 46, 59);
-    cursor: pointer;
-} */
-
-/* nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    text-decoration: none;
-    margin-top: 10px;
-} */
