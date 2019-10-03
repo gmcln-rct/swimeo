@@ -60,7 +60,7 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 765px) {
 .hero-header {
 
   font-size: 3em;
