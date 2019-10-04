@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class Header extends React.Component {
+class Splash extends React.Component {
     constructor(props) {
         super(props);
  
@@ -29,4 +29,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default Splash;

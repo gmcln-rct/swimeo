@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
 import { openModal } from '../../actions/modal_actions';
 
-import Header from './header';
+import Splash from './splash';
 
     const msp = ({ session }) => ({
         currentUser: session.currentUser
@@ -14,4 +14,4 @@ import Header from './header';
         };
     };
 
-export default connect(msp, mdp)(Header);
+export default connect(msp, mdp)(Splash);
