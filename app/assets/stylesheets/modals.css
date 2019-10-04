@@ -140,10 +140,10 @@ input::placeholder {
 .login-input-session-errors {
   border: 2px solid #FF4D4D !important;
   /* background-color: red; */
-    background-image: url('error-red.png');
-    background-position: 95% 50%;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
+  background-image: url('error-red.png');
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 .login-form-container li:first-child {

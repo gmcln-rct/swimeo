@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: swimeo_production
-  first_last_name: swimeo
+  username: swimeo
   password: <%= ENV['SWIMEO_DATABASE_PASSWORD'] %>
