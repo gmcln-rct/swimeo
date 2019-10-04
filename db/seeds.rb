@@ -11,3 +11,4 @@ demoGuest = User.create!(
     email: 'demo@demo.com',
     password: 'password'
 )
+
