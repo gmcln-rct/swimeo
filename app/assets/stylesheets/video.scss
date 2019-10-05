@@ -1,0 +1,28 @@
+
+
+
+/* React Video Player */
+
+// .video-react-video {
+// 	padding-top: 0 !important;
+// }
+
+
+
+.video-react-controls-enabled, .video-react, .video-player {
+		padding-top: 0 !important;
+}
+
+.video-react-control-bar {
+  color: red;
+  background-color: blue;
+  height: 5em !important;
+}
+button .video-react-play-control {
+    color: green;
+    background-color: red;
+}
+
+.video-react .video-react-button {
+  background: blue;
+}

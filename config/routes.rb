@@ -8,4 +8,10 @@ Rails.application.routes.draw do
     resources :videos 
   end
 
+  # namespace :api do
+  #   resource :user, only: [:create]
+  #   resource :session, only: [:create, :destroy]
+  #   resources :videos 
+  # end
+  
 end

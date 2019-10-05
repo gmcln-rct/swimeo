@@ -58,6 +58,11 @@
   border: 1px solid black;
 }
 
+/* .font-not-awesome {
+  height: 100px;
+  color: red;
+} */
+
 /* Media Queries */
 
 @media screen and (max-width: 765px) {

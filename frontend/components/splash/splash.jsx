@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
+// import ReactDOM from 'react-dom';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+;
 class Splash extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +16,9 @@ class Splash extends React.Component {
                 <div className="hero-header">
                     Swimeo can help*
                 </div>
+                {/* <div className='font-not-awesome'>
+                    <FontAwesomeIcon icon="check-square" />
+                </div> */}
                 <div className='hero-subheader'>
                     *with video collaboration, video distribution and fish mongering.
                 </div>

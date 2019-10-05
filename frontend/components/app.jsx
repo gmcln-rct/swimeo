@@ -6,7 +6,9 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import GreetingContainer from './greeting/greeting_container';
 
 import Modal from './modal/modal';
-import Splash from './splash/splash_container'
+import Splash from './splash/splash_container';
+import VideoShow from './video/video_show/video_show_container';
+import VideoUpload from './video/video_upload/video_upload_container';
 
 
 
@@ -17,7 +19,9 @@ const App = () => (
       <span id='header-logo'>swimeo</span>
       <GreetingContainer />
     </header>
-    <Splash />
+    <Route exact path='/' component={Splash} />
+    <Route path='/watch/:id' component={VideoShow} />
+    <Route path='/upload' component={VideoUpload} />
     {/* <Route path="/login" component={LoginFormContainer} />
     <Route path="/signup" component={SignupFormContainer} /> */}
   </div>

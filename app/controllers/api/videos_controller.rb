@@ -7,11 +7,12 @@ class Api::VideosController < ApplicationController
 
     def create
         @video = Video.new(video_params)
+        debugger
         @video.creator_id = current_user.id
         if @video.save
-        render :show
+            render :show
         else
-        render json: @video.errors.full_messages, status: 422
+            render json: @video.errors.full_messages, status: 422
         end
     end
 
@@ -19,25 +20,26 @@ class Api::VideosController < ApplicationController
         @video = Video.find(params[:id])
 
         if @video.update(video_params)
-        render :show
+            render :show
         else
-        render json: @video.errors.full_messages, status: 422
+            render json: @video.errors.full_messages, status: 422
         end
 
     end
 
     def show
         @video = Video.find(params[:id])
+        render :show
     end
 
     def destroy
         @video = Video.find(params[:id])
 
         if @video.creator_id == current_user.id
-        @video.destroy
-        render :show
+            @video.destroy
+            render :show
         else
-        render json: @video.errors.full_messages, status: 401
+            render json: @video.errors.full_messages, status: 401
         end
     end
 

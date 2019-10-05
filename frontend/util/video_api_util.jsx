@@ -1,5 +1,5 @@
 // Fetch Videos (PLURAL)
-export const fetchVideos = () => {
+export const receiveVideos = () => {
     return $.ajax({
         type: `GET`,
         url: `/api/videos`,
@@ -7,39 +7,37 @@ export const fetchVideos = () => {
 };
 
 // Fetch Video (ONE)
-export const fetchVideo = (id) => {
+export const receiveVideo = (id) => {
     return $.ajax({
-        type: `GET`,
-        url: `/api/videos/${id}`,
-    });
-};
-
+        method: 'GET',
+        url: `api/videos/${id}`,
+    })
+}
 
 // Create New Video
-export const createVideo = (video) => {
+export const uploadVideo = (video) => {
     return $.ajax({
-        type: `POST`,
-        url: `/api/videos`,
-        data: video,
-    });
-};
+        method: 'POST',
+        url: `api/videos/${video.id}`,
+        data: { video }
+    })
+}
 
 
 // Update video
 export const updateVideo = (video) => {
     return $.ajax({
-        type: `PATCH`,
-        url: `/api/videos/${video.id}`,
-        data: { video },
-    });
-};
+        method: 'PATCH',
+        url: `api/videos/${video.id}`,
+        data: { video }
+    })
+}
 
 // Delete Video
 export const deleteVideo = (id) => {
     return $.ajax({
-        type: `DELETE`,
-        url: `/api/videos/${id}`,
-    });
-};
-
+        method: 'DELETE',
+        url: `api/videos/${id}`,
+    })
+}
 

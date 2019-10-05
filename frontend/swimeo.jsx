@@ -6,7 +6,7 @@ import configureStore from './store/store';
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
 
-
+    // Persist Current User
     let store;
     if (window.currentUser) {
         const { currentUser } = window;
