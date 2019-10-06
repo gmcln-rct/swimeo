@@ -170,7 +170,7 @@ video::-webkit-media-controls-play-button {
     padding: 10px;
     
     font-size: 2em;
-    color: rgb(26, 46, 59);
+    color: #1A2E3B;
     background-color: white;
     border: 1px dashed #D0D8DB;
 }
@@ -267,8 +267,10 @@ video::-webkit-media-controls-play-button {
 
 .video-upload-form-footer {
     margin: 20px 10px;
+
     font-size: 1em;
-    opacity: 0.7;
+    color: #1A2E3B;
+    opacity: 0.5;
 
 }
 
@@ -335,7 +337,6 @@ video::-webkit-media-controls-play-button {
  }
 
 .video-upload-right-sidebar-buttons {
-
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -346,9 +347,9 @@ video::-webkit-media-controls-play-button {
 }
 
  .video-upload-fake-button {
-    width: 125px;
+    width: 130px;
     margin: 5px;
-    padding: 10px 20px;
+    padding: 10px 10px;
 
     font-size: 1.2em;
     font-weight: 700;

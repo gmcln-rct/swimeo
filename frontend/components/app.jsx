@@ -12,10 +12,10 @@ import VideoUpload from './video/video_upload/video_upload_container';
 
 import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-// import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCheckSquare, faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
+import { faDropbox, faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faCheckSquare, faCloudUploadAlt);
+library.add(faDropbox, faGoogleDrive, faCloudUploadAlt);
 
 const App = () => (
   <div>

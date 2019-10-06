@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class VideoUpload extends React.Component {
     constructor(props) {
@@ -122,7 +122,7 @@ class VideoUpload extends React.Component {
                             <button onClick={this.props.upload} className='upload-form-upload-button'>Upload Video</button>
                         </form>
                     </div>
-                    <div className='video-upload-form-footer'>Learn more about uploading in the Video Guidelines, Compression Guidelines, and Help Center.</div>
+                    <div className='video-upload-form-footer'>Learn more about swimming in the Swimeo Rules, Pool Guidelines, and Help Center.</div>
                 </section>
 
                 <section className="video-upload-sidebar">
@@ -152,8 +152,13 @@ class VideoUpload extends React.Component {
 
                         <div className='video-upload-right-sidebar-buttons'>
 
-                            <button className='video-upload-fake-button'>DropBait</button>
-                            <button className='video-upload-fake-button'>GoogleDrop</button>
+                            <button className='video-upload-fake-button'>
+                                <span><FontAwesomeIcon icon={['fab', 'dropbox']} style={{ color: 'black' }} /> DropBait</span>
+                            </button>
+                            <button className='video-upload-fake-button'>
+                                <span><FontAwesomeIcon icon={['fab', 'google-drive']} style={{ color: 'black' }} /> GoogleDried</span>
+                            </button>
+                            {/* <button className='video-upload-fake-button'>GoogleDrop</button> */}
                             <button className='video-upload-fake-button'>And More</button>
 
                         </div>
