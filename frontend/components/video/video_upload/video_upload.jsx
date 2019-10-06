@@ -111,7 +111,6 @@ class VideoUpload extends React.Component {
                                         onChange={this.handleInput('description')} 
                                         placeholder="Enter video description"
                                         title="Please enter a video description."
-                                        
                                         >
                                 </textarea>
                             </label>

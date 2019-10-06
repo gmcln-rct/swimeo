@@ -21,7 +21,7 @@ const App = () => (
   <div>
     <Modal />
     <header>
-      <span id='header-logo'>swimeo</span>
+      {/* <span id='header-logo'>swimeo</span> */}
       <GreetingContainer />
     </header>
     <Route exact path='/' component={Splash} />
@@ -29,6 +29,14 @@ const App = () => (
     <Route path='/upload' component={VideoUpload} />
     {/* <Route path="/login" component={LoginFormContainer} />
     <Route path="/signup" component={SignupFormContainer} /> */}
+
+    {/* <Route exact path="/" render={() => (
+      this.props.currentUser ? (
+        <Home />
+      ) : (
+          <Redirect to="/login" />
+        )
+    )} /> */}
   </div>
 );
 

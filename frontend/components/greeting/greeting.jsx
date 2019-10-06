@@ -1,13 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 const Greeting = ({ currentUser, logout, openModal }) => {
 
     const sessionLinks = () => (
-        <nav className="login-nav">
-            <button className="button-signup" onClick={() => openModal('signup')}>Join</button>
-            <button className="button-login" onClick={() => openModal('login')}>Login</button>
+        <nav className="header-nav">
+            <span className='login-nav'>
+                <span className='header-logo'>swimeo</span>
+                <button className="button-signup" onClick={() => openModal('signup')}>Join</button>
+                <button className="button-login" onClick={() => openModal('login')}>Login</button>
+            </span>
+            <div  className='nav-upload'>
+
+                <Link to="/upload" className='nav-upload-button'>
+                    <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /> Upload
+
+                    {/* <span> Upload</span> */}
+                </Link>
+                {/* <button  className='nav-upload-button'>Upload Video</button> */}
+            </div>
+ 
         </nav>
     );
     const personalGreeting = () => (

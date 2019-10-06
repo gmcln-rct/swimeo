@@ -1,0 +1,116 @@
+/* HEADER */
+
+/* header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid #ccc;
+  font-size: 1em;
+  color: rgb(14,22,22);
+} */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  height: 60px;
+
+  font-size: 1em;
+  color: #1A2E3B;
+  background: white;
+}
+
+.login-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 80px; */
+  background: white;
+  font-size: 1em;
+  color: rgb(14,22,22);
+}
+
+.header-logo {
+  margin-left: 40px;
+  padding: 20px;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+}
+
+.header-logo:hover {
+  color: rgb(16, 174, 241);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav button {
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  background: transparent;
+  text-decoration: none;
+  color: #1A2E3B;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.button-signup {
+    font-weight: 700;
+    border: 1px solid lightgray;
+} 
+
+.button-signup:hover {
+    border: 1px solid black;
+}
+
+.button-login {
+    border: 0;
+    text-transform: none;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* Upload nav button */
+
+.nav-upload {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  height: 60px;
+  /* background: white; */
+  /* border-bottom: 1px solid #ccc; */
+  font-size: 1em;
+
+}
+
+
+a.nav-upload-button {
+  width: 100%;
+  max-height: 50px;
+  margin-top: 15px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 15px;
+
+
+  font-size: 0.9em;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+
+  color: white;
+  background-color: #00adef;
+  cursor: pointer;
+}
+
+a.nav-upload-button:hover {
+    border-color: #08C;
+    background-color: #08C;
+}

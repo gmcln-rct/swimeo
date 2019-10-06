@@ -15,6 +15,40 @@
  *= require_self
  */
 
+
+/* REFERENCE */
+
+/* Logo Blue */
+/* rgb(16, 174, 241); */
+/* 10AEAB */
+
+
+/* Font */
+/* Roboto */
+
+/* Text color */
+
+/* #1A2E3B; */
+
+
+/* Blue button
+
+.video-upload-container form input[type=file] {
+    width: 100%;
+
+    color: white;
+    background-color: #00adef;
+    /* background: red; */
+/* }
+
+.video-upload-container form input[type=file]:hover {
+    color: white;
+    border-color: #08C;
+    background-color: #08C;
+}  */
+
+
+
 /* Main Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
 /* Logo Font */
@@ -23,68 +57,9 @@
 
 
 
-/* Font Awesome */
-/* @import "font-awesome-sprockets";
-@import "font-awesome"; */
-
  body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(16, 174, 241);
 }
 
-/* HEADER */
-
-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 80px;
-  background: rgb(255, 255, 255);
-  border-bottom: 1px solid #ccc;
-  font-size: 1em;
-  color: rgb(14,22,22);
-}
-
-#header-logo {
-    margin-left: 40px;
-    padding: 20px;
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5em;
-}
-
-#header-logo:hover {
-  color: rgb(16, 174, 241);
-}
-
-nav {
-  display: flex;
-  justify-content: flex-start;
-}
-
-nav button {
-  margin-top: 10px;
-  padding: 10px 20px 10px 20px;
-  background: transparent;
-  text-decoration: none;
-  color: rgb(26, 46, 59);
-  text-transform: none;
-  cursor: pointer;
-}
-
-.button-signup {
-    font-weight: 700;
-    border: 1px solid lightgray;
-} 
-
-.button-signup:hover {
-    border: 1px solid black;
-}
-
-.button-login {
-    border: 0;
-      text-transform: none;
-}
-
-
-/* ---------------------------------------------------- */
 

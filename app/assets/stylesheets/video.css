@@ -194,9 +194,11 @@ video::-webkit-media-controls-play-button {
  }
 
 .upload-input-label {
-    margin: 5x;
+    margin-bottom: 5px;
+
     font-size: .5em;
     font-weight: 700;
+    line-height: 1em;
 }
 
 .upload-choose-file-button-faux {
@@ -226,7 +228,9 @@ video::-webkit-media-controls-play-button {
 /* Descriptions */
 .video-upload-container form input, .video-upload-container form textarea  {
     width: 100%;
+    margin-top: 5px;
     padding: 5px;
+
     font-size: 1em;
     font-weight: 500;
 }

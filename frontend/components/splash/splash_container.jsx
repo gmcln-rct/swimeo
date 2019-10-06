@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { logout } from '../../actions/session_actions';
+import { logout, signup } from '../../actions/session_actions';
 import { openModal } from '../../actions/modal_actions';
 
 import Splash from './splash';
