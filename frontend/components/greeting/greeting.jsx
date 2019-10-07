@@ -17,8 +17,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
                 <Link to="/upload" className='nav-upload-button'>
                     <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /> Upload
-
-                    {/* <span> Upload</span> */}
                 </Link>
                 {/* <button  className='nav-upload-button'>Upload Video</button> */}
             </div>

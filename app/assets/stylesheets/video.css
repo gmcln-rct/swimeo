@@ -1,5 +1,6 @@
 
  /* ------------------------------------------------------------------------------------ */
+ /* VIDEO WATCH/SHOW PAGE */
 /* Video Outer Container
  /* ------------------------------------------------------------------------------------ */
 
@@ -8,6 +9,8 @@
     display: block;
     width: 100%;
     max-height: 600px;
+
+    color: #1A2E3B;
     background-color: black;
 }
 
@@ -26,16 +29,113 @@ video {
 }
 
 .video-footer {
+    display: block;
+
+    width: 100%;
+    max-height: 200px;
+
+    color: #1A2E3B;
     background-color: white;
 }
 
+.video-info {
+    font-size: 3em;
+}
 
  /* ------------------------------------------------------------------------------------ */
 /* For HTML 5 PLAYER SHADOW PLAYER */
 /* (super hacky solution for native browser issue) */
  /* ------------------------------------------------------------------------------------ */
 
- video::-webkit-media-controls-enclosure {
+
+/* Because video needed a defined hieght in order for object-fit: fill to work. */
+
+
+/* hide the default Chrome video player styling */
+
+/* video::-webkit-media-controls-overlay-enclosure {
+    display:none !important;
+} */
+
+/* video::-webkit-media-controls-enclosure {
+    display:none !important;
+} */
+
+/* video::-webkit-media-controls {
+    display:none !important;
+} */
+
+/*  Needed to hide player controls in Safari Only */
+
+/* video::-webkit-media-controls-panel {
+    display:none !important;
+}
+
+video::-webkit-media-controls-play-button {
+    display: none !important;
+} */
+
+video::-webkit-media-controls-current-time-display {
+    display: none !important;
+}
+
+video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+video::-webkit-media-controls-timeline {
+    display: none !important;
+}
+
+video::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-volume-slider {
+    display: none !important;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
+video::-internal-media-controls-download-button {
+    display: none !important;
+}
+
+/* Firefox Shadow DOM Fix */
+
+/* *::-moz-list-bullet, *::-moz-list-number {
+    display:none !important;
+}
+
+*::-moz-meter-bar {
+    display:none !important;
+}
+
+:-moz-full-screen:not(:root)::backdrop {
+    display:none !important;
+}
+
+*::backdrop {
+    display:none !important;
+}
+
+:fullscreen:not(:root) {
+    display:none !important;
+} */
+
+/* New addition to removal of User Agent StyleSheet for Firefox. Removed dotted border around range. */
+/* input[type="range"]::-moz-focus-outer {
+    border: 0;
+} */
+
+/* ------------------------------ */
+
+/* Shadow Dom v2 */
+
+
+ /* video::-webkit-media-controls-enclosure {
 
     padding-left: 10px;
     padding-top: 5px;
@@ -46,7 +146,6 @@ video {
 video::-webkit-media-controls-panel {
     position: absolute;
     bottom: 10px;
-	/* opacity: 1 !important; */
 	display: -webkit-flex !important;
 	height: 40px;
     width: 100%;
@@ -68,8 +167,6 @@ video::-webkit-media-controls-volume-slider, video::-webkit-media-controls-timel
 	border-radius: 5px;
     min-width: 15px;
     width: 60%;
-
-    /* display: none; */
 }
 
 video::-webkit-media-controls-volume-slider::-webkit-media-slider-container, video::-webkit-media-controls-timeline::-webkit-media-slider-container {
@@ -91,7 +188,6 @@ video::-webkit-media-controls-play-button {
     padding-top: 10px;
     border-radius: 4px;
     transform: scale(2);
-    /* font-size: 2em; */
     color: white;
     font-family: "Roboto", sans-serif;
     border-radius: 2px;
@@ -126,7 +222,6 @@ video::-webkit-media-controls-play-button {
  	background-position: center 8px;
      background-repeat: no-repeat;
      color: white;
-     
  }
 
  video::-webkit-media-controls-fullscreen-button:hover {
@@ -144,7 +239,7 @@ video::-webkit-media-controls-play-button {
  	font-size: 1.5em;
      font-weight: normal;
      
- } 
+ }  */
 
  /* ------------------------------------------------------------------------------------ */
  /* Video Upload */
@@ -371,3 +466,58 @@ video::-webkit-media-controls-play-button {
  }
 
 
+
+
+ .video-player {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+
+
+.video-controls {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  transition: opacity .5s ease-in-out;
+}
+
+
+.video-controls:hover{
+  opacity: 1;
+}
+
+.video-thumbnail-showing{
+  opacity: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.main-video-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* New video Controls */
+
+input[type=button]::--webkit-media-controls-play-button, input.pause {
+    background: red;
+    color: green;
+}

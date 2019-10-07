@@ -1,3 +1,12 @@
+.splash-container {
+  width: 100%;
+  max-height: 700px;
+  
+  background: white;
+}
+
+/* ---------------------------------------------------- */
+
 /* HEADER HERO */
 
 .hero-container {
@@ -13,7 +22,7 @@
   margin-top: 50px;
   font-size: 5em;
   font-weight: 700;
-  color: rgb(26, 46, 59);
+  color: #1A2E3B;
 }
 
 .hero-subheader {
@@ -41,15 +50,16 @@
 .hero-buttons-plan {
   color: white;
   background-color: rgb(216, 105, 149);
+  border: none;
+  transition: 0.4s;
 }
 
 .hero-buttons-plan:hover {
-
   background-color: rgb(177, 85, 122);
 }
 
 .hero-buttons-join {
-  color: rgb(26, 46, 59);
+  color: #1A2E3B;
   background-color: white;
   border: 1px solid lightgray;
 }
@@ -62,6 +72,124 @@
   height: 100px;
   color: red;
 } */
+
+
+/* ---------------------------------------------------- */
+
+/* Splash Section 1 */
+
+.splash-1 {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+
+
+  width: 100%;
+  max-height: 800px;
+  margin-top: 40px;
+
+
+
+  color: #1A2E3B;
+  background: white;
+}
+
+.splash-1-main {
+  max-width: 50%;
+  padding: 10px;
+
+}
+
+.splash-video figure {
+
+  width: 500px;
+  height: auto;
+  margin-righ: 10px;
+  
+
+  /* margin-left: 20%; */
+}
+
+.splash-1-sidebar {
+  /* display: flex;
+  justify-content: flex-start;
+  direction: column; */
+
+  width: 40%;
+  margin-left: 50px;
+  padding: 10px;
+  word-wrap: normal;
+
+}
+
+.splash-subheader {
+  margin: 10px;
+  font-size: 2.5em;
+
+
+  color: #1A2E3B;
+
+}
+
+.splash-messaging {
+  margin: 20px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.splash-plans {
+  margin: 20px;
+  padding-bottom: 40px;
+
+  color: rgb(0, 173, 239);
+  font-size: 1em;
+  font-weight: 700;
+
+  border-bottom: 1px solid lightgray; 
+}
+
+
+.splash-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.splash-buttons button {
+  margin: 20px;
+  padding: 15px 40px 15px 40px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.splash-buttons-plan {
+  color: white;
+  background-color: #00adef;
+  border: none;
+  transition: 0.4s;
+}
+
+.splash-buttons-plan:hover {
+  border-color: #08C;
+  background-color: #08C;
+}
+
+/* ---------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------- */
+
+/* Splash Section 1 */
+
+/* .splash-2 {
+  height: 300px;
+} */
+
+/* ---------------------------------------------------- */
+
 
 /* Media Queries */
 

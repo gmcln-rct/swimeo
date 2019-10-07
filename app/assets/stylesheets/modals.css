@@ -24,24 +24,47 @@
   /* background-color: #F2F4F5; */
 }
 
+.login-form-container-head {
+  width: 100%;
+  max-height: 80px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+    /* margin-top: 30px;
+  margin-bottom: 10px; */
+
+  background-color: #F2F4F5;
+  border-bottom: 1px solid #D0D8DB;
+
+}
+
+.login-form-header {
+
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  color: #1a2e3b;
+
+  /* background-color: #F2F4F5; */
+}
+
  .close-x {
    position: absolute;
+   display:inline-block;
    top: 30px;
    right: 30px;
+
+   color: #879CAB;
    font-size: 1.2em;
    font-weight: 700;
    opacity: .5;
 
    cursor: pointer;
+ }
 
-   /* expand X button */
-    display:inline-block;
-    -webkit-transform:scale(1.5,1); /* Safari and Chrome */
-    -moz-transform:scale(1.5,1); /* Firefox */
-    -ms-transform:scale(1.5,1); /* IE 9 */
-    -o-transform:scale(1.5,1); /* Opera */
-    transform:scale(1.5,1); /* W3C */
-   /* z-index: 2; */
+ .close-x:hover {
+   color: #657987;
  }
 
 
@@ -99,16 +122,6 @@ input::placeholder, textarea::placeholder  {
   background-color: #3367d6;
 }
 
-.login-form-header {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 1.3em;
-  font-weight: 700;
-  text-align: center;
-  color: #1a2e3b;
-  background-color: white;
-  /* background-color: #F2F4F5; */
-}
 
 .login-form-footer {
   margin: 10px;
@@ -138,7 +151,7 @@ input::placeholder, textarea::placeholder  {
 /* Errors */
 
 .login-input-session-errors {
-  border: 2px solid #FF4D4D !important;
+  border: 1px solid #FF4D4D !important;
   /* background-color: red; */
   background-image: url('error-red.png');
   background-position: 95% 50%;
@@ -163,4 +176,8 @@ input::placeholder, textarea::placeholder  {
   text-align: center;
   background-color: #FFEDED;
   border-radius: 3px;
+}
+
+.no-errors {
+  display: none;
 }

@@ -76,7 +76,7 @@ nav button {
 
 /* ---------------------------------------------------- */
 
-/* Upload nav button */
+/* Upload Nav Button */
 
 .nav-upload {
   display: flex;
@@ -84,12 +84,9 @@ nav button {
   align-content: center;
 
   height: 60px;
-  /* background: white; */
-  /* border-bottom: 1px solid #ccc; */
+
   font-size: 1em;
-
 }
-
 
 a.nav-upload-button {
   width: 100%;
@@ -107,10 +104,13 @@ a.nav-upload-button {
 
   color: white;
   background-color: #00adef;
+  border-color: #00adef;
+  border-radius: 3px;
+
   cursor: pointer;
 }
 
 a.nav-upload-button:hover {
-    border-color: #08C;
-    background-color: #08C;
+  border-color: #08C;
+  background-color: #08C;
 }

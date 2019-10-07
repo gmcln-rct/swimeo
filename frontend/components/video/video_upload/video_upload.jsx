@@ -79,7 +79,6 @@ class VideoUpload extends React.Component {
                                 onChange={this.handleFile} /> */}
 
                             <button className='upload-choose-file-button-faux'>
-                                {/* <span> <FontAwesomeIcon icon="cloud-upload-alt" /></span> */}
                                 <span> <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /></span>
 
                                 <span> Or choose files</span>

@@ -9,13 +9,14 @@ import Modal from './modal/modal';
 import Splash from './splash/splash_container';
 import VideoShow from './video/video_show/video_show_container';
 import VideoUpload from './video/video_upload/video_upload_container';
+import Footer from './footer/footer'
 
 import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDropbox, faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
-import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faDropbox, faGoogleDrive, faCloudUploadAlt);
+library.add(faDropbox, faGoogleDrive, faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight );
 
 const App = () => (
   <div>
@@ -37,6 +38,8 @@ const App = () => (
           <Redirect to="/login" />
         )
     )} /> */}
+
+    {/* <Footer /> */}
   </div>
 );
 

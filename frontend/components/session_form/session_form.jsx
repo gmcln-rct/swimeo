@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class SessionForm extends React.Component {
@@ -66,15 +67,16 @@ class SessionForm extends React.Component {
         const emailClass = this.props.errors['Email'] ? 'login-input-session-errors' : 'login-input';
         const passwordClass = this.props.errors['Password'] ? 'login-input-session-errors' : 'login-input';
 
+        const errorClass = (this.props.errors['First'] || this.props.errors['Email'] || this.props.errors['Password'] ) ? 
+        'form-errors' : 'no-errors'
+
         return (
             <div className="login-form-container">
-                <div className="login-form-header">{this.props.formHeader}</div>
-                <div onClick={this.props.closeModal} className="close-x">X</div>
+                <div className='login-form-container-head'>
+                    <div className="login-form-header">{this.props.formHeader}</div>
+                    <div onClick={this.props.closeModal} className="close-x"><FontAwesomeIcon icon="times" /></div>
+                </div>
 
-               {/* <i className="fas fa-times"></i>  */}
-
-                <br />
-                <hr />
                 <form onSubmit={this.handleSubmit} className="login-form">
 
                         {/* Includes name if Join/Signup form */}
@@ -98,7 +100,7 @@ class SessionForm extends React.Component {
                             title="Please enter a password"
                             />
                         <br/>
-                        <div className='form-errors'>
+                        <div className={errorClass}>
                             {this.renderErrors()}
                         </div>
    

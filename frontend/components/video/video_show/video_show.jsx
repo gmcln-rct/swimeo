@@ -24,6 +24,8 @@ class VideoShow extends React.Component {
         this.props.showVideo(id);
     }
 
+
+    
     render() {
         // const videoId = this.props.video.id;
         debugger
@@ -64,7 +66,7 @@ class VideoShow extends React.Component {
                     </div>
 
                     <div className='video-footer'>
-                        <div className='video-text-description'>
+                        <div className='video-info'>
 
                             <div className='video-title'>{this.props.video.title}</div>
                             <br />
