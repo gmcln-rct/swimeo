@@ -54,7 +54,9 @@ class VideoUpload extends React.Component {
         }).then(
             (response) => {
                 debugger
-                console.log(response)},
+                console.log(response);
+                this.props.history.push('/watch')
+            },
             (response) => {
                 console.log(response.responseJSON)
             }

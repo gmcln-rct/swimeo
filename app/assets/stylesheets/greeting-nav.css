@@ -36,8 +36,20 @@
 .header-logo {
   margin-left: 40px;
   padding: 20px;
+  
+  text-decoration: none;
   font-family: 'Pacifico', cursive;
   font-size: 2.5em;
+
+  color: #1A2E3B;
+  background: transparent;
+  border: none;
+}
+
+/* Removes annoying box around logo when mouse moves from logo */
+a.header-logo:focus {
+  outline-color: white;
+
 }
 
 .header-logo:hover {
@@ -52,7 +64,9 @@ nav {
 nav button {
   margin-top: 10px;
   padding: 10px 20px 10px 20px;
+
   background: transparent;
+
   text-decoration: none;
   color: #1A2E3B;
   text-transform: none;

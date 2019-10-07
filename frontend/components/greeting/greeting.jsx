@@ -9,7 +9,8 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
         <nav className="header-nav">
             <span className='login-nav'>
-                <span className='header-logo'>swimeo</span>
+                <Link to='/' className='header-logo'>swimeo</Link>
+                {/* <span className='header-logo'>swimeo</span> */}
                 <button className="button-signup" onClick={() => openModal('signup')}>Join</button>
                 <button className="button-login" onClick={() => openModal('login')}>Login</button>
                 <Link to="/watch" className='nav-watch-button'>Watch</Link>

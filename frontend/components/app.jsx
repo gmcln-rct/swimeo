@@ -9,14 +9,16 @@ import Modal from './modal/modal';
 import Splash from './splash/splash_container';
 import VideoShow from './video/video_show/video_show_container';
 import VideoUpload from './video/video_upload/video_upload_container';
+import VideoWatch from './video/video watch/video_watch_container';
+
 import Footer from './footer/footer';
 
 import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDropbox, faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
-import { faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faDropbox, faGoogleDrive, faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight );
+library.add(faDropbox, faGoogleDrive, faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo );
 
 const App = () => (
   <div>
@@ -26,7 +28,7 @@ const App = () => (
       <GreetingContainer />
     </header>
     <Route exact path='/' component={Splash} />
-    {/* <Route exact path='/watch' component={VideoWatch} /> */}
+    <Route exact path='/watch' component={VideoWatch} />
     <Route path='/watch/:id' component={VideoShow} />
     <Route path='/upload' component={VideoUpload} />
     {/* <Route path="/login" component={LoginFormContainer} />

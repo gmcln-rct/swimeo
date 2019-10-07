@@ -3,7 +3,6 @@ import { showVideo, showVideos, receiveVideo } from '../../../actions/video_acti
 import VideoShow from './video_show';
 
 const msp = (state, ownProps) => {
-    debugger
     return ({
         // videos: Object.values(state.videos),
         video: state.videos[ownProps.match.params.id]

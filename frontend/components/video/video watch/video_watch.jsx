@@ -1,30 +1,53 @@
 import React from 'react';
-import { withRouter } from 'react-router';
-import { connect } from 'react-redux';
+
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 
 class VideoWatch extends React.Component {
     constructor(props) {
         super(props);
 
-    };
+    }
 
-    // componentDidMount() {
-    //     const id = this.props.match.params.id;
-    //     debugger
-    //     this.props.showVideo(id);
-    // }
+    componentDidMount() {
+        const id = this.props.match.params.id;
+        debugger
+        this.props.receiveVideos();
+    }
 
 
 
     render() {
-        debugger
-        if (!this.props.video) { return null };
+
 
         return (
 
-            <div className='video-watch-page-container'>
-                <section className='video-watch-page-sidebar'></section>
-                <section className='video-watch-page-main'></section>
+            <div className='watch-page-container'>
+                <section className='watch-page-sidebar'>
+                    <Link to="/upload" className='nav-upload-button'>
+                        Upload
+                    </Link>
+                <div className='watch-sidebar-list'>
+                    <div className='watch-sidebar-list-item'>
+                        <FontAwesomeIcon icon='home' /> Home
+                    </div>
+                    <div className='watch-sidebar-list-item'>
+                            <FontAwesomeIcon icon='photo-video' /> Videos
+                    </div>
+                    {/* <span> Videos</span> */}
+                </div>
+                <div>
+                    Swimeo Pro
+                </div>
+                <div>
+                    Powerful privacy options and advanced stats.
+                </div>
+
+
+                </section>
+                <section className='watch-page-main'></section>
 
             </div>
             

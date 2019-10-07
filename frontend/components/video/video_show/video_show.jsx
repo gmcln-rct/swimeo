@@ -13,7 +13,6 @@ class VideoShow extends React.Component {
         this.props.showVideo(id);
     }
 
-
     
     render() {
         // const videoId = this.props.video.id;

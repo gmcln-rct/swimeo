@@ -1,22 +1,18 @@
-// import { connect } from 'react-redux';
-// import { showVideo, showVideos, receiveVideo } from '../../../actions/video_actions';
-// import VideoWatch from './video_watch';
+import { connect } from 'react-redux';
+import VideoWatch from './video_watch';
+import {receiveVideos} from '../../../actions/video_actions'
 
-// const msp = (state, ownProps) => {
-//     debugger
-//     return ({
-//         // videos: Object.values(state.videos),
-//         video: state.videos[ownProps.match.params.id]
+const msp = (state) => {
 
-//     });
-// };
+    return ({
+        videos: Object.values(state.videos),
+    });
+};
 
-// const mdp = (dispatch, ownProps) => {
-//     return ({
-//         // showVideos: () => dispatch(showVideos()),
-//         // receiveVideo: (id) => dispatch(receiveVideo(id)),
-//         showVideo: (id) => dispatch(showVideo(id)),
-//     });
-// };
+const mdp = dispatch => {
+    return ({
+        receiveVideos: () => dispatch(receiveVideos())
+    });
+};
 
-// export default connect(msp, mdp)(VideoWatch);
+export default connect(msp, mdp)(VideoWatch);
