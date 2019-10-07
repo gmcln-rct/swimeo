@@ -278,6 +278,21 @@ video::-webkit-media-controls-play-button {
 
  }
 
+  .upload-header-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+ .upload-header-logo img {
+    
+    width: 70px;
+    height: auto;
+    margin-top: 45px;
+
+ }
+
  .video-upload-container {
     position: relative;
     width: 40rem;
@@ -317,24 +332,37 @@ video::-webkit-media-controls-play-button {
     line-height: 1em;
 }
 
-.upload-choose-file-button-faux {
+/* Chooose File Button */
+
+.video-upload-container form  input[type="file"].upload-choose-file-button-faux {
     width: 100%;
     margin-top: 20px;
-    padding: 5px;
-
+    padding: 0;
+    
     font-size: .5em;
     line-height: 1.5em;
+    
+    background: white;
+}
+input.upload-choose-file-button-faux:hover {
+    background-color: transparent;
+    border: transparent;
+}
+
+input::-webkit-file-upload-button {
+    width: 100%;
+    padding: 5px;
+
     color: white;
     background: #00adef;
-    border: 1px solid #00adef;
+    border-color: #00adef;
+    text-align: center;
 }
 
-.upload-choose-file-button-faux:hover {
+input::-webkit-file-upload-button:hover {
     background-color: #08C;
-    border: 1px solid #00adef;
+    border-color: #08C;
 }
-
-
 
 
 /* .video-upload-container form:nth-child(1) {
@@ -357,7 +385,7 @@ video::-webkit-media-controls-play-button {
 
     color: white;
     background-color: #00adef;
-    /* background: red; */
+    border-color: #00adef;
 }
 
 .video-upload-container form input[type=file]:hover {

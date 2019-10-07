@@ -41,9 +41,9 @@ class VideoUpload extends React.Component {
         formData.append('video[description]', this.state.description);
 
         if (this.state.videoFile) {
-
             formData.append('video[video_url]', this.state.videoFile);
         }
+        
         debugger
         $.ajax({
             url: '/api/videos',
@@ -70,19 +70,23 @@ class VideoUpload extends React.Component {
                     <div className='video-upload-container'>
                         <form onSubmit={this.handleSubmit} className="video-upload-form">
 
-                            <div className='upload-header-logo'></div>
+                            <div className='upload-header-logo'>
+                                <img src="https://swimeo-seeds.s3.amazonaws.com/video-upload.png" alt="Upload video"/>
+                            </div>
                             <div className='upload-header'>Choose Video File to Upload</div>
                             <br/>
-
-                            {/* <input
+                            
+                            <input
                                 type="file"
-                                onChange={this.handleFile} /> */}
+                                className='upload-choose-file-button-faux'
+                                onChange={this.handleFile} />
 
+                            {/* FAUX UPLOAD
                             <button className='upload-choose-file-button-faux'>
                                 <span> <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /></span>
 
                                 <span> Or choose files</span>
-                            </button>
+                            </button> */}
 
                             <br/>
                             <label className='upload-input-label'>
@@ -91,15 +95,17 @@ class VideoUpload extends React.Component {
                                     type="text"
                                     className="video-title"
                                     value={this.state.title}
+                                    onChange={this.handleInput('title')}
                                     className='upload-input-label'
                                     placeholder="Enter video title"
-                                    title="Please enter a video title"
-                                />
+                                    title="Please enter a video title"/>
+
                             {/* <input 
                                 type="text"
                                 id="video-title"
                                 value={this.state.title}
                                 onChange={this.handleInput('title')} /> */}
+
                             </label>
                             <br/>
                             <label className='upload-input-label'>
@@ -107,9 +113,9 @@ class VideoUpload extends React.Component {
                                 <textarea
                                         id="video-description"
                                         value={this.state.description}
-                                        onChange={this.handleInput('description')} 
                                         placeholder="Enter video description"
                                         title="Please enter a video description."
+                                        onChange={this.handleInput('description')} 
                                         >
                                 </textarea>
                             </label>
@@ -130,12 +136,12 @@ class VideoUpload extends React.Component {
                         <br/>
                         <div className='video-upload-right-sidebar-1'> 
                             <p>Weekly Limit</p>
-                            <p>100TB</p>
+                            <p>5MB of 100TB</p>
                         </div>
                         <br/>
                         <div className='video-upload-right-sidebar-1'>
                             <span>Total Limit</span>
-                            <span>100PB</span>
+                            <span>1.4GB of 100PB</span>
                         </div>
                         <br/>
                         <div className='video-upload-right-sidebar-1'>

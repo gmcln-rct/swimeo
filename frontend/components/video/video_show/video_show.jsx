@@ -1,16 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import { connect } from 'react-redux';
-import {
-    Player, ControlBar, ReplayControl,
-    ForwardControl,
-    CurrentTimeDisplay,
-    TimeDivider,
-    PlayToggle,
-    PlaybackRateMenuButton,
-    VolumeMenuButton} from 'video-react';
-
-
 
 class VideoShow extends React.Component {
     constructor(props) {
@@ -35,13 +24,15 @@ class VideoShow extends React.Component {
             <div className='video-unit-wrapper'>
                 <div className='video-player-wrapper'>
                     <div className='video-container'>
-                        {/* <video
+                        <video
                             controls
                             autoPlay
                             src={this.props.video.video_url} 
                             type='video/webm' />
 
-                        <br/> */}
+                        <br/>
+{/* 
+                    Placeholder Video
                     <figure>
                         <video
                             controls
@@ -49,7 +40,7 @@ class VideoShow extends React.Component {
                             className='video-player'
                             src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
                             type='video/webm' />
-                    </figure>
+                    </figure> */}
 
                         {/* <Player
                             playsInline

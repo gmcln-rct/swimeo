@@ -9,7 +9,7 @@ import Modal from './modal/modal';
 import Splash from './splash/splash_container';
 import VideoShow from './video/video_show/video_show_container';
 import VideoUpload from './video/video_upload/video_upload_container';
-import Footer from './footer/footer'
+import Footer from './footer/footer';
 
 import ReactDOM from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -26,6 +26,7 @@ const App = () => (
       <GreetingContainer />
     </header>
     <Route exact path='/' component={Splash} />
+    {/* <Route exact path='/watch' component={VideoWatch} /> */}
     <Route path='/watch/:id' component={VideoShow} />
     <Route path='/upload' component={VideoUpload} />
     {/* <Route path="/login" component={LoginFormContainer} />

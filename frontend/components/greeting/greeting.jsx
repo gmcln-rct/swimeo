@@ -12,6 +12,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                 <span className='header-logo'>swimeo</span>
                 <button className="button-signup" onClick={() => openModal('signup')}>Join</button>
                 <button className="button-login" onClick={() => openModal('login')}>Login</button>
+                <Link to="/watch" className='nav-watch-button'>Watch</Link>
             </span>
             <div  className='nav-upload'>
 
