@@ -152,7 +152,6 @@
     height: 70x;
     padding: 30px;
 
-
     border-bottom: 1px solid #e3e8e9;
 
     font-size: 2em;
@@ -161,7 +160,7 @@
 
 .watch-page-main-grid {
     width: 90%;
-    margin: 5% 10%;
+    margin: 2% 10%;
 }
 
 .watch-main-grid-container {

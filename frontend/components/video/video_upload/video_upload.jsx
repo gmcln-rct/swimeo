@@ -44,7 +44,7 @@ class VideoUpload extends React.Component {
             formData.append('video[video_url]', this.state.videoFile);
         }
         
-        debugger
+        
         $.ajax({
             url: '/api/videos',
             method: 'POST',
@@ -53,7 +53,7 @@ class VideoUpload extends React.Component {
             processData: false
         }).then(
             (response) => {
-                debugger
+                
                 console.log(response);
                 this.props.history.push('/watch')
             },

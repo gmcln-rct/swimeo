@@ -13,7 +13,7 @@ class VideoWatch extends React.Component {
 
     componentDidMount() {
         const id = this.props.match.params.id;
-        // debugger
+        // 
         this.props.receiveVideos();
     }
 
@@ -117,7 +117,7 @@ class VideoWatch extends React.Component {
                             </div>
                             <div className='watch-page-main-grid-item'>
                                 <Link to="/watch/12" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/12-rain-street.jpg" className="watch-page-thumb" alt="Video" /></Link>
-                                <h1>Rains on streetr</h1>
+                                <h1>Rain on street</h1>
                             </div>
                         </div>
                     </div>

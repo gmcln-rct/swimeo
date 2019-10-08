@@ -52,7 +52,6 @@ class Splash extends React.Component {
 
                     <div className='splash-buttons'>
                         <button className='splash-buttons-plan'>Compare plans</button>
-
                     </div>
                 </div>
 

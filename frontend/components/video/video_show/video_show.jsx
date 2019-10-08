@@ -9,14 +9,14 @@ class VideoShow extends React.Component {
 
     componentDidMount() {
         const id = this.props.match.params.id;
-        debugger
+        
         this.props.showVideo(id);
     }
 
     
     render() {
         // const videoId = this.props.video.id;
-        debugger
+        
         if (!this.props.video) { return null };
 
         return (
