@@ -9,5 +9,9 @@ class Video < ApplicationRecord
     foreign_key: :creator_id,
     class_name: 'User'
 
+  has_many :likes,
+    foreign_key: :video_id,
+    class_name: 'Like'
+
 
 end

@@ -9,12 +9,11 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token
 
-  has_many :comments,
-    foreign_key: :author_id
-    
-  has_many :likes
-
   has_many :videos
+
+  has_many :likes,
+    foreign_key: :user_id,
+    class_name: 'Like'
 
 
 

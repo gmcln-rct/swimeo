@@ -69,6 +69,45 @@ demoVideo12.video_url.attach(io: video12, filename: "12-rain-street.webm")
 demoVideo13.video_url.attach(io: video13, filename: "13-rain-window.webm")
 
 
+
+Like.create!([
+{user_id: seedUser5.id, video_id: demoVideo8.id},
+{user_id: seedUser4.id, video_id: demoVideo1.id},
+{user_id: seedUser1.id, video_id: demoVideo1.id},
+{user_id: seedUser4.id, video_id: demoVideo9.id},
+{user_id: seedUser2.id, video_id: demoVideo5.id},
+{user_id: seedUser5.id, video_id: demoVideo8.id},
+{user_id: seedUser2.id, video_id: demoVideo1.id},
+{user_id: seedUser4.id, video_id: demoVideo4.id},
+{user_id: seedUser2.id, video_id: demoVideo6.id},
+{user_id: seedUser4.id, video_id: demoVideo10.id},
+{user_id: seedUser2.id, video_id: demoVideo1.id},
+{user_id: seedUser3.id, video_id: demoVideo10.id},
+{user_id: seedUser3.id, video_id: demoVideo2.id},
+{user_id: seedUser2.id, video_id: demoVideo2.id},
+{user_id: seedUser3.id, video_id: demoVideo4.id},
+{user_id: seedUser4.id, video_id: demoVideo8.id},
+{user_id: seedUser3.id, video_id: demoVideo8.id},
+{user_id: seedUser2.id, video_id: demoVideo4.id},
+{user_id: seedUser1.id, video_id: demoVideo3.id},
+{user_id: seedUser3.id, video_id: demoVideo7.id},
+{user_id: seedUser2.id, video_id: demoVideo3.id},
+{user_id: seedUser3.id, video_id: demoVideo10.id},
+{user_id: seedUser5.id, video_id: demoVideo3.id},
+{user_id: seedUser3.id, video_id: demoVideo5.id},
+{user_id: seedUser3.id, video_id: demoVideo5.id},
+{user_id: seedUser2.id, video_id: demoVideo2.id},
+{user_id: seedUser4.id, video_id: demoVideo7.id},
+{user_id: seedUser4.id, video_id: demoVideo7.id},
+{user_id: seedUser3.id, video_id: demoVideo3.id},
+{user_id: seedUser4.id, video_id: demoVideo6.id},
+{user_id: seedUser3.id, video_id: demoVideo10.id},
+{user_id: seedUser1.id, video_id: demoVideo6.id},
+{user_id: seedUser4.id, video_id: demoVideo3.id},
+{user_id: seedUser2.id, video_id: demoVideo8.id},
+{user_id: seedUser5.id, video_id: demoVideo12.id}
+])
+
 # demoVideo1 = Video.create!(
 #     title: 'Belly Flop',
 #     description: 'The best belly flop video ever',
