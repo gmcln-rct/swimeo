@@ -35,7 +35,6 @@ class VideoWatch extends React.Component {
                         <hr/>
                     </div>
  
-
                     <div className='watch-sidebar-list'>
 
                         <div className='watch-sidebar-list-item'>
@@ -67,38 +66,60 @@ class VideoWatch extends React.Component {
 
                 <section className='watch-page-main'>
                     <div className='watch-page-main-header'>Videos</div>
+
                     <div className='watch-page-main-grid'>
+                        <div className='watch-main-grid-container'>
 
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/1-waterfall.jpg"  className='watch-page-thumb' alt="Video" />
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg" className="watch-page-thumb" alt="Video" />
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/3-tide.jpg" className="watch-page-thumb" alt="Video" />
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/4-ocean-surface.jpg" className="watch-page-thumb" alt="Video" /> 
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg" className="watch-page-thumb" alt="Video" />
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg" className="watch-page-thumb" alt="Video" />
-                            Video Thumbnail
-                        </div>
-                        <div className='watch-page-main-grid-item'>
-                            <img src="https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg" className="watch-page-thumb" alt="Video" />
-                            Video Thumbnail
-                        </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to='/watch/1'><img src="https://swimeo-seeds.s3.amazonaws.com/images/1-waterfall.jpg" className='watch-page-thumb' alt="Video" /></Link>
+                                <h1>Waterfall</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to='/watch/2'><img src="https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Water Drop on Surface</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/3" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/3-tide.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Tide at night</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/4" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/4-ocean-surface.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Ocean waves</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/5" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/5-bubbles.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Fountains of Bellagio</h1>
+                            </div>
 
-
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/6" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/6-belaggio-fountain.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>The Fountains of the Bellaggio Rock!</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to='/watch/7'><img src="https://swimeo-seeds.s3.amazonaws.com/images/7-belly-flops.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Fine Art of the Belly Flop</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/9"><img src="https://swimeo-seeds.s3.amazonaws.com/images/8-marines.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Marine Pool Training</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/9"><img src="https://swimeo-seeds.s3.amazonaws.com/images/9-marines-2.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Marine Pool Training 2</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/10" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/10-michael-phelps.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Michael Phelps Can Swim!</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/11" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/11-pool.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>tranquil pool water</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/12" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/12-rain-street.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>Rains on streetr</h1>
+                            </div>
+                        </div>
                     </div>
 
                 </section>
