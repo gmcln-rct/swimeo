@@ -15,6 +15,8 @@
     font-size: 1em;
     color: #1A2E3B;
     background: white;
+
+    border-top: 2px solid rgba(238,241,242,1);
 }
 
 .watch-page-sidebar {
@@ -39,10 +41,12 @@
 }
 
 .watch-sidebar-list  {
-    min-width: 40rem;
+    width: 80%;
     height: auto;
 
     margin-top: 10px;
+    margin-right: 10%;
+    
 }
 
 .watch-sidebar-list-item {
@@ -88,8 +92,7 @@
 
 .watch-sidebar-footer {
     width: 80%;
-    height: 150px;
-
+    height: 100px;
     margin-top: 30px;
     padding: 20px;
     
@@ -111,17 +114,17 @@
 }
 
 .watch-sidebar-footer .splash-buttons-plan {
-    margin: 10px;
-    padding: 10px 30px;
+    margin: 15px 5px;
+    padding: 10px 40px;
 
     color: white;
     background-color: #4EC437;
     border-color: #4EC437;
+    border-radius: 3px;
 
     font-size: 0.8em;
     line-height: 1em;
     letter-spacing: 0.04em;
-
     text-align: center;
 }
 .watch-sidebar-footer .splash-buttons-plan:hover {
@@ -181,8 +184,8 @@
     border-right: 1px;
     border-bottom: 3px; */
     -webkit-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
--moz-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
+    box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
     background: white;
 }
 
