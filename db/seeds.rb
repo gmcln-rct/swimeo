@@ -12,6 +12,10 @@ User.destroy_all
 Video.destroy_all
 Like.destroy_all
 
+ApplicationRecord.connection.reset_pk_sequence!("users")
+ApplicationRecord.connection.reset_pk_sequence!("video")
+ApplicationRecord.connection.reset_pk_sequence!("likes")
+
 demoGuest = User.create!(
     first_last_name: 'demoguest',
     email: 'demo@demo.com',
