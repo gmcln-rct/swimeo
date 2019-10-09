@@ -19,7 +19,7 @@
     width: 100%;
     height: 100px;
     /* margin:50px; */
-    margin: 0 50px 50px 50px;
+    margin: 0 50px 50px 75px;
 
     text-align: center;
 
@@ -33,6 +33,7 @@
 }
 
 .plans-header h3 {
+    margin-bottom: 20px;
     font-size: 1.5em;
     font-weight: 400px;
 }
@@ -45,18 +46,17 @@
     width: 100%;
     max-height: 500px;
 
-
 }
 
 .plans-ourplans-left {
     width: 30rem;
     height: 400px;
-    padding: 20px;
+    padding: 40px;
 
     /* background-color: lightseagreen; */
     border: 1px solid rgba(223, 227, 229, 0.7);
 
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .plans-ourplans-right {
@@ -69,7 +69,6 @@
     padding: 20px;
     min-width:70%;
 
-
     border: 1px solid rgba(223, 227, 229, 0.7);
 
     font-size: 2em;
@@ -80,13 +79,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
+    flex-grow: 1;
 
     min-width: 150px;
     max-width: 300px;
     height: 100%;
     margin: 10px;
-
-
 
     /* background-color: lightgreen; */
 
@@ -100,6 +98,7 @@
 
 .plans-ourplans-plan-header-img {
     margin: 0 auto;
+    padding: 25px;
 }
 
 .plans-ourplans-plan-header {
@@ -109,12 +108,19 @@
     text-align: center;
 }
 
-.plans-ourplans-plan-pricing {
-    margin: 10px;
+.plans-ourplans-plan-details {
+    margin-top: 10px;
+    margin-bottom: 15px;
 
     font-size: .5em;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.4em;
+}
+
+.plans-ourplans-plan-pricing h2 {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5em;
 }
 
 .plans-ourplans-plan-sub {
@@ -130,7 +136,6 @@
     margin: 5px;
     list-style-type: disc;
     list-style-position: inside;
-
 }
 
 .plans-ourplans-tier1 button{
@@ -181,19 +186,19 @@
 } */
 
 .fish-1 {
-    margin: 10px;
+    margin: 15px;
     color: rgb(75, 201, 255);
 }
 
 .fish-2 {
-    margin: 10px;
+    margin: 15px;
     transform: scale(2);
 
     color: rgb(16, 111, 167);
 }
 
 .fish-3 {
-    margin: 10px;
+    margin: 15px;
     color: rgb(8, 67, 103);
     transform: scale(3);
 }
