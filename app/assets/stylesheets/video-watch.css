@@ -193,10 +193,13 @@
 .watch-page-thumb {
     top: 0;
     left: 0;
+
     width: 100%;
 
-    height: auto;
+    height: 180px;
     margin: 0px;
+
+    object-fit: cover;
 }
 
 .watch-page-thumb:hover {

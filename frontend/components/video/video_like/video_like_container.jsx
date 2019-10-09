@@ -7,8 +7,9 @@ import {withRouter} from 'react-router-dom';
 // VIDEO LIKE CONTAINER
 
 const msp = (state, ownProps) => {
-    // NOTE: Add boolean to determine if video has been liked
-    const isLiked = state.entities.like !== {};
+
+    const isLiked = state.entities.like !== null;
+
     // const likes = Object.values(state.entities.like).map(like => like.user_id);
     const currentUserId = state.session.id || null;
 

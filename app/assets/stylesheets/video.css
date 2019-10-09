@@ -287,11 +287,9 @@ video::-webkit-media-controls-play-button {
   }
 
  .upload-header-logo img {
-    
     width: 70px;
     height: auto;
     margin-top: 45px;
-
  }
 
  .video-upload-container {
@@ -555,10 +553,11 @@ input::-webkit-file-upload-button:hover {
 .button-not-liked {
     margin-top: 10px;
     color: #1A2E3B;
+    font-size: 1.2em;
 }
 
 .button-not-liked path:hover  {
-    fill: #1A2E3B;
+    fill: #00adef;
     stroke: #1A2E3B;
 }
 
