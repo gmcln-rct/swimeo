@@ -5,7 +5,7 @@ import {receiveVideos} from '../../../actions/video_actions'
 // VIDEO WATCH CONTAINER - MULTIPLE VIDEOS
 
 const msp = (state) => {
-    debugger
+    
     return ({
         videos: Object.values(state.entities.videos),
     });

@@ -17,13 +17,13 @@ class VideoLikeComponent extends React.Component {
         if (this.props.likes.includes(currentUserId)) {
             this.props.removeLike(this.props.video.id );
         } else if (currentUserId) {
-            debugger
+            
             this.props.addLike({ user_id: currentUserId, video_id: this.props.video.id });
         }
     }
     
     render() {
-        debugger
+        
         const likeButtonClass = this.props.isLiked ? 'button-liked' : 'button-not-liked';
 
         // let likeButtonAction;

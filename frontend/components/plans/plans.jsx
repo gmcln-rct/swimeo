@@ -82,15 +82,15 @@ class Plans extends React.Component {
                                 <br/>
                                 <br/>
                                 <div className='plans-ourplans-plan-pricing'>
-                                        <h2>$9.99</h2>
-                                        <span>/mo</span>
+                                        <h2>$19.99</h2>
+                                        <span>/min</span>
                                 </div>
                             </div>
                             <button className='plan-btn-3'>Get Bluefin</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
                                     <li>Live streaming</li>
-                                    <li>Audience chat</li>
+                                    <li>Free big-screen TV</li>
                                     <li>Nerf Super-Soaker</li>
                                 </ul>
                             </div>

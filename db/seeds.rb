@@ -10,6 +10,7 @@ require 'open-uri'
 
 User.destroy_all
 Video.destroy_all
+Like.destroy_all
 
 demoGuest = User.create!(
     first_last_name: 'demoguest',
@@ -76,12 +77,12 @@ Like.create!([
 {user_id: seedUser1.id, video_id: demoVideo1.id},
 {user_id: seedUser4.id, video_id: demoVideo9.id},
 {user_id: seedUser2.id, video_id: demoVideo5.id},
-{user_id: seedUser5.id, video_id: demoVideo8.id},
+{user_id: seedUser2.id, video_id: demoVideo12.id},
 {user_id: seedUser2.id, video_id: demoVideo1.id},
 {user_id: seedUser4.id, video_id: demoVideo4.id},
 {user_id: seedUser2.id, video_id: demoVideo6.id},
 {user_id: seedUser4.id, video_id: demoVideo10.id},
-{user_id: seedUser2.id, video_id: demoVideo1.id},
+{user_id: seedUser1.id, video_id: demoVideo10.id},
 {user_id: seedUser3.id, video_id: demoVideo10.id},
 {user_id: seedUser3.id, video_id: demoVideo2.id},
 {user_id: seedUser2.id, video_id: demoVideo2.id},
@@ -92,16 +93,15 @@ Like.create!([
 {user_id: seedUser1.id, video_id: demoVideo3.id},
 {user_id: seedUser3.id, video_id: demoVideo7.id},
 {user_id: seedUser2.id, video_id: demoVideo3.id},
-{user_id: seedUser3.id, video_id: demoVideo10.id},
+{user_id: seedUser2.id, video_id: demoVideo9.id},
 {user_id: seedUser5.id, video_id: demoVideo3.id},
 {user_id: seedUser3.id, video_id: demoVideo5.id},
-{user_id: seedUser3.id, video_id: demoVideo5.id},
-{user_id: seedUser2.id, video_id: demoVideo2.id},
+{user_id: seedUser4.id, video_id: demoVideo5.id},
 {user_id: seedUser4.id, video_id: demoVideo7.id},
-{user_id: seedUser4.id, video_id: demoVideo7.id},
+{user_id: seedUser5.id, video_id: demoVideo7.id},
 {user_id: seedUser3.id, video_id: demoVideo3.id},
+{user_id: seedUser5.id, video_id: demoVideo4.id},
 {user_id: seedUser4.id, video_id: demoVideo6.id},
-{user_id: seedUser3.id, video_id: demoVideo10.id},
 {user_id: seedUser1.id, video_id: demoVideo6.id},
 {user_id: seedUser4.id, video_id: demoVideo3.id},
 {user_id: seedUser2.id, video_id: demoVideo8.id},

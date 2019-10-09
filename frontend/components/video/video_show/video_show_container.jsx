@@ -6,7 +6,7 @@ import VideoShow from './video_show';
 // VIDEO SHOW CONTAINER - SINGLE VIDEO
 
 const msp = (state, ownProps) => {
-    debugger
+    
     return ({
         // video: state.videos[ownProps.match.params.id]
         video: state.entities.videos[ownProps.match.params.id]

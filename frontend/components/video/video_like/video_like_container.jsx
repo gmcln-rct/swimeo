@@ -19,7 +19,7 @@ const msp = (state, ownProps) => {
     const video = state.entities.videos[ownProps.match.params.id];
     // const video = currentUserId ? state.entities.videos[currentUserId] : null;
 
-    debugger
+    
 
     return ({
         currentUserId,
