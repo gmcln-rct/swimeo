@@ -1,5 +1,6 @@
 import {RECEIVE_ALL_LIKES, RECEIVE_LIKE, REMOVE_LIKE} from '../actions/like_actions';
 import { RECEIVE_VIDEO } from '../actions/video_actions';
+import merge from 'lodash/merge';
 
 
 const likesReducer = (oldState = {}, action) => {
@@ -26,3 +27,14 @@ const likesReducer = (oldState = {}, action) => {
 }
 
 export default likesReducer;
+
+
+// Video show jbuilder
+
+// json.likes do
+//     @video.likes.each do | like |
+//         json.set! like.id do
+//     json.extract! like, : user_id, : video_id
+// end
+// end
+// end

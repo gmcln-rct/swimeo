@@ -22,16 +22,15 @@ class VideoLikeComponent extends React.Component {
         }
     }
     
-
     render() {
-        // debugger
+        debugger
         const likeButtonClass = this.props.isLiked ? 'button-liked' : 'button-not-liked';
 
-        let likeButtonAction;
+        // let likeButtonAction;
 
-        if (this.props.likes.includes(this.props.currentUserId)) {
-             likeButtonAction = () => removeVideo(this.props.video.id);
-        }
+        // if (this.props.likes.includes(this.props.currentUserId)) {
+        //      likeButtonAction = () => removeVideo(this.props.video.id);
+        // }
 
         return (
             <div className={likeButtonClass}

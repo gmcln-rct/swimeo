@@ -4,10 +4,18 @@ json.video do
     json.likes @video.likes.pluck(:id)
 end
 
+
+
 json.likes do 
-    @video.likes.each do |like|
-        json.set! like.id do
-            json.extract! like, :user_id, :video_id
+
+    if @video.likes.present?
+        @video.likes.each do |like|
+            json.set! like.id do
+                json.extract! like, :user_id, :video_id
+            end
         end
+    else
+        json.null!
     end
+
 end

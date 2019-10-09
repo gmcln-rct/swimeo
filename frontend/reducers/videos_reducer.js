@@ -22,7 +22,7 @@ const videosReducer = (state = {}, action) => {
             return newState;
         case REMOVE_LIKE:
             debugger
-            return state;
+            return state;x
         default:
             return state;
     }
