@@ -1,9 +1,14 @@
 .plans-page {
     width: 100%;
     min-height: 100vh;
+    top: 0;
+    padding-top: 40px;
 
     color: rgb(26, 46, 59);
-    background-color: lightpink;
+    /* background-color: lightpink; */
+
+    background: url('https://swimeo-seeds.s3.amazonaws.com/site-graphics/aA-FSP-plans-bg-tall.jpg') center top no-repeat;
+    background-size: cover;
 }
 
 .plans-header {
@@ -13,8 +18,8 @@
 
     width: 100%;
     height: 100px;
-    margin:50px;
-
+    /* margin:50px; */
+    margin: 0 50px 50px 50px;
 
     text-align: center;
 
@@ -40,37 +45,33 @@
     width: 100%;
     max-height: 500px;
 
-    
 
 }
 
 .plans-ourplans-left {
-
     width: 30rem;
     height: 400px;
     padding: 20px;
 
-    background-color: lightseagreen;
-
+    /* background-color: lightseagreen; */
+    border: 1px solid rgba(223, 227, 229, 0.7);
 
     font-size: 2em;
 }
 
 .plans-ourplans-right {
-
     display:flex;
     justify-content: flex-end;
     align-content: baseline;
     flex-wrap: wrap;
 
-    /* width: 60%;
-    max-width: 800px; */
-    min-width:70%;
-
     height: 400px;
     padding: 20px;
+    min-width:70%;
 
-    background-color: lightyellow;
+
+    border: 1px solid rgba(223, 227, 229, 0.7);
+
     font-size: 2em;
 }
 
@@ -85,10 +86,16 @@
     height: 100%;
     margin: 10px;
 
-    background-color: lightgreen;
+
+
+    /* background-color: lightgreen; */
 
     word-break: break-word;
     text-align: left;
+}
+
+.plans-ourplans-right:nth-child(1) {
+        border: 1px solid rgba(223, 227, 229, 0.7);
 }
 
 .plans-ourplans-plan-header-img {
@@ -103,20 +110,20 @@
 }
 
 .plans-ourplans-plan-pricing {
-
     margin: 10px;
+
     font-size: .5em;
     font-weight: 300;
+    line-height: 1.5em;
 }
 
 .plans-ourplans-plan-sub {
-
     padding: 10px;
     border-top: 1px solid lightgray;
+
     font-size: .5em;
     font-weight: 300;
-
-
+    line-height: 1.5em;
 }
 
 .plans-ourplans-plan-sub ul {
@@ -140,32 +147,53 @@
 }
 .plan-btn-1 {
     background-color: rgb(75, 201, 255);
+    border-color: rgb(75, 201, 255);
+}
+
+.plan-btn-1:hover {
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
 }
 
 .plan-btn-2 {
     background-color: rgb(16, 111, 167);
+    border-color: rgb(16, 111, 167);
 }
 
 .plan-btn-2:hover {
-    background-color: rgb(75, 201, 255);
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
 }
 
 .plan-btn-3 {
-    background-color: rgb(75, 201, 255);
+    background-color: rgb(8, 67, 103);
+    border-color: rgb(8, 67, 103);
 }
 
 .plan-btn-3:hover {
-    background-color: rgb(75, 201, 255);
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
 }
 
-fish-1 {
-
-}
-
-fish-2 {
-
-}
-
-fish-3 {
+/* .plans-ourplans-plan-header-img {
     
+
+} */
+
+.fish-1 {
+    margin: 10px;
+    color: rgb(75, 201, 255);
+}
+
+.fish-2 {
+    margin: 10px;
+    transform: scale(2);
+
+    color: rgb(16, 111, 167);
+}
+
+.fish-3 {
+    margin: 10px;
+    color: rgb(8, 67, 103);
+    transform: scale(3);
 }

@@ -20,16 +20,16 @@ class Plans extends React.Component {
                     <div className='plans-ourplans-left'>Our Plans</div>
                     <div className='plans-ourplans-right'>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img fish-1'><FontAwesomeIcon icon="fish" /></div>
+                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" className="fish-1" /></div>
                             <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
-                                5GB/week
+                                1GB/week
                                 <br />
-                                250GB every year
+                                5GB every year
                                 Single user
                                 $0.99/mo billed annually
                             </div>
-                            <button className='plan-btn-1'>Get Basic</button>
+                            <button className='plan-btn-1'>Get Anchovy</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
                                     <li>Player customization</li>
@@ -40,41 +40,41 @@ class Plans extends React.Component {
                             </div>
                         </div>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img fish-2'><FontAwesomeIcon icon="fish" /></div>
-                            <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
+                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" className="fish-2" /></div>
+                            <div className='plans-ourplans-plan-header'>Cod Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
                                 5GB/week
                                 <br />
-                                250GB every year
+                                60B every year
                                 Single user
-                                $0.99/mo billed annually
+                                $9.99/mo billed annually
                             </div>
-                            <button className='plan-btn-2'>Get Plus</button>
+                            <button className='plan-btn-2'>Get Cod</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
-                                    <li>Player customization</li>
-                                    <li>Privacy controls</li>
-                                    <li>5 Water Balloons</li>
+                                    <li>Review and approval</li>
+                                    <li>Team projects</li>
+                                    <li>Swimeo-branded boogie board</li>
                                 </ul>
 
                             </div>
                         </div>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img fish-3'><FontAwesomeIcon icon="fish" /></div>
-                            <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
+                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" className="fish-3"/></div>
+                            <div className='plans-ourplans-plan-header'>Bluefin Tuna Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
-                                5GB/week
+                                1TB/minute
                                 <br />
-                                250GB every year
-                                Single user
-                                $0.99/mo billed annually
+                                100PB every year
+                                You, your family and your pet goldfish
+                                $1,000,000/mo billed annually
                             </div>
-                            <button className='plan-btn-3'>Get Premium</button>
+                            <button className='plan-btn-3'>Get Bluefin</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
-                                    <li>Player customization</li>
-                                    <li>Privacy controls</li>
-                                    <li>5 Water Balloons</li>
+                                    <li>Live streaming</li>
+                                    <li>Audience chat</li>
+                                    <li>Nerf Super-Soaker</li>
                                 </ul>
 
                             </div>

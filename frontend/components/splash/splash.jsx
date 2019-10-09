@@ -20,7 +20,9 @@ class Splash extends React.Component {
                     *with video collaboration, video distribution and fish mongering.
                 </div>
                 <div className='hero-buttons'>
-                    <button className='hero-buttons-plan'>See plans</button>
+                    <Link to="/plans">
+                        <button className='hero-buttons-plan'>See plans</button>
+                    </Link>
 
                     <button onClick={this.props.heroSignup} className='hero-buttons-join'>Join for free</button>
 
@@ -49,7 +51,9 @@ class Splash extends React.Component {
                     <div className='splash-messaging'>Plans with custom players from $0.99</div>
 
                     <div className='splash-buttons'>
-                        <button className='splash-buttons-plan'>Compare plans</button>
+                        <Link to="/plans">
+                            <button className='splash-buttons-plan'>Compare plans</button>
+                        </Link>
                     </div>
                 </div>
 

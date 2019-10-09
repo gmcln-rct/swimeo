@@ -194,17 +194,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* min-width: 250px; */
+
     height: auto;
     margin: 0px;
 }
 
 .watch-page-thumb:hover {
-  /* -webkit-filter: saturate(50%);
-  filter: saturate(50%); */
-
     -webkit-filter: brightness(60%);
-  filter: brightness(60%);
+    filter: brightness(60%);
 }
 
 .watch-page-main-grid-item h1 {
@@ -215,4 +212,8 @@
     font-weight: 700;
     line-height: 2em;
 
+}
+
+.fish-1 {
+    transform: scale(50%);
 }

@@ -535,24 +535,33 @@ input::-webkit-file-upload-button:hover {
  /* ------------------------------------------------------------------------------------ */
 
 .button-liked {
-    font-size: 1.5em;
-    /* color: #00adef;
-    outline-color: fuchsia; */
-
-      /* color: fuchsia;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: fuchsia; */
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #1A2E3B;
 }
+
+/* For SVG */
 .button-liked path  {
     fill: transparent;
-    stroke: orange;
+    stroke: #00adef;
     stroke-width: 10%;
 }
 
-.button-not-liked {
-    color: black;
+.button-liked path:hover  {
+    fill: #08C;
+    stroke: #08C;
 }
+
+.button-not-liked {
+    margin-top: 10px;
+    color: #1A2E3B;
+}
+
+.button-not-liked path:hover  {
+    fill: #1A2E3B;
+    stroke: #1A2E3B;
+}
+
 
 
 
