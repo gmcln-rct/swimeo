@@ -40,7 +40,6 @@ export const uploadVideo = (video) => dispatch => {
         .then(video => dispatch(receiveVideo(video)));
 };
 
-
 export const deleteVideo = (id) => dispatch => {
     return VideoApiUtil.deleteVideo(id)
         .then(id => dispatch(removeVideo(id)));

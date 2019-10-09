@@ -153,7 +153,7 @@ input::placeholder, textarea::placeholder  {
 .login-input-session-errors {
   border: 1px solid #FF4D4D !important;
   /* background-color: red; */
-  background-image: url('error-red.png');
+  background-image: url('https://swimeo-seeds.s3.amazonaws.com/error-red.png');
   background-position: 95% 50%;
   background-repeat: no-repeat;
   background-size: 20px 20px;

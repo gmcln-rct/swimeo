@@ -5,6 +5,8 @@ import { login } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 import SessionForm from './session_form';
 
+// LOGIN FORM CONTAINER
+
 const msp = ({ errors }) => {
     return {
         errors: errors.session,

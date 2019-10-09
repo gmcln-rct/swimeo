@@ -2,6 +2,9 @@ import { connect } from 'react-redux';
 import { logout, signup } from '../../actions/session_actions';
 import { openModal } from '../../actions/modal_actions';
 
+
+// SPLASH PAGE CONTAINER
+
 import Splash from './splash';
 
     const msp = ({ session }) => ({

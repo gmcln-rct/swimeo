@@ -5,12 +5,14 @@
 /* ---------------------------------------------------- */
 
 .watch-page-container {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-content: baseline;
 
     width: 100%;
-    height: auto;
+    /* height: auto; */
+      min-height: 100vh;
 
     font-size: 1em;
     color: #1A2E3B;

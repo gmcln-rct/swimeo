@@ -15,9 +15,7 @@ class Splash extends React.Component {
                 <div className="hero-header">
                     Swimeo can help*
                 </div>
-                {/* <div className='font-not-awesome'>
-                    <FontAwesomeIcon icon="check-square" />
-                </div> */}
+
                 <div className='hero-subheader'>
                     *with video collaboration, video distribution and fish mongering.
                 </div>

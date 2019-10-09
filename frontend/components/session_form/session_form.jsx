@@ -39,7 +39,6 @@ class SessionForm extends React.Component {
                     placeholder="First and last name"
                     title="Please enter your name"
                     /> 
-
              );
         } else {
             return "";

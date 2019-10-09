@@ -47,8 +47,8 @@
 }
 
 /* Removes annoying box around logo when mouse moves from logo */
-a.header-logo:focus {
-  outline-color: white;
+a.header-logo:focus, a.header-logo:visited {
+  outline-color: white !important;
 
 }
 

@@ -20,7 +20,7 @@ class VideoUpload extends React.Component {
     handleInput(field) {
         return (e) => {
             this.setState({ [field]: e.currentTarget.value });
-        }
+        };
     }
 
     handleFile(e) {

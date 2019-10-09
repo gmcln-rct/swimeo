@@ -17,16 +17,15 @@ class Footer extends React.Component {
                     </div>
 
                     <ul className='footer-terms-conditions'>
-                        <li>Terms</li>
+                        <li>Terms &amp; Conditions </li>
                         <li>Privacy</li>
-                        <li>Water Rights</li>
-                        <li>Fishcakes</li>
+                        <li>Fishcakes(Cookies)</li>
                     </ul>
                     <div className='footer-made-with'>
                         Made with <FontAwesomeIcon icon="heart" style={{ color: '##879CAB' }} /> and <FontAwesomeIcon icon="fish" style={{ color: '##879CAB' }} /> in NYC
                     </div>
                 </div>
-                <div classNme='footer-right'>
+                <div className='footer-right'>
                     <div className='footer-right-container'>
                         <span className='footer-right-1'>
                             Language: English

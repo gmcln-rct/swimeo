@@ -4,8 +4,10 @@ import { openModal } from '../../actions/modal_actions';
 
 import Greeting from './greeting';
 
-const msp = ({ session }) => ({
-    currentUser: session.currentUser
+const msp = state => ({
+    // currentUser: session.currentUser
+    currentUser: state.session.currentUser
+
 });
 
 const mdp = dispatch => ({

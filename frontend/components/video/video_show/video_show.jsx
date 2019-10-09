@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import VideoLikeComponent from '../video_like/video_like_container';
 
 class VideoShow extends React.Component {
     constructor(props) {
@@ -61,6 +62,9 @@ class VideoShow extends React.Component {
                             <br />
                             <div className='video-description'>
                                 {this.props.video.description}
+                            </div>
+                            <div>
+                                <VideoLikeComponent />
                             </div>
 
                         </div>

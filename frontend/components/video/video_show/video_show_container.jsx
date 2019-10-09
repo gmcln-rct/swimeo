@@ -2,11 +2,14 @@ import { connect } from 'react-redux';
 import { showVideo, showVideos, receiveVideo } from '../../../actions/video_actions';
 import VideoShow from './video_show';
 
+
+// VIDEO SHOW CONTAINER - SINGLE VIDEO
+
 const msp = (state, ownProps) => {
+    debugger
     return ({
-        // videos: Object.values(state.videos),
-        video: state.videos[ownProps.match.params.id]
-        
+        // video: state.videos[ownProps.match.params.id]
+        video: state.entities.videos[ownProps.match.params.id]
     });
 };
 

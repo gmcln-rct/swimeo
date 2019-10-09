@@ -2,7 +2,6 @@ import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER} from '../actions/session_
 
 import { CLOSE_MODAL } from '../actions/modal_actions';
 
-import merge from 'lodash/merge';
 
 const _nullUser = {
     currentUser: null,

@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import { signup, login } from '../../actions/session_actions';
 import { openModal, closeModal } from '../../actions/modal_actions';
 
+
+// SIGN IN FORM CONTAINER
+
 const msp = ({errors}) => {
     const errorsObj = {};
     errors.session.forEach(e => errorsObj[e.split(" ")[0]] = e);
