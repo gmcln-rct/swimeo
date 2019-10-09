@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import {removeLike, addLike} from '../../../actions/like_actions';
 import VideoLikeComponent from './video_like';
+import {withRouter} from 'react-router-dom';
 
 
 // VIDEO LIKE CONTAINER
@@ -9,13 +10,15 @@ const msp = (state, ownProps) => {
     // NOTE: Add boolean to determine if video has been liked
     const isLiked = state.entities.like === {};
     const likes = Object.values(state.entities.like).map(like => like.user_id);
-    let currentUserId = state.session.id || null;
-    const video = state.entities.videos[currentUserId];
+    const currentUserId = state.session.id || null;
     // const likes = Object.values(state.entities.likes).map(like => like.user_id);
     // const video = state.entities.videos[ownProps.match.params.id];
+    
+    debugger
+    const video = state.entities.videos[ownProps.match.params.id];
+    // const video = currentUserId ? state.entities.videos[currentUserId] : null;
 
     debugger
-    // const video = state.entities.videos[ownProps.match.params.videoId];
 
     return ({
         currentUserId,
@@ -34,4 +37,4 @@ const mdp = dispatch => {
     });
 };
 
-export default connect(msp, mdp)(VideoLikeComponent);
+export default withRouter(connect(msp, mdp)(VideoLikeComponent));

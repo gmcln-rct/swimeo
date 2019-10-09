@@ -8,9 +8,7 @@ class Api::LikesController < ApplicationController
     end
 
     def create
-        @like = Like.new()
-        @like.user_id = current_user.id
-        @like.video_id = params[:video_id]
+        @like = Like.new(like_params)
 
         if @like.save
             render :show
@@ -20,8 +18,7 @@ class Api::LikesController < ApplicationController
     end
 
   def destroy
-        @like = Like.find_by(user_id: current_user.id, video_id: params[:video_id])
-
+        @like = Like.find_by(user_id: current_user.id, video_id: params[:id])
         if @like.destroy
             render :show
         else
@@ -31,7 +28,7 @@ class Api::LikesController < ApplicationController
 
     private
 
-  def review_params
+  def like_params
     params.require(:like).permit(:user_id, :video_id)
   end
 

@@ -20,7 +20,7 @@ class Plans extends React.Component {
                     <div className='plans-ourplans-left'>Our Plans</div>
                     <div className='plans-ourplans-right'>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" /></div>
+                            <div className='plans-ourplans-plan-header-img fish-1'><FontAwesomeIcon icon="fish" /></div>
                             <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
                                 5GB/week
@@ -40,7 +40,7 @@ class Plans extends React.Component {
                             </div>
                         </div>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" /></div>
+                            <div className='plans-ourplans-plan-header-img fish-2'><FontAwesomeIcon icon="fish" /></div>
                             <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
                                 5GB/week
@@ -49,7 +49,7 @@ class Plans extends React.Component {
                                 Single user
                                 $0.99/mo billed annually
                             </div>
-                            <button>Get Basic</button>
+                            <button className='plan-btn-2'>Get Plus</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
                                     <li>Player customization</li>
@@ -60,7 +60,7 @@ class Plans extends React.Component {
                             </div>
                         </div>
                         <div className='plans-ourplans-tier1'>
-                            <div className='plans-ourplans-plan-header-img'><FontAwesomeIcon icon="fish" /></div>
+                            <div className='plans-ourplans-plan-header-img fish-3'><FontAwesomeIcon icon="fish" /></div>
                             <div className='plans-ourplans-plan-header'>Anchovy Plan</div>
                             <div className='plans-ourplans-plan-pricing'>
                                 5GB/week
@@ -69,7 +69,7 @@ class Plans extends React.Component {
                                 Single user
                                 $0.99/mo billed annually
                             </div>
-                            <button>Get Basic</button>
+                            <button className='plan-btn-3'>Get Premium</button>
                             <div className='plans-ourplans-plan-sub'>
                                 <ul>
                                     <li>Player customization</li>

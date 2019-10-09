@@ -1,4 +1,5 @@
 import { RECEIVE_VIDEO, REMOVE_VIDEO, RECEIVE_VIDEOS} from '../actions/video_actions';
+import {REMOVE_LIKE} from '../actions/like_actions';
 
 import { merge } from 'lodash';
 
@@ -19,7 +20,9 @@ const videosReducer = (state = {}, action) => {
             let newState = merge({}, state);
             delete newState[action.id];
             return newState;
-
+        case REMOVE_LIKE:
+            debugger
+            return state;
         default:
             return state;
     }
