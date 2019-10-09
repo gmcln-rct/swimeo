@@ -1,15 +1,15 @@
 class Api::CommentsController < ApplicationController
 
     def create
-        @comment = Comment.new(comment_params[)
-            
-            if @comment.save
-                @video = Video.find(comment_params[:video_id])
-                render :show
-            else
-                render json: ["User must be logged"], status: 422
-            end
+        @comment = Comment.new(comment_params)
+        
+        if @comment.save
+            @video = Video.find(comment_params[:video_id])
+            render :show
+        else
+            render json: ["User must be logged in"], status: 422
         end
+    end
         
         
     def update
