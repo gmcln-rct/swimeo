@@ -530,6 +530,31 @@ input::-webkit-file-upload-button:hover {
   background-color: black;
 }
 
+ /* ------------------------------------------------------------------------------------ */
+ /* VIDEO LIKE BUTTON */
+ /* ------------------------------------------------------------------------------------ */
+
+.button-liked {
+    font-size: 1.5em;
+    /* color: #00adef;
+    outline-color: fuchsia; */
+
+      /* color: fuchsia;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: fuchsia; */
+}
+.button-liked path  {
+    fill: transparent;
+    stroke: orange;
+    stroke-width: 10%;
+}
+
+.button-not-liked {
+    color: black;
+}
+
+
 
 /* 
 .video-controls {

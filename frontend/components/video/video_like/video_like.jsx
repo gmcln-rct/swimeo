@@ -10,25 +10,9 @@ class VideoLikeComponent extends React.Component {
     }
 
  
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.currentUser.id !== prevProps.userID) {
-    //         this.props.getLikes(this.props.video.id); //????
-    //     }
-    // }
-
-
-// MAIN REFERENCE
+// HANDLE LIKE CLICK
     updateLike(e) {
-        // e.preventDefault();
 
-        // if (this.props.likes.includes(this.props.currentUserId)) {
-        // // remove like
-        //     this.props.removeLike({ video_id: this.props.currentVideo.id });
-        // } else if (this.props.currentUserId) {
-        // // add like
-        //     this.props.addLike({ video_id: this.props.currentVideo.id });
-        // }
-        debugger
         const {currentUserId} = this.props;
         if (this.props.likes.includes(currentUserId)) {
             this.props.removeLike(this.props.video.id );
@@ -40,7 +24,7 @@ class VideoLikeComponent extends React.Component {
     
 
     render() {
-
+        // debugger
         const likeButtonClass = this.props.isLiked ? 'button-liked' : 'button-not-liked';
 
         let likeButtonAction;
@@ -50,7 +34,7 @@ class VideoLikeComponent extends React.Component {
         }
 
         return (
-            <div className="likeButtonClass"
+            <div className={likeButtonClass}
                 onClick={this.updateLike} >
                     <FontAwesomeIcon icon="heart" /> {this.props.likes.length}
             </div>

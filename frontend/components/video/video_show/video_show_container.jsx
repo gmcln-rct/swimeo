@@ -22,3 +22,7 @@ const mdp = (dispatch, ownProps) => {
 };
 
 export default connect(msp, mdp)(VideoShow);
+
+
+// removed from json show:
+// json.liked_by_current_user!!@video.likes.find_by(user_id: current_user.id)
