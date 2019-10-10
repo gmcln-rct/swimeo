@@ -37,7 +37,9 @@ class Splash extends React.Component {
                                 loop
                                 className='splash-video'
                                 src="https://swimeo-seeds.s3.amazonaws.com/swimeo-intro.webm"
-                                type='video/webm' />
+                                type='video/webm' 
+                                src="https://swimeo-seeds.s3.amazonaws.com/swimeo-intro.mp4"
+                                type='video/mp4' />
                         </figure>
 
 

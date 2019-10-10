@@ -102,19 +102,14 @@
 }
 
 .splash-video figure {
-
-  width: 500px;
+  width: 400px;
+  max-width: 50%;
   height: auto;
-  margin-righ: 10px;
-  
-
-  /* margin-left: 20%; */
 }
 
+
+
 .splash-1-sidebar {
-  /* display: flex;
-  justify-content: flex-start;
-  direction: column; */
 
   width: 40%;
   margin-left: 50px;
@@ -127,9 +122,7 @@
   margin: 10px;
   font-size: 2.5em;
 
-
   color: #1A2E3B;
-
 }
 
 .splash-messaging {
@@ -179,15 +172,6 @@
 
 /* ---------------------------------------------------- */
 
-
-
-/* ---------------------------------------------------- */
-
-/* Splash Section 1 */
-
-/* .splash-2 {
-  height: 300px;
-} */
 
 /* ---------------------------------------------------- */
 

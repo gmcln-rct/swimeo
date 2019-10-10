@@ -2,6 +2,8 @@ class Video < ApplicationRecord
 
   has_one_attached :video_url
 
+  has_one_attached :image_url
+
   validates :title, :description, :creator_id, presence: true
   validates :title, uniqueness: true
 
@@ -13,5 +15,8 @@ class Video < ApplicationRecord
     foreign_key: :video_id,
     class_name: 'Like'
 
+  has_many :comments,
+    foreign_key: :video_id,
+    class_name: 'Comment'
 
 end

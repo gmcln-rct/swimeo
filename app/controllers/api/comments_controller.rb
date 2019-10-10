@@ -3,7 +3,7 @@ class Api::CommentsController < ApplicationController
     def create
         @comment = Comment.new(comment_params)
         
-        if @comment.save
+        if @comment.save  # Not save! ?
             @video = Video.find(comment_params[:video_id])
             render :show
         else
@@ -12,10 +12,6 @@ class Api::CommentsController < ApplicationController
     end
         
         
-    def update
-    
-    end
-
     def destroy
         comment = Comment.find(params[:id])
         if comment
@@ -25,10 +21,11 @@ class Api::CommentsController < ApplicationController
         end
     end
 
+    
   private
 
   def comment_params
-    params.require(:comment).permit(:id, :video_id, :body)
+    params.require(:comment).permit(:user_id, :video_id, :body)
   end
 
 end

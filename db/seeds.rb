@@ -12,9 +12,13 @@ User.destroy_all
 Video.destroy_all
 Like.destroy_all
 
-ApplicationRecord.connection.reset_pk_sequence!("users")
-ApplicationRecord.connection.reset_pk_sequence!("video")
-ApplicationRecord.connection.reset_pk_sequence!("likes")
+# ApplicationRecord.connection.reset_pk_sequence!("users")
+# ApplicationRecord.connection.reset_pk_sequence!("videos")
+# ApplicationRecord.connection.reset_pk_sequence!("likes")
+
+ActiveRecord::Base.connection.tables.each do |t|
+  ActiveRecord::Base.connection.reset_pk_sequence!(t)
+end
 
 demoGuest = User.create!(
     first_last_name: 'demoguest',

@@ -26,12 +26,12 @@ const deleteLike = likeId => ({
 export const addLike = like => dispatch => {
     return LikesAPIUtil.addLike(like)
         .then(like => dispatch(receiveLike(like)))
-}
+};
 
 export const getLikes = (video_id) => {
     return LikesAPIUtil.receiveAllLikes(video_id)
         .then( likes => dispatch(receiveAllLikes(video_id)))
-}
+};
 
 export const removeLike = id => dispatch => (
     LikesAPIUtil.removeLike(id)
