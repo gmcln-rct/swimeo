@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import VideoLikeComponent from '../video_like/video_like_container';
-import VideoCommentComponent from '../video_comment/video_comment_container';
+import CommentIndexComponent from '../video_comment/comment_index_container';
 
 class VideoShow extends React.Component {
     constructor(props) {
@@ -71,7 +71,7 @@ class VideoShow extends React.Component {
                                 </div>
                                 <br/>
                                 <div>
-                                    <VideoCommentComponent />
+                                    <CommentIndexComponent />
                                 </div>
 
                             </div>

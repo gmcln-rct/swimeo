@@ -2,17 +2,24 @@
     /* display: flex;
     justify-content: flex-start;
     flex-wrap: wrap; */
-display: block;
-      width: 100%;
-      height: auto;
-      min-height: 100px;
-  max-height: 700px;
-  background-color: blue;
+    display: block;
+    width: 100%;
+    height: auto;
 
+
+    background-color: blue;
 
     /* width: 100%;
     height: auto;
     margin: 5px; */
+}
+
+.comments-index {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    min-height: 100px;
+    margin-bottom: 20px;
 }
 
 .commments-header {
@@ -20,11 +27,6 @@ display: block;
     height: 50px;
     margin: 20px 0px;
     font-size: 2em;
-}
-
-.comments-group {
-    width: 100%;
-    background-color: fuchsia;
 }
 
 

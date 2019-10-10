@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { removeComment, addComment } from '../../../actions/comment_actions';
-import VideoCommentComponent from './video_comment';
+import CommentIndexComponent from './comment_index';
 import { withRouter } from 'react-router-dom';
 
 
@@ -29,4 +29,4 @@ const mdp = dispatch => {
     });
 };
 
-export default withRouter(connect(msp, mdp)(VideoCommentComponent));
+export default withRouter(connect(msp, mdp)(CommentIndexComponent));

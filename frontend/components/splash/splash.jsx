@@ -17,7 +17,7 @@ class Splash extends React.Component {
                 </div>
 
                 <div className='hero-subheader'>
-                    *with video collaboration, video distribution and fish mongering.
+                    *with video collaboration, video distribution and swim lessons.
                 </div>
                 <div className='hero-buttons'>
                     <Link to="/plans">
@@ -41,14 +41,12 @@ class Splash extends React.Component {
                                 src="https://swimeo-seeds.s3.amazonaws.com/swimeo-intro.mp4"
                                 type='video/mp4' />
                         </figure>
-
-
                 </div>
                 <div className='splash-1-sidebar'>
                     <div className='splash-subheader'>Your Brand.</div>
                     <div className='splash-subheader'>Your Videos.</div>
                     <div className='splash-subheader'>Your Swimsuit.</div>
-                    <div className='splash-messaging'>The world's fastest, fully-hydrated video player.</div>
+                    <div className='splash-messaging'>The #1 source for premium aquatic video content.</div>
                     <Link to="/plans">
                         <div className='splash-plans'>Learn more   <FontAwesomeIcon icon="arrow-right" /></div>
                     </Link>

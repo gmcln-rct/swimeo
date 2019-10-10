@@ -83,14 +83,11 @@
 .splash-1 {
   display: flex;
   justify-content: center;
-  align-content: baseline;
-
+  align-content: center;
 
   width: 100%;
   max-height: 800px;
   margin-top: 40px;
-
-
 
   color: #1A2E3B;
   background: white;
@@ -98,16 +95,19 @@
 
 .splash-1-main {
   max-width: 50%;
+  height: auto;
   padding: 10px;
 
 }
 
-.splash-video figure {
+.splash-video {
+  height: auto;
+}
+/* .splash-video figure {
   width: 400px;
   max-width: 50%;
   height: auto;
-}
-
+} */
 
 
 .splash-1-sidebar {

@@ -3,7 +3,6 @@ json.video do
     json.video_url url_for(@video.video_url)
     json.likes @video.likes.pluck(:id)
     json.comments @video.comments.pluck(:id)
-
 end
 
 json.likes do 

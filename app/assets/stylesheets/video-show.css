@@ -1,10 +1,10 @@
 
  /* ------------------------------------------------------------------------------------ */
- /* VIDEO WATCH/SHOW PAGE */
+ /* VIDEO SHOW PAGE */
 /* Video Outer Container
  /* ------------------------------------------------------------------------------------ */
 
-.video-show-page {
+/* .video-show-page {
     display: block;
     width: 100%;
     height: auto;
@@ -12,7 +12,19 @@
     margin-top: 0px;
     margin-bottom: 0px;
 
+} */
+
+.video-show-page {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    /* margin-top: 0px; */
+    margin-bottom: 20vh;
+
 }
+
+
 .video-unit-wrapper {
     width: 100%;
     height: auto;
