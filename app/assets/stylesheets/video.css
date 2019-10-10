@@ -4,12 +4,20 @@
 /* Video Outer Container
  /* ------------------------------------------------------------------------------------ */
 
-
-.video-unit-wrapper {
+.video-show-page {
     display: block;
     width: 100%;
-    /* max-height: 600px; */
+    height: auto;
     min-height: 100vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.video-unit-wrapper {
+    width: 100%;
+    height: auto;
+    /* max-height: 600px; */
+    /* min-height: 100vh; */
 
     color: #1A2E3B;
     background-color: black;
@@ -19,14 +27,22 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100%;
+
+    height: auto;
+    max-height: 600px;
     padding: 0;
 
 }
 
 video {
 	display: inline-block;
-    max-height: 600px;
+    max-height: 615px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    /* object-fit: fill; */
+    /* line-height: 0px; */
 }
 
 .video-footer {

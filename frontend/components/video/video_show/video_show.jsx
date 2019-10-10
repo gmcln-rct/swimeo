@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import VideoLikeComponent from '../video_like/video_like_container';
+import VideoCommentComponent from '../video_comment/video_comment_container';
 
 class VideoShow extends React.Component {
     constructor(props) {
@@ -21,57 +22,68 @@ class VideoShow extends React.Component {
         if (!this.props.video) { return null };
 
         return (
-            <div className='video-unit-wrapper'>
-                <div className='video-player-wrapper'>
-                    <div className='video-container'>
-                        <video
-                            controls
-                            autoPlay
-                            src={this.props.video.video_url} 
-                            type='video/webm' />
-                    </div>
-                        <br/>
-{/* 
-                    Placeholder Video
-                    <figure>
-                        <video
-                            controls
-                            autoPlay
-                            className='video-player'
-                            src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
-                            type='video/webm' />
-                    </figure> */}
+            <div className='video-show-page'>
 
-                        {/* <Player
-                            playsInline
-                            className='video-player'
-                            src="https://swimeo-seeds.s3.amazonaws.com/pool.webm">
+                <div className='video-unit-wrapper'>
+                    <div className='video-player-wrapper'>
+                        <div className='video-container'>
+                            <video
+                                controls
+                                autoPlay
+                                src={this.props.video.video_url} 
+                                type='video/webm' />
+                        </div>
+                            <br/>
+    {/* 
+                        Placeholder Video
+                        <figure>
+                            <video
+                                controls
+                                autoPlay
+                                className='video-player'
+                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
+                                type='video/webm' />
+                        </figure> */}
 
-                            <ControlBar autoHide={false} disableDefaultControl  >
-                                <PlayToggle />
-                                </ControlBar>
-                            <VolumeMenuButton vertical />
+                            {/* <Player
+                                playsInline
+                                className='video-player'
+                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm">
 
-                            </Player> */}
+                                <ControlBar autoHide={false} disableDefaultControl  >
+                                    <PlayToggle />
+                                    </ControlBar>
+                                <VolumeMenuButton vertical />
+
+                                </Player> */}
 
 
-                    <div className='video-footer'>
-                        <div className='video-info'>
+                        <div className='video-footer'>
+                            <div className='video-info'>
 
-                            <div className='video-title'>{this.props.video.title}</div>
-                            <br />
-                            <div className='video-description'>
-                                {this.props.video.description}
+                                <div className='video-title'>{this.props.video.title}</div>
+                                <br />
+                                <div className='video-description'>
+                                    {this.props.video.description}
+                                </div>
+                                <div>
+                                    <VideoLikeComponent />
+                                </div>
+                                <br/>
+                                <div>
+                                    <VideoCommentComponent />
+                                </div>
+
                             </div>
-                            <div>
-                                <VideoLikeComponent />
-                            </div>
-
                         </div>
                     </div>
+
                 </div>
 
+
             </div>
+        
+           
         );
     };
 };

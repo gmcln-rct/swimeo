@@ -7,25 +7,25 @@ import { withRouter } from 'react-router-dom';
 // VIDEO COMMENT CONTAINER
 
 const msp = (state, ownProps) => {
-
-    const isCommented = state.entities.comment !== null;
+    
+    const hasComments = state.entities.comments !== null;
     const currentUserId = state.session.id || null;
-    const comments = state.entities.comment ? Object.values(state.entities.comment).map(comment => comment.user_id) : {};
+    const comments = state.entities.comments ? Object.values(state.entities.comments) : [];
     const video = state.entities.videos[ownProps.match.params.id];
 
     return ({
         currentUserId,
         video,
         comments,
-        isCommented
+        hasComments
     });
 };
 
 const mdp = dispatch => {
 
     return ({
-        removeComment: (id) => dispatch(removeComment(id)),
-        addComment: (comment) => dispatch(addComment(comment))
+        addComment: (comment) => dispatch(addComment(comment)),
+        removeComment: (id) => dispatch(removeComment(id))
     });
 };
 

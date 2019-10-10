@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   background: white;
 }
 
@@ -138,9 +139,17 @@
   color: rgb(0, 173, 239);
   font-size: 1em;
   font-weight: 700;
+  text-decoration: none;
 
   border-bottom: 1px solid lightgray; 
 }
+
+a:link {
+
+  text-decoration: none;
+
+}
+
 
 
 .splash-buttons {

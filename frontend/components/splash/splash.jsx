@@ -49,7 +49,9 @@ class Splash extends React.Component {
                     <div className='splash-subheader'>Your Videos.</div>
                     <div className='splash-subheader'>Your Swimsuit.</div>
                     <div className='splash-messaging'>The world's fastest, fully-hydrated video player.</div>
-                        <div className='splash-plans'>Learn more   <FontAwesomeIcon icon="arrow-right"  /></div>
+                    <Link to="/plans">
+                        <div className='splash-plans'>Learn more   <FontAwesomeIcon icon="arrow-right" /></div>
+                    </Link>
                     <div className='splash-messaging'>Plans with custom players from $0.99</div>
 
                     <div className='splash-buttons'>

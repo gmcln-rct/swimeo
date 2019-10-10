@@ -18,7 +18,6 @@ class VideoWatch extends React.Component {
     }
 
 
-
     render() {
 
 
@@ -60,7 +59,9 @@ class VideoWatch extends React.Component {
                     <div className='watch-sidebar-footer'>
                         <h1>Swimeo Pro</h1>
                         <h3>Powerful privacy options and advanced stats.</h3>
+                        <Link to="/plans">
                             <button className='splash-buttons-plan'>Upgrade</button>
+                        </Link>
                     </div>
                 </section>
 
@@ -119,6 +120,24 @@ class VideoWatch extends React.Component {
                                 <Link to="/watch/12" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/12-rain-street.jpg" className="watch-page-thumb" alt="Video" /></Link>
                                 <h1>Rain on street</h1>
                             </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/13" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/13-rain-window.jpg" className="watch-page-thumb" alt="Video"/></Link>                                
+                                <h1>Rain drops falling on a window</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/14" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/14-trout.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>rainbow trout are the real monsters</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/15" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/15-feet-water.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>ocean soothing feet</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/16" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/16-kids-pool.jpg" className="watch-page-thumb" alt="Video" /></Link>                                
+                                <h1>Summer pool time</h1>
+                            </div>
+
+
                         </div>
                     </div>
 

@@ -6,11 +6,17 @@ class VideoCommentComponent extends React.Component {
     constructor(props) {
         super(props);
 
-        this.updateComment = this.updateComment.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
+        // this.updateComment = this.updateComment.bind(this);
     }
 
 
-  
+    // update(field) {
+    //     return e => this.setState({
+    //         [field]: e.currentTarget.value
+    //     });
+    // }
+
     updateComment(e) {
         const { currentUserId } = this.props;
         if (this.props.comments.includes(currentUserId)) {
@@ -21,36 +27,39 @@ class VideoCommentComponent extends React.Component {
     }
 
     renderComments() {
-        const comments = this.props.video.comments;
-        if (comments && comments.length > 0) {
+        const comments = this.props.comments; 
+        if (this.props.comments.length) {
+            
             return (
-                comments.map(comment => (
-                    <div key={comment.id} className="comment">
-                        <h5>
-                            <span className="author">
-                                {comment.username}
-                            </span> - <Ago date={comment.date} />
-                        </h5>
-                        {this.deleteButton(comment)}
-                        <p>{comment.body}</p>
+                comments.map( (comment, idx) => (
+                    <div key={idx} className="video-comment">
+                      {/* Need Username */}
+                        <div className="comment-body">
+                            {comment.body}
+                        </div> 
                     </div>
                 ))
             )
         }
     }
 
-
     render() {
-
-        const commentButtonClass = this.props.isCommentd ? 'button-commented' : 'button-not-commented';
-
-
+        const numComments = this.props.comments.length;
+        const commentHeader = numComments === 1 ? "Comment" : "Comments"
         return (
-            <div className={commentButtonClass}
-                onClick={this.updateComment} >
-                <FontAwesomeIcon icon="heart" /> {this.props.comments.length}
+            <div className="video-comments-container">
+                <div className="commments-header">
+                    {numComments} {commentHeader}
+                </div>
+                <div className="comments-group">
+                    {this.renderComments()}
+                    {/* Add Comment Form Here */}
+                </div>
+                <div>
+                        <br/>
+                </div>
             </div>
-        );
+        )
     }
 
 };
