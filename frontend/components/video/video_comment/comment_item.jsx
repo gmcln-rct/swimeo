@@ -12,16 +12,13 @@ class CommentItem extends React.Component {
 
     render() {
         const comment = this.props.comment;
-        const username = this.props.first_last_name;
+        const username = this.props.comment.first_last_name;
         
-        // const username = this.props.comment;
         return (
             <li className='comment-container-item'>
                 <div className="video-comment">
-                    {/* Need Username */}
-                    <div>
-                        {this.props.first_last_name}
-                    </div>
+                    <div className="comment-username">{username}</div>
+
                     <div className="comment-body">
                         {this.props.comment.body}
                     </div>
@@ -30,7 +27,6 @@ class CommentItem extends React.Component {
         )
         };
 }
-
 
 
 export default CommentItem;

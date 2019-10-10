@@ -179,11 +179,6 @@
     margin: 10px;
 
     
-    /* flex: 1 1 50%; */
-    /* border-color: rgb(238, 241, 242);
-    border-left: 1px;
-    border-right: 1px;
-    border-bottom: 3px; */
     -webkit-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
     -moz-box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
     box-shadow: 3px 3px 5px 0px rgba(238,241,242,1);
@@ -214,7 +209,6 @@
     font-size: 1em;
     font-weight: 700;
     line-height: 2em;
-
 }
 
 .fish-1 {

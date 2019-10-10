@@ -1,5 +1,5 @@
 import React from 'react';
-import CommentItem from './comment_item';
+import CommentItem from './comment_item_container';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // COMMENT INDEX COMPONENT

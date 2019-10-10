@@ -59,7 +59,8 @@
 
  body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(16, 174, 241);
+  /* background-color: rgb(16, 174, 241); */
+      background-color: white;
 }
 
 

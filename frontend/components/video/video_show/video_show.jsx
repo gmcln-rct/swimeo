@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import VideoLikeComponent from '../video_like/video_like_container';
 import CommentIndexComponent from '../video_comment/comment_index_container';
+import { receiveVideo } from '../../../actions/video_actions';
 
 class VideoShow extends React.Component {
     constructor(props) {
@@ -12,10 +13,16 @@ class VideoShow extends React.Component {
 
     componentDidMount() {
         const id = this.props.match.params.id;
-        
+        debugger
         this.props.showVideo(id);
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.match.params.id !== this.props.match.params.id) {
+            debugger
+            this.props.showVideo(this.props.match.params.id);
+        }
+    }
     
     render() {
         // const videoId = this.props.video.id;

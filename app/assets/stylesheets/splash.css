@@ -3,6 +3,7 @@
   max-height: 700px;
   min-height: 100vh;
   
+  margin-bottom: 20vh;
   background: white;
 }
 
@@ -145,9 +146,7 @@
 }
 
 a:link {
-
   text-decoration: none;
-
 }
 
 

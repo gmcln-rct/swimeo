@@ -9,7 +9,10 @@
 
     background: url('https://swimeo-seeds.s3.amazonaws.com/site-graphics/aA-FSP-plans-bg-tall.jpg') center top no-repeat;
     background-size: cover;
+    background-color: #F0F3F8;
 }
+
+
 
 .plans-header {
     display: flex;
