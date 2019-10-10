@@ -15,7 +15,6 @@ const msp = (state, ownProps) => {
 
     const likes = state.entities.like ? Object.values(state.entities.like).map(like => like.user_id) : {};
 
-
     const video = state.entities.videos[ownProps.match.params.id];
     // const video = currentUserId ? state.entities.videos[currentUserId] : null;
 

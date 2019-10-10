@@ -15,12 +15,12 @@ const likesReducer = (oldState = {}, action) => {
             newState[action.like.id] = action.like;
             return newState;
         case REMOVE_LIKE:
-            
             delete newState[action.likeId];
             return newState;
+
         case RECEIVE_VIDEO:
-            
             return action.video.likes;
+            
         default:
             return oldState;
     }

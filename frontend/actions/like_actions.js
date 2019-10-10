@@ -14,7 +14,7 @@ const receiveLike = like => ({
 const receiveAllLikes = () => ({
     type: RECEIVE_ALL_LIKES,
     likes
-})
+});
 
 const deleteLike = likeId => ({
     type: REMOVE_LIKE,

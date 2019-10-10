@@ -29,7 +29,7 @@ class VideoShow extends React.Component {
                             autoPlay
                             src={this.props.video.video_url} 
                             type='video/webm' />
-
+                    </div>
                         <br/>
 {/* 
                     Placeholder Video
@@ -53,7 +53,7 @@ class VideoShow extends React.Component {
                             <VolumeMenuButton vertical />
 
                             </Player> */}
-                    </div>
+
 
                     <div className='video-footer'>
                         <div className='video-info'>
