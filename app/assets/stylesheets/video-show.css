@@ -1,7 +1,7 @@
 
  /* ------------------------------------------------------------------------------------ */
  /* VIDEO SHOW PAGE */
-/* Video Outer Container
+/* Video  Container
  /* ------------------------------------------------------------------------------------ */
 
 /* .video-show-page {
@@ -21,9 +21,8 @@
     min-height: 100vh;
     /* margin-top: 0px; */
     margin-bottom: 20vh;
-
+    background-color: white;
 }
-
 
 .video-unit-wrapper {
     width: 100%;
@@ -43,7 +42,6 @@
     height: auto;
     max-height: 600px;
     padding: 0;
-
 }
 
 video {
@@ -57,40 +55,123 @@ video {
     /* line-height: 0px; */
 }
 
+ /* ------------------------------------------------------------------------------------ */
+ /* VIDEO SHOW PAGE */
+/*  Video Footer Section
+ /* ------------------------------------------------------------------------------------ */
+
+
 .video-footer {
-    display: block;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
 
     width: 100%;
-    height: 300px;
+    height: auto;
+
     padding: 20px;
 
     color: #1A2E3B;
     background-color: white;
 }
 
-.video-info {
+.video-footer-container {
+
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: baseline;
 
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 80%;
+    margin: 10px;
+
+}
+
+.video-info {
+    /* display: flex;
+    justify-content: flex-start; */
+
+    /* width: 80%; */
 
 
+    /* background-color: blue; */
+    height: auto;
+
+    margin-bottom: 10px;
 }
 
 .video-title {
     font-size: 2.5em;
-    font-weight: 400;
-    
-    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    /* line-height: 1.11111; */
+    /* margin-bottom: 10px; */
 }
 
 .video-description {
     font-size: 1em;
+    line-height: 1em;
+        margin-bottom: 20px;
+
 }
 
+
+/* Video Playlist */
+
+
+.video-playlist {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start; */
+    
+    /* width: 20%; */
+    height: auto;
+    border-left: 1px solid #E3E8E9;
+}
+
+.video-playlist-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 18rem;
+    height: auto;
+    margin: 10px;
+
+}
+
+.video-playlist-item  h1{
+    font-size: 1em;
+    font-weight: 500;
+    text-overflow: ellipsis;
+
+}
+
+
+.playlist-thumb {
+
+    width: 130px;
+    height: 73px;
+    margin: 10px;
+
+    object-fit: fill;
+}
+
+.playlist-thumb-1 {
+    width: 130px;
+    height: 73px;
+    margin: 10px;
+
+    object-fit: fill;
+
+    border: 5px solid #00adef;
+}
+
+/* .video-playlist:first-child > img {
+
+    width: 300px;
+} */
  /* ------------------------------------------------------------------------------------ */
 /* For HTML 5 PLAYER SHADOW PLAYER */
 /* (super hacky solution for native browser issue) */

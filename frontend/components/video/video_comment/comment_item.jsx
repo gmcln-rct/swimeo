@@ -13,7 +13,7 @@ class CommentItem extends React.Component {
     render() {
         const comment = this.props.comment;
         const username = this.props.first_last_name;
-        debugger
+        
         // const username = this.props.comment;
         return (
             <li className='comment-container-item'>
