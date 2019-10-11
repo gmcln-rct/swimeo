@@ -51,7 +51,6 @@ class Video < ApplicationRecord
   ```
 
 
-
 Because of the Vimeo show page's UI's very specific look and feel, extra attention had to be placed on how the elements were placed in the page.
 
 ```javascript
@@ -89,7 +88,7 @@ Because of the Vimeo show page's UI's very specific look and feel, extra attenti
 
 <h3>Video Likes</h3>
 
-To integrate Likes into the video page, we integrated video Like actions into the Video Reducer, which helped to maintain a normalized Redux state.
+To integrate Likes into the video page, we integrated the Remove Like action into the Video Reducer, which helped to maintain a normalized Redux state.
 
 ```javascript
 const videosReducer = (state = {}, action) => {
@@ -109,17 +108,33 @@ const videosReducer = (state = {}, action) => {
             
         case REMOVE_LIKE:
             return state;
+            
         default:
             return state;
     }
 };
 ```
 
+Also, to maintain a normalized Redux state and centralize the flow of data from the database, Likes and Comments were included in the show.json.jbuilder for Video, instead of separate json.jbuilder files.
+
+```javascript
+json.video do 
+    json.extract! @video, :id, :title, :description
+    json.video_url url_for(@video.video_url)
+    json.likes @video.likes.pluck(:id)
+    json.comments @video.comments.pluck(:id)
+end
+```
+
 <h2>Future Updates</h2>
 These are among the features that we intended to update:
+
 * Video search
+
 * Improved presentation of the video player controls, through manipulation of Shadow DOM elements.
+
 * Currently, the videos are formatted as .webm for Chrome browser support. We plan to refactor to add support for .mp4, using video transcoding.
+
 
 ---
 
@@ -165,9 +180,3 @@ Node/NPM Versions:
 
 ---
 
-
-Brief explanation of what the app is and does
-Link to live site
-Discussion of technologies used
-Delve deep into ~2 features that show off your technical abilities. Discuss both the challenges faced and your brilliant solutions.
-Code snippets to highlight your best code (markdown code snippets, NOT screenshots)
