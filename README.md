@@ -27,12 +27,18 @@ Swimeo live site: https://swimeo.herokuapp.com/#/
 
 <h1>Features & Challenges </h1>
 
-Vimeo is a site for video creatives, and places an emphasis on its attractive ui. Similarly, Swimeo was developed with both function and design in mind.
+Vimeo is a site for video creatives, and places an emphasis on its intuitive, attractive ui. Similarly, Swimeo was developed with both function and design in mind.
 
-The video viewing experience is of course a key part if it. Implementing the video player 
 
 Video Show Page
 
+The video viewing experience is, of course, a key part of the experience. Implementing the video player required the use of the HTML5 player, using the browser's native media controls.
+
+
+
+![Test Video Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-video-page-small.gif)
+
+Because of the Vimeo show page's UI's very specific look and feel, extra attention h 
 
 ```javascript
               <div className='video-unit-wrapper'>
