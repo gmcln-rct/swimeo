@@ -42,7 +42,7 @@ Video viewing is, of course, a key part of the experience. Implementing the vide
 
 
 
-The video url was associated to the Video instance used has_one_attached in the Video model. 
+The video url was associated to the Video instance, using a has_one_attached association in the Video model. 
 
 ```ruby
 class Video < ApplicationRecord
@@ -50,10 +50,10 @@ class Video < ApplicationRecord
   has_one_attached :video_url
 
   has_one_attached :image_url
-  ```
+```
 
 
-Because of the Vimeo show page's UI's very specific look and feel, extra attention had to be placed on how the elements were placed in the page.
+Because of the Vimeo show page's UI's very specific look and feel, extra attention had to be placed on how the elements were placed within the DOM, leveraging CSS Flexbox to mimick the specific look, sizing and positioning of the original site.
 
 ```javascript
               <div className='video-unit-wrapper'>
@@ -90,7 +90,7 @@ Because of the Vimeo show page's UI's very specific look and feel, extra attenti
 
 <h3>Video Likes</h3>
 
-To integrate Likes into the video page, we integrated the Remove Like action into the Video Reducer, which helped to maintain a normalized Redux state.
+To integrate Likes into the video page, a Remove Like action was integrated into the Video Reducer, which helped to maintain a normalized Redux state.
 
 ```javascript
 const videosReducer = (state = {}, action) => {
