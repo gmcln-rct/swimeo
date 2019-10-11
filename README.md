@@ -30,7 +30,7 @@ Swimeo live site: https://swimeo.herokuapp.com/#/
 Vimeo is a site for video creatives, and places an emphasis on its intuitive, attractive ui. Similarly, Swimeo was developed with both function and design in mind.
 
 
-Video Show Page
+<h3>Video Show Page</h3>
 
 The video viewing experience is, of course, a key part of the experience. Implementing the video player required the use of the HTML5 player, using the browser's native media controls.
 
@@ -83,7 +83,9 @@ Because of the Vimeo show page's UI's very specific look and feel, extra attenti
 ```
 
 
-Video Likes
+<h3>Video Likes</h3>
+
+To integrate Likes into the video page, we integrated video Like actions into the Video Reducer, which helped to maintain a normalized Redux state.
 
 ```javascript
 const videosReducer = (state = {}, action) => {
@@ -92,7 +94,6 @@ const videosReducer = (state = {}, action) => {
     switch (action.type) {
 
         case RECEIVE_VIDEOS:
-            
             return merge({}, state, action.videos);
         case RECEIVE_VIDEO:
             const {video} = action.video
@@ -112,6 +113,7 @@ const videosReducer = (state = {}, action) => {
 
 <h2>Future Updates</h2>
 These are among the features that we intended to update:
+* Video search
 * Currently, the videos are formatted as .webm for Chrome browser support. We plan to refactor to add support for .mp4, using video transcoding.
 
 ---
