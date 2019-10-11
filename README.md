@@ -29,7 +29,7 @@ Swimeo was developed using a Ruby on Rails framework, PostgresSQL database, and 
 <h3>Dependencies</h3>
 The app has the following dependencies:
 
-```
+```ruby
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
@@ -48,19 +48,19 @@ The app has the following dependencies:
     "redux-thunk": "^2.3.0",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9"
-  }
 ```
+
 <h3>Versions</h3>
 The site was built with Ruby version 2.5.3.
 
 Node/NPM Versions:
 
-```  "engines": {
+```ruby
+"engines": {
     "node": "10.13.0",
     "npm": "6.4.1"
   },
 ```
-
 
 
 
