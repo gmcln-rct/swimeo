@@ -11,17 +11,6 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 Brief explanation of what the app is and does
 Link to live site
 Discussion of technologies used
@@ -29,3 +18,22 @@ Delve deep into ~2 features that show off your technical abilities. Discuss both
 Code snippets to highlight your best code (markdown code snippets, NOT screenshots)
 
 <h1>Welcome to Swimeo</h1>
+Swimeo is a video destination site for users interested in watching and uploading quality aquatically-themed video content. The features include:
+
+* Users can sign in/login
+
+* Users can browse and watch videos
+
+* Logged in users can:
+
+  - Like a video
+
+  - Comment on a video
+
+  - Upload a video
+  
+
+Swimeo live site: https://swimeo.herokuapp.com/#/
+
+
+![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/swimeo-splash-screenshot.jpg)
