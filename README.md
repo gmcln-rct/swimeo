@@ -25,13 +25,74 @@ Swimeo live site: https://swimeo.herokuapp.com/#/
 
 ---
 
-<h1>Features</h1>
+<h1>Features & Challenges </h1>
 
 Vimeo is a site for video creatives, and places an emphasis on its attractive ui. Similarly, Swimeo was developed with both function and design in mind.
 
-The video viewing experience was a key part if it.
+The video viewing experience is of course a key part if it. Implementing the video player 
+
+Video Show Page
 
 
+```javascript
+              <div className='video-unit-wrapper'>
+                    <div className='video-player-wrapper'>
+                        <div className='video-container'>
+                            <video
+                                controls
+                                autoPlay
+                                src={this.props.video.video_url} 
+                                type='video/webm' />
+                        </div>
+                            <br/>
+
+                        <div className='video-footer'>
+                            <div className='video-footer-container'>
+
+                                <div className='video-info'>
+
+                                    <div className='video-title'>{this.props.video.title}</div>
+                                    <br />
+                                    <div className='video-description'>
+                                        {this.props.video.description}
+                                    </div>
+                                    <div>
+                                        <VideoLikeComponent />
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <CommentIndexComponent />
+                                    </div>
+                                </div>
+```
+
+
+Video Likes
+
+```javascript
+const videosReducer = (state = {}, action) => {
+    Object.freeze(state);
+
+    switch (action.type) {
+
+        case RECEIVE_VIDEOS:
+            
+            return merge({}, state, action.videos);
+        case RECEIVE_VIDEO:
+            const {video} = action.video
+            return merge({}, state, { [video.id]: video });
+        case REMOVE_VIDEO:
+            let newState = merge({}, state);
+            delete newState[action.id];
+            return newState;
+            
+        case REMOVE_LIKE:
+            return state;
+        default:
+            return state;
+    }
+};
+```
 
 
 ---
