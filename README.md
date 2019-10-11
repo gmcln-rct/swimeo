@@ -1,6 +1,6 @@
 # README
 
-![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-splash-large.gif)
+![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-splash-page.gif)
 
 <h1>Welcome to Swimeo</h1>
 Swimeo is a clone of the site Vimeo, intended as a video destination site for users interested in watching and uploading quality aquatically-themed video content. 
