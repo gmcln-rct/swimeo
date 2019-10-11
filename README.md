@@ -21,6 +21,7 @@ Swimeo is a video destination site for users interested in watching and uploadin
 
 Swimeo live site: https://swimeo.herokuapp.com/#/
 
+---
 
 <h2>Development Notes</h2>
 
