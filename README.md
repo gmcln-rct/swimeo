@@ -5,6 +5,7 @@
 <h1>Welcome to Swimeo</h1>
 Swimeo is a clone of the site Vimeo. It is a video destination site for people interested in watching and uploading quality aquatically-themed video content. 
 
+
 Currently, the primary features include:
 
 * Users can sign in/login
@@ -36,7 +37,7 @@ The video viewing experience is, of course, a key part of the experience. Implem
 
 
 
-![Test Video Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-video-page-small.gif)
+![Video Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-video-page-small.gif "Video Show Page")
 
 
 
