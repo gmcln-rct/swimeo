@@ -38,7 +38,17 @@ The video viewing experience is, of course, a key part of the experience. Implem
 
 ![Test Video Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-video-page-small.gif)
 
-Because of the Vimeo show page's UI's very specific look and feel, extra attention h 
+The video url was associated to the Video instance used has_one_attached in the Video model. 
+
+```ruby
+class Video < ApplicationRecord
+
+  has_one_attached :video_url
+
+  has_one_attached :image_url
+  ```
+
+Because of the Vimeo show page's UI's very specific look and feel, extra attention had to be placed on how the elements were placed in the page.
 
 ```javascript
               <div className='video-unit-wrapper'>
@@ -100,6 +110,9 @@ const videosReducer = (state = {}, action) => {
 };
 ```
 
+<h2>Future Updates</h2>
+These are among the features that we intended to update:
+* Currently, the videos are formatted as .webm for Chrome browser support. We plan to refactor to add support for .mp4, using video transcoding.
 
 ---
 
