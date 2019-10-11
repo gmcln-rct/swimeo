@@ -33,7 +33,9 @@ Swimeo is a video destination site for users interested in watching and uploadin
   - Upload a video
   
 
-Swimeo live site: https://swimeo.herokuapp.com/#/
 
 
 ![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/swimeo-splash-screenshot.jpg)
+
+Swimeo live site: https://swimeo.herokuapp.com/#/
+
