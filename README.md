@@ -24,6 +24,7 @@ Currently, the primary features include:
 
 Swimeo live site: https://swimeo.herokuapp.com/#/
 
+
 ---
 
 <h1>Features & Challenges </h1>
@@ -33,7 +34,7 @@ Vimeo is a site for video creatives, and places an emphasis on its intuitive, at
 
 <h3>Video Show Page</h3>
 
-The video viewing experience is, of course, a key part of the experience. Implementing the video player required the use of the HTML5 player, using the browser's native media controls.
+Video viewing is, of course, a key part of the experience. Implementing the video player on the Video Show required a Video Show container and Video Show presentational component. On the front-end, the work was on implementing the HTML5 player, by manipulating the browser's native media controls.
 
 
 
