@@ -1,9 +1,11 @@
 # README
 
-![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/swimeo-splash-screenshot.jpg)
+![Swimeo Home Page](https://swimeo-seeds.s3.amazonaws.com/github-images/Swimeo-splash-page.gif)
 
 <h1>Welcome to Swimeo</h1>
-Swimeo is a video destination site for users interested in watching and uploading quality aquatically-themed video content. The basic features include:
+Swimeo is a clone of the site Vimeo, intended as a video destination site for users interested in watching and uploading quality aquatically-themed video content. 
+
+The core features include:
 
 * Users can sign in/login
 
@@ -20,6 +22,17 @@ Swimeo is a video destination site for users interested in watching and uploadin
 
 
 Swimeo live site: https://swimeo.herokuapp.com/#/
+
+---
+
+<h1>Features</h1>
+
+Vimeo is a site for video creatives, and places an emphasis on its attractive ui. Similarly, Swimeo was developed with both function and design in mind.
+
+The video viewing experience was a key part if it.
+
+
+
 
 ---
 
@@ -63,6 +76,7 @@ Node/NPM Versions:
   },
 ```
 
+---
 
 
 Brief explanation of what the app is and does
