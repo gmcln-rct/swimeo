@@ -12,17 +12,15 @@ const videosReducer = (state = {}, action) => {
             
             return merge({}, state, action.videos);
         case RECEIVE_VIDEO:
-            
             const {video} = action.video
-            debugger
             return merge({}, state, { [video.id]: video });
         case REMOVE_VIDEO:
             let newState = merge({}, state);
             delete newState[action.id];
             return newState;
-        case REMOVE_LIKE:
             
-            return state;x
+        case REMOVE_LIKE:
+            return state;
         default:
             return state;
     }

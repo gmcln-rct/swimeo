@@ -4,11 +4,22 @@ import { openModal } from '../../actions/modal_actions';
 
 import Greeting from './greeting';
 
-const msp = state => ({
-    // currentUser: session.currentUser
-    currentUser: state.session.currentUser
+// const msp = state => ({
+    
+//     currentUser: state.session.currentUser,
+// });
 
-});
+const msp = (state) => {
+    // const currentUser = state.session.currentUser || null;
+    // const currentUser = state.entities.session.currentUser || null;
+    const currentUserId = state.session.id || null;
+    const currentUser = state.entities.users[state.session.id];
+
+    return ({
+        currentUser,
+        currentUserId
+    });
+};
 
 const mdp = dispatch => ({
     logout: () => dispatch(logout()),

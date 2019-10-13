@@ -12,12 +12,10 @@ class VideoLikeComponent extends React.Component {
  
 // HANDLE LIKE CLICK
     updateLike(e) {
-
         const {currentUserId} = this.props;
         if (this.props.likes.includes(currentUserId)) {
             this.props.removeLike(this.props.video.id );
         } else if (currentUserId) {
-            
             this.props.addLike({ user_id: currentUserId, video_id: this.props.video.id });
         }
     }
@@ -25,12 +23,6 @@ class VideoLikeComponent extends React.Component {
     render() {
         
         const likeButtonClass = this.props.isLiked ? 'button-liked' : 'button-not-liked';
-
-        // let likeButtonAction;
-
-        // if (this.props.likes.includes(this.props.currentUserId)) {
-        //      likeButtonAction = () => removeVideo(this.props.video.id);
-        // }
 
         return (
             <div className={likeButtonClass}
@@ -45,4 +37,3 @@ class VideoLikeComponent extends React.Component {
 
 export default VideoLikeComponent;
 
-// (() => likeButtonAction(video.id)

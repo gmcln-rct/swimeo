@@ -1,6 +1,6 @@
 import React from 'react';
 import CommentItem from './comment_item_container';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CommentForm from './comment_form_container';
 
 // COMMENT INDEX COMPONENT
 
@@ -20,7 +20,7 @@ class CommentIndexComponent extends React.Component {
 
 
     render() {
-        this.props.comments
+        this.props.comments;
         const numComments = this.props.comments.length;
         const commentHeader = numComments === 1 ? "Comment" : "Comments";
         return (
@@ -37,6 +37,7 @@ class CommentIndexComponent extends React.Component {
                     ))
                     }
                 </ul>
+                <CommentForm />
             </div>
         )
 

@@ -19,9 +19,9 @@ import ReactDOM from 'react-dom';
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDropbox, faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
-import { faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo} from '@fortawesome/free-solid-svg-icons';
+import { faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo, faSwimmer} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faDropbox, faGoogleDrive, faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo);
+library.add(faDropbox, faGoogleDrive, faCloudUploadAlt, faHeart, faFish, faTimes, faArrowRight, faHome, faPhotoVideo, faSwimmer);
 
 const App = () => (
   <div>

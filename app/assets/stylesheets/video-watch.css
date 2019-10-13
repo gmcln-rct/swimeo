@@ -214,3 +214,10 @@
 .fish-1 {
     transform: scale(50%);
 }
+
+/* Testing */
+-webkit-media-controls-play-button,
+-internal-media-controls-button-hover-background {
+    background-color: pink !important;
+    border-radius: 5px;
+}

@@ -64,3 +64,15 @@
 }
 
 
+.header-logo {
+  margin-left: 40px;
+  padding: 20px;
+  
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+
+  color: #1A2E3B;
+  background: transparent;
+  border: none;
+}

@@ -89,7 +89,7 @@ class VideoWatch extends React.Component {
                             </div>
                             <div className='watch-page-main-grid-item'>
                                 <Link to="/watch/5" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/5-bubbles.jpg" className="watch-page-thumb" alt="Video" /></Link>
-                                <h1>Fountains of Bellagio</h1>
+                                <h1>Bubbles</h1>
                             </div>
 
                             <div className='watch-page-main-grid-item'>

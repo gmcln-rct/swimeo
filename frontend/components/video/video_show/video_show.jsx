@@ -13,13 +13,13 @@ class VideoShow extends React.Component {
 
     componentDidMount() {
         const id = this.props.match.params.id;
-        debugger
+        
         this.props.showVideo(id);
     }
 
     componentDidUpdate(prevProps) {
         if (prevProps.match.params.id !== this.props.match.params.id) {
-            debugger
+            
             this.props.showVideo(this.props.match.params.id);
         }
     }
@@ -42,29 +42,6 @@ class VideoShow extends React.Component {
                                 type='video/webm' />
                         </div>
                             <br/>
-    {/* 
-                        Placeholder Video
-                        <figure>
-                            <video
-                                controls
-                                autoPlay
-                                className='video-player'
-                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
-                                type='video/webm' />
-                        </figure> */}
-
-                            {/* <Player
-                                playsInline
-                                className='video-player'
-                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm">
-
-                                <ControlBar autoHide={false} disableDefaultControl  >
-                                    <PlayToggle />
-                                    </ControlBar>
-                                <VolumeMenuButton vertical />
-
-                                </Player> */}
-
 
                         <div className='video-footer'>
                             <div className='video-footer-container'>
@@ -135,3 +112,27 @@ class VideoShow extends React.Component {
 
 
 export default VideoShow;
+
+
+{/* 
+                        Placeholder Video
+                        <figure>
+                            <video
+                                controls
+                                autoPlay
+                                className='video-player'
+                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
+                                type='video/webm' />
+                        </figure> */}
+
+{/* <Player
+                                playsInline
+                                className='video-player'
+                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm">
+
+                                <ControlBar autoHide={false} disableDefaultControl  >
+                                    <PlayToggle />
+                                    </ControlBar>
+                                <VolumeMenuButton vertical />
+
+                                </Player> */}

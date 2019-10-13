@@ -46,7 +46,6 @@ class SessionForm extends React.Component {
     }
 
     renderErrors() {
-        
         const errors = Object.values(this.props.errors)
             return (
                 <ul>
