@@ -53,8 +53,6 @@
     font-size: 1em;
 
     border-color:1px solid black;
-
-
 }
 
 .button-comment {
@@ -70,5 +68,17 @@
   border-color: #08C;
   background-color: #08C;
   transition: 0.4s;
+}
+
+.comment-input-not-loggedin {
+    width: 90%;
+    height: auto;
+    min-height: 50px;
+    margin: 10px 0px;
+    padding: 10px;
+
+    font-size: 1em;
+
+    border-color: 2px solid red !important;
 }
 

@@ -34,34 +34,9 @@ class CommentForm extends React.Component {
         } 
     }
 
-    // commentForm() {
-    //     // debugger
-    //     if (this.props.currentUserId) {
-    //         return (
-    //             <form onSubmit={this.handleSubmit}>
-    //                 <input
-    //                     type="textarea"
-    //                     value={this.state.body}
-    //                     onChange={this.update("body")}
-    //                     placeholder="Comment"
-    //                     title="Enter your comment here"
-    //                     className="comment-forminput" />
-    //                 <input type="submit" value={this.props.addComment} className="button-comment">Add Comment</input>
-    //             </form>
-    //         )
-    //     } else {
-    //         return (
-    //             <div className="comment-form-not-loggedin">
-    //                 <h3>You must be logged in to comment.</h3>
-    //             </div>
-    //         )
-    //     }
-    // }
-
-
     commentForm() {
         // debugger
-
+        if (this.props.currentUserId) {
             return (
                 <form onSubmit={this.handleSubmit}>
                     <input type="textarea"
@@ -75,8 +50,35 @@ class CommentForm extends React.Component {
                     <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
 
                 </form>
-            );
-        } 
+            )
+        } else {
+            return (
+                <div className="comment-input-not-loggedin">
+                    You must be logged in to comment.
+                </div>
+            )
+        }
+    }
+
+
+    // commentForm() {
+    //     // debugger
+
+    //         return (
+    //             <form onSubmit={this.handleSubmit}>
+    //                 <input type="textarea"
+    //                     value={this.state.body}
+    //                     onChange={this.update('body')}
+    //                     className="comment-input"
+    //                     placeholder="Add comment"
+    //                     title="Please enter a password"
+    //                 />
+    //                 <br />
+    //                 <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
+
+    //             </form>
+    //         );
+    //     } 
    
 
 
