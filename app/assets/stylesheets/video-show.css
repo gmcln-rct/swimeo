@@ -687,6 +687,18 @@ input::-webkit-file-upload-button:hover {
 }
 
 
+span.likeLoggedIn {
+    display: none !important;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.likeNotLoggedIn {
+    margin-left: 10px;
+    font-size: 1em;
+    line-height: 1em;
+    color: #1A2E3B;
+    opacity: 0.5;
+}
 
 
 /* 

@@ -51,6 +51,10 @@ demoVideo13 = Video.create!(title: "Rain drops falling on a window", description
 demoVideo14 = Video.create!(title: "rainbow trout are the real monsters", description: "They may look innocent, but rainbow trout are predators. They will eat almost anything that they can catch, including insects, small fish, crustaceans, and even Chipotle.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/14-trout.jpg", creator_id: seedUser3.id )
 demoVideo15 = Video.create!(title: "ocean soothing feet", description: "Soaking your tootsies in soothing salty ocean water is the best.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/15-feet-water.jpg", creator_id: seedUser5.id )
 demoVideo16 = Video.create!(title: "Summer pool time", description: "Nothing is more than a summer jump in the pool.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/16-kids-pool.jpg", creator_id: seedUser2.id )
+demoVideo17 = Video.create!(title: "snorkel P.O.V.", description: "Snorkeling underwater can be so peaceful and serene. I feel like a sea tortoise, or a walrus.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/17-snorkel-pov.jpg", creator_id: seedUser4.id )
+demoVideo18 = Video.create!(title: "dog playing fetch in water", description: "This retriever is eager to play fetch and go swim in the water. He is having a blast!", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/18-dog-splash.jpg", creator_id: seedUser1.id )
+demoVideo19 = Video.create!(title: "turquoise tide", description: "The tide coming in on a sunny day is the most beautiful thing I have ever seen, even better than seeing two meat-lovers pizzas from Papa Johns.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/19-tide-pretty.jpg", creator_id: seedUser5.id )
+demoVideo20 = Video.create!(title: "snorkeling on the surface", description: "Snorkeling on the surface can be as healthy exercisee as regular swimming, and just as much fun.", thumbnail: "https://swimeo-seeds.s3.amazonaws.com/images/20-snorkel.jpg", creator_id: seedUser5.id )
 
 
 video1 = open("https://swimeo-seeds.s3.amazonaws.com/videos/1-waterfall.webm")
@@ -69,6 +73,10 @@ video13 = open("https://swimeo-seeds.s3.amazonaws.com/videos/13-rain-window.webm
 video14 = open("https://swimeo-seeds.s3.amazonaws.com/videos/14-trout.webm")
 video15 = open("https://swimeo-seeds.s3.amazonaws.com/videos/15-feet-water.webm")
 video16 = open("https://swimeo-seeds.s3.amazonaws.com/videos/16-kids-pool.webm")
+video17 = open("https://swimeo-seeds.s3.amazonaws.com/videos/17-snorkel-pov.webm")
+video18 = open("https://swimeo-seeds.s3.amazonaws.com/videos/18-dog-splash.webm")
+video19 = open("https://swimeo-seeds.s3.amazonaws.com/videos/19-tide-pretty.webm")
+video20 = open("https://swimeo-seeds.s3.amazonaws.com/videos/20-snorkel.webm")
 
 
 demoVideo1.video_url.attach(io: video1, filename: "1-waterfall.webm")
@@ -87,6 +95,10 @@ demoVideo13.video_url.attach(io: video13, filename: "13-rain-window.webm")
 demoVideo14.video_url.attach(io: video14, filename: "14-trout.webm")
 demoVideo15.video_url.attach(io: video15, filename: "15-feet-water.webm")
 demoVideo16.video_url.attach(io: video16, filename: "16-kids-pool.webm")
+demoVideo17.video_url.attach(io: video17, filename: "17-snorkel-pov.webm")
+demoVideo18.video_url.attach(io: video18, filename: "18-dog-splash.webm")
+demoVideo19.video_url.attach(io: video19, filename: "19-tide-pretty.webm")
+demoVideo20.video_url.attach(io: video20, filename: "20-snorkel.webm")
 
 # SEED LIKES
 Like.create!([
@@ -131,12 +143,12 @@ Like.create!([
 {user_id: seedUser4.id, video_id: demoVideo8.id},
 {user_id: seedUser2.id, video_id: demoVideo1.id},
 {user_id: seedUser4.id, video_id: demoVideo15.id},
-{user_id: seedUser5.id, video_id: demoVideo8.id},
-{user_id: seedUser1.id, video_id: demoVideo8.id},
-{user_id: seedUser3.id, video_id: demoVideo10.id},
-{user_id: seedUser1.id, video_id: demoVideo10.id},
-{user_id: seedUser1.id, video_id: demoVideo3.id},
-{user_id: seedUser4.id, video_id: demoVideo9.id},
+{user_id: seedUser5.id, video_id: demoVideo17.id},
+{user_id: seedUser1.id, video_id: demoVideo18.id},
+{user_id: seedUser3.id, video_id: demoVideo19.id},
+{user_id: seedUser1.id, video_id: demoVideo20.id},
+{user_id: seedUser1.id, video_id: demoVideo17.id},
+{user_id: seedUser4.id, video_id: demoVideo18.id},
 {user_id: seedUser5.id, video_id: demoVideo12.id}
 ])
 
@@ -189,7 +201,12 @@ Comment.create!([
 {user_id: seedUser3.id, video_id: demoVideo7.id, body: "Thousands have lived without love, not one without water. Except in Gowanus."},
 {user_id: seedUser4.id, video_id: demoVideo13.id, body: "Nem toda a água no mar agitado e agitado pode lavar o bálsamo de um rei ungido."},
 {user_id: seedUser2.id, video_id: demoVideo1.id, body: "O vento alto e monstruoso de cano parece espirrar o urso em chamas e extinguir os guardas sempre fixos."},
-{user_id: seedUser5.id, video_id: demoVideo10.id, body: "E apague os guardas do posto sempre fixo."}
+{user_id: seedUser5.id, video_id: demoVideo10.id, body: "E apague os guardas do posto sempre fixo."},
+{user_id: seedUser2.id, video_id: demoVideo16.id, body: "A book should serve as the ax for the frozen sea within us."},
+{user_id: seedUser1.id, video_id: demoVideo3.id, body: "If you want to build a ship, don't drum up people together to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea."},
+{user_id: seedUser2.id, video_id: demoVideo20.id, body: "Follow the river and you will find the sea."},
+{user_id: seedUser3.id, video_id: demoVideo19.id, body: "Sea-nymphs hourly ring his knell: Ding-dong. Hark! now I hear them,—Ding-dong, bell."},
+{user_id: seedUser4.id, video_id: demoVideo19.id, body: "O, brave new sea that has such people in it!"}
 ])
 
 # demoVideo1 = Video.create!(

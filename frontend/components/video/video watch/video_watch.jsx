@@ -137,6 +137,22 @@ class VideoWatch extends React.Component {
                                 <h1>Summer pool time</h1>
                             </div>
 
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/17" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/17-snorkel-pov.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>snorkel P.O.V.</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/18" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/18-dog-splash.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>dog playing fetch in water</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/19" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/19-tide-pretty.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>turquoise tide</h1>
+                            </div>
+                            <div className='watch-page-main-grid-item'>
+                                <Link to="/watch/20" ><img src="https://swimeo-seeds.s3.amazonaws.com/images/20-snorkel.jpg" className="watch-page-thumb" alt="Video" /></Link>
+                                <h1>snorkeling on the surface</h1>
+                            </div>
 
                         </div>
                     </div>
