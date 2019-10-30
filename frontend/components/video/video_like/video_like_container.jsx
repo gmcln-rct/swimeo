@@ -10,14 +10,11 @@ const msp = (state, ownProps) => {
 
     const isLiked = state.entities.like !== null;
 
-    // const likes = Object.values(state.entities.like).map(like => like.user_id);
     const currentUserId = state.session.id || null;
 
     const likes = state.entities.like ? Object.values(state.entities.like).map(like => like.user_id) : {};
 
     const video = state.entities.videos[ownProps.match.params.id];
-    // const video = currentUserId ? state.entities.videos[currentUserId] : null;
-
 
     return ({
         currentUserId,
