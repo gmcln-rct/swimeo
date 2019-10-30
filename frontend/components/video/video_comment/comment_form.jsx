@@ -16,7 +16,13 @@ class CommentForm extends React.Component {
         this.commentForm = this.commentForm.bind(this);
     }
 
- 
+    // componentDidUpdate(prevProps, prevState) {
+    //     debugger
+    //     if (prevState.comment.body !== this.state.comment.body)
+
+    // }
+
+
     update(field) {
         return (e) => {
             this.setState({[field]: e.currentTarget.value});
@@ -30,9 +36,10 @@ class CommentForm extends React.Component {
             comment.user_id = this.props.currentUserId;
             comment.video_id = this.props.video.id;
             comment.body = this.state.body;
-            this.props.addComment(comment);
-            this.setState({ body: "" });
+            this.props.addComment(comment)
+            .then(this.setState({ body: "" }));
         } 
+
     }
 
     commentForm() {
@@ -60,8 +67,6 @@ class CommentForm extends React.Component {
             )
         }
     }
-
-
 
     render() {
         return (
