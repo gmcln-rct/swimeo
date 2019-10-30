@@ -11,6 +11,7 @@ class CommentForm extends React.Component {
             video_id: this.props.video.id,
             user_id: this.props.currentUserId
         };
+        this.update = this.update.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.commentForm = this.commentForm.bind(this);
     }
@@ -47,8 +48,8 @@ class CommentForm extends React.Component {
                         title="Please enter a password"
                     />
                     <br />
-                    <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
 
+                    <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
                 </form>
             )
         } else {
@@ -59,27 +60,6 @@ class CommentForm extends React.Component {
             )
         }
     }
-
-
-    // commentForm() {
-    //     // debugger
-
-    //         return (
-    //             <form onSubmit={this.handleSubmit}>
-    //                 <input type="textarea"
-    //                     value={this.state.body}
-    //                     onChange={this.update('body')}
-    //                     className="comment-input"
-    //                     placeholder="Add comment"
-    //                     title="Please enter a password"
-    //                 />
-    //                 <br />
-    //                 <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
-
-    //             </form>
-    //         );
-    //     } 
-   
 
 
 

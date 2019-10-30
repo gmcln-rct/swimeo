@@ -8,7 +8,20 @@ class CommentIndexComponent extends React.Component {
     constructor(props) {
         super(props);
 
+        // this.state = {
+        //     comments: this.props.comments,
+        // };
+
     }
+
+    // componentDidUpdate(prevProps) {
+    //     if (prevProps.match.params.id !== this.props.match.params.id) {
+
+    //         this.props.showVideo(this.props.match.params.id);
+    //     }
+    // }
+
+    // HANDLE COMMENT UPDATE
     updateComment(e) {
         const { currentUserId } = this.props;
         if (this.props.comments.includes(currentUserId)) {
@@ -20,7 +33,7 @@ class CommentIndexComponent extends React.Component {
 
 
     render() {
-        this.props.comments;
+        // this.props.comments;
         const numComments = this.props.comments.length;
         const commentHeader = numComments === 1 ? "Comment" : "Comments";
         return (

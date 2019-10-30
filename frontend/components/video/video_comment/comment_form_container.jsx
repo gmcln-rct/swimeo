@@ -7,9 +7,8 @@ import {addComment} from '../../../actions/comment_actions';
 // COMMENT FORM CONTAINER
 
 const msp = (state, ownProps) => {
-    // const currentUserId = state.entities.session === undefined ? null : state.entities.session.id;
     
-    const video= state.entities.videos[ownProps.match.params.id] || {};
+    const video = state.entities.videos[ownProps.match.params.id] || {};
     const currentUserId = state.session ? state.session.id : null;
     
     return {
