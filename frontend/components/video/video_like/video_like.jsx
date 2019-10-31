@@ -22,7 +22,8 @@ class VideoLikeComponent extends React.Component {
     
     render() {
         
-        const likeButtonClass = this.props.isLiked ? 'button-liked' : 'button-not-liked';
+        const likeButtonClass = (this.props.isLiked && this.props.currentUserId) ? 'button-liked' : 'button-not-liked';
+
         const isLoggedIn = this.props.currentUserId ? 'likeLoggedIn' : 'likeNotLoggedIn';
 
         return (
