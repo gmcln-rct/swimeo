@@ -1,22 +1,11 @@
 /* HEADER */
 
-/* header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 80px;
-  background: rgb(255, 255, 255);
-  border-bottom: 1px solid #ccc;
-  font-size: 1em;
-  color: rgb(14,22,22);
-} */
-
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
 
-  height: 60px;
+  height: 70px;
 
   font-size: 1em;
   color: #1A2E3B;
@@ -34,18 +23,7 @@
 
 /* PLACED HEADER LOGO CSS IN APPLICATIONS */
 
-/* .header-logo {
-  margin-left: 40px;
-  padding: 20px;
-  
-  text-decoration: none;
-  font-family: 'Pacifico', cursive;
-  font-size: 2.5em;
 
-  color: #1A2E3B;
-  background: transparent;
-  border: none;
-} */
 
 .header-logo:hover {
   color: rgb(16, 174, 241);
@@ -113,22 +91,24 @@ nav button {
   justify-content: flex-end;
   align-content: center;
 
-  height: 60px;
+  height: 70px;
 
   font-size: 1em;
 }
 
 a.nav-upload-button {
-  width: 100px;
+  width: 90px;
+
   max-height: 50px;
 
-  margin-top: 15px;
+  margin-top: 20px;
   margin-right: 40px;
-  margin-bottom: 10px;
-  padding: 10px 15px 10px 15px;
+  margin-bottom: 20px;
+  padding: 5px 3px;
 
   font-size: 0.9em;
   font-weight: 700;
+  /* line-height: 1em; */
   text-align: center;
   text-transform: none;
   text-decoration: none;
@@ -136,9 +116,14 @@ a.nav-upload-button {
   color: white;
   background-color: #00adef;
   border-color: #00adef;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 
   cursor: pointer;
+}
+
+.nav-upload-button svg {
+  margin-right: 5px;
+  font-size: 1.2em;
 }
 
 a.nav-upload-button:hover {
@@ -146,25 +131,7 @@ a.nav-upload-button:hover {
   background-color: #08C;
 }
 
-
-button.button-logout{
-  width: 100px;
-  height: 40px;
-  margin: 15px 20px;
-  
-  padding: 5px 15px;
-
-  color: #1A2E3B;
-  background: transparent;
-  text-decoration: none;
-  text-transform: none;
-  cursor: pointer;
-}
-button.button-logout:hover {
-  color: black;
-  border-color: black !important;
-  /* border: 5p solid blue; */
-}
+/* User Icon - Swimmer */
 
 .nav-user-icon {
   width: 8px;
@@ -172,7 +139,7 @@ button.button-logout:hover {
 
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-left: 5px;
   
   padding-top: 10px;
@@ -190,4 +157,27 @@ button.button-logout:hover {
 
 .svg-inline--fa.fa-w-20 {
   width: 1em;
+}
+
+
+/* Logout */
+
+button.button-logout{
+  width: 100px;
+  height: 40px;
+  margin: 15px 20px;
+  
+  padding: 5px 15px;
+
+  color: #1A2E3B;
+  background: transparent;
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+}
+
+button.button-logout:hover {
+  color: black;
+  border-color: black !important;
+  /* border: 5p solid blue; */
 }

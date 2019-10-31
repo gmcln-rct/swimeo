@@ -30,7 +30,6 @@ class VideoLikeComponent extends React.Component {
                 <div className={likeButtonClass}
                     onClick={this.updateLike} >
                     <FontAwesomeIcon icon="heart" /> {this.props.likes.length}
-
                  <span className={isLoggedIn}>  Must be logged in to like video</span>
                 </div>
         );
