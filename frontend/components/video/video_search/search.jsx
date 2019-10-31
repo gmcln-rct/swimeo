@@ -5,7 +5,6 @@ import _ from 'lodash';
 import VideoGrid from '../videos/video_grid';
 
 
-
 class Search extends React.Component {
 
     constructor(props) {
@@ -13,7 +12,6 @@ class Search extends React.Component {
         this.state = { search: "" };
 
     }
-
 
     update(field) {
         return e => {
