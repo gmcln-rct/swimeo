@@ -39,7 +39,6 @@ class CommentForm extends React.Component {
             this.props.addComment(comment)
             .then(this.setState({ body: "" }));
         } 
-
     }
 
     commentForm() {
