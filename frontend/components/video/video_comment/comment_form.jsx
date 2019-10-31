@@ -17,7 +17,6 @@ class CommentForm extends React.Component {
     }
 
     // componentDidUpdate(prevProps, prevState) {
-    //     debugger
     //     if (prevState.comment.body !== this.state.comment.body)
 
     // }
