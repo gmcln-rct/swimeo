@@ -23,8 +23,6 @@
 
 /* PLACED HEADER LOGO CSS IN APPLICATIONS */
 
-
-
 .header-logo:hover {
   color: rgb(16, 174, 241);
   transition: 0.4s;
@@ -67,7 +65,6 @@ nav button {
 }
 
 
-
 /* ---------------------------------------------------- */
 
 /* Upload Watch Link */
@@ -84,7 +81,7 @@ nav button {
 
 /* ---------------------------------------------------- */
 
-/* Upload Nav Button */
+/* Right - Upload Nav Button */
 
 .nav-upload {
   display: flex;
@@ -131,7 +128,7 @@ a.nav-upload-button:hover {
   background-color: #08C;
 }
 
-/* User Icon - Swimmer */
+/* Right - User Icon - Swimmer */
 
 .nav-user-icon {
   width: 8px;

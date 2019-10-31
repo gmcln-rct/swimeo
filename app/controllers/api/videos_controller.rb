@@ -1,6 +1,14 @@
 class Api::VideosController < ApplicationController
 
     def index
+        if params[:search] == ""
+                @videos = []
+        elsif @videos = Video.where([
+                'title ILIKE :query',
+                {query: "%#{params[:search]}%"}
+            ]).limit(20)
+        
+        else
         @videos = Video.all
         render :index
     end
@@ -47,7 +55,7 @@ class Api::VideosController < ApplicationController
   private
 
   def video_params
-    params.require(:video).permit(:title, :description, :creator_id, :video_url)
+    params.require(:video).permit(:title, :description, :creator_id, :video_url, :search)
   end
 
 end
