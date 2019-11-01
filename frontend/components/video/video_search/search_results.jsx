@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import _ from 'lodash';
-import VideoGrid from '../videos/video_grid';
 
 
 class SearchResults extends React.Component {
