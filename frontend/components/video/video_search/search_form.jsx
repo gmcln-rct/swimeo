@@ -9,7 +9,8 @@ class SearchForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { search: "" };
-
+        this.update = this.update.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     update(field) {
@@ -40,12 +41,9 @@ class SearchForm extends React.Component {
     render() {
         return (
             <div>
-                <li onClick={this.openModal}>
-                    <a href="#">Search <i className="fa fa-search" aria-hidden="true"></i></a>
-                </li>
+                <a href="#">Search <i className="fa fa-search" aria-hidden="true"></i></a>
 
-                    {this.form()}
-                    {this.searchResults()}
+                {this.form()}
             </div>
         )
     }

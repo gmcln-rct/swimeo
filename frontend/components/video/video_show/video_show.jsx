@@ -25,22 +25,21 @@ class VideoShow extends React.Component {
     }
     
     render() {
-        // const videoId = this.props.video.id;
-        
+        const videoId = this.props.video.id;
+        debugger
         if (!this.props.video) { return null };
 
         return (
             <div className='video-show-page'>
 
                 <div className='video-unit-wrapper'>
-                        <div className='video-container'>
-
-                            <video
-                                controls
-                                autoPlay
-                                src={this.props.video.video_url} 
-                                type='video/webm' />
-                        </div>
+                    <div className='video-container'>
+                        <video
+                            controls
+                            autoPlay
+                            src={this.props.video.video_url} 
+                            type='video/webm' />
+                    </div>
                 </div>
 
                     <div className='video-footer'>
@@ -109,25 +108,3 @@ class VideoShow extends React.Component {
 export default VideoShow;
 
 
-{/* 
-                        Placeholder Video
-                        <figure>
-                            <video
-                                controls
-                                autoPlay
-                                className='video-player'
-                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm"
-                                type='video/webm' />
-                        </figure> */}
-
-{/* <Player
-                                playsInline
-                                className='video-player'
-                                src="https://swimeo-seeds.s3.amazonaws.com/pool.webm">
-
-                                <ControlBar autoHide={false} disableDefaultControl  >
-                                    <PlayToggle />
-                                    </ControlBar>
-                                <VolumeMenuButton vertical />
-
-                                </Player> */}

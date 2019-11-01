@@ -20,7 +20,7 @@ class VideoWatch extends React.Component {
 
     render() {
 
-
+        
         return (
 
             <div className='watch-page-container'>

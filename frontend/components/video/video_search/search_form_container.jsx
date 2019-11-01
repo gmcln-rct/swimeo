@@ -6,7 +6,7 @@ import { searchQuery } from '../../actions/search_actions';
 
 // SEARCH FORM CONTAINER
 
-const msp = ({ session, search }) => ({
+const msp = ({ search }) => ({
     search: search
 });
 

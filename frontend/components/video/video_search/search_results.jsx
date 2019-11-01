@@ -22,9 +22,7 @@ class SearchResults extends React.Component {
             <div className="search-results">
                 {Object.keys(search).map(id => {
                     let video = search[id];
-                    let divStyle = {
-                        backgroundImage: 'url(' + video.thumbnail + ')'
-                    }
+
                     return (
                         <div key={id} className="search-video">
                             <Link to={`/videos/${video.id}`} onClick={this.closeModal}>
