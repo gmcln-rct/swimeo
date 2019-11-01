@@ -37,20 +37,6 @@
     background-color: black;
 }
 
-/* .video-player-wrapper {
-    height: auto;
-    max-height: 600px;
-    padding: 0;
-
-} */
-/* 
-.video-player-wrapper span {
-    padding-top: 12%;
-    color: lightgray;
-    font-family: 'Pacifico', cursive;
-    font-size: 5em;
-    text-align: center;
-} */
 
 .video-container {
     display: flex;
@@ -106,15 +92,7 @@ video {
 }
 
 .video-info {
-    /* display: flex;
-    justify-content: flex-start; */
-
-    /* width: 80%; */
-
-
-    /* background-color: blue; */
     height: auto;
-
     margin-bottom: 10px;
 }
 
@@ -122,9 +100,7 @@ video {
     font-size: 2.5em;
     font-weight: 500;
     letter-spacing: 0.1rem;
-    /* line-height: 1.11111; */
-    /* margin-bottom: 10px; */
-}
+
 
 .video-description {
     font-size: 1em;
@@ -136,14 +112,7 @@ video {
 
 /* Video Playlist */
 
-
 .video-playlist {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: flex-start; */
-    
-    /* width: 20%; */
     height: auto;
     border-left: 1px solid #E3E8E9;
 }
