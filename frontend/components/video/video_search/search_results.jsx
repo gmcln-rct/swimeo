@@ -8,7 +8,6 @@ class SearchResults extends React.Component {
     constructor(props) {
         super(props);
 
-        
     }
 
 
@@ -59,10 +58,9 @@ class SearchResults extends React.Component {
                     </div>
                 </div>
 
+)
             </section >
 
-
-        )
     }
 }
 
