@@ -81,15 +81,9 @@ class VideoUpload extends React.Component {
                             <input
                                 type="file"
                                 className='upload-choose-file-button-faux'
-                                onChange={this.handleFile} />
-
-                            {/* FAUX UPLOAD
-                            <button className='upload-choose-file-button-faux'>
-                                <span> <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /></span>
-
-                                <span> Or choose files</span>
-                            </button> */}
-
+                                onChange={this.handleFile} 
+                                accept="video/webm" />
+                                
                             <br/>
                             <label className='upload-input-label'>
                                 Title                         
@@ -100,7 +94,8 @@ class VideoUpload extends React.Component {
                                     onChange={this.handleInput('title')}
                                     className='upload-input-label'
                                     placeholder="Enter video title"
-                                    title="Please enter a video title"/>
+                                    title="Please enter a video title"
+                                     />
 
                             {/* <input 
                                 type="text"

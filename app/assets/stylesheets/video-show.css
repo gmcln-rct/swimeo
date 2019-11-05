@@ -124,14 +124,12 @@ video {
     width: 18rem;
     height: auto;
     margin: 10px;
-
 }
 
 .video-playlist-item  h1{
     font-size: 1em;
     font-weight: 500;
     text-overflow: ellipsis;
-
 }
 
 
@@ -513,7 +511,6 @@ input::-webkit-file-upload-button:hover {
     font-size: 1em;
     color: #1A2E3B;
     opacity: 0.5;
-
 }
 
 /* Upload .video-upload-right-sidebar */
