@@ -14,10 +14,11 @@ const msp = (state, ownProps) => {
 };
 
 const mdp = (dispatch, ownProps) => {
+    debugger
     return ({
-        // showVideos: () => dispatch(showVideos()),
         receiveVideo: (id) => dispatch(receiveVideo(id)),
         showVideo: (id) => dispatch(showVideo(id)),
+        // showVideos: () => dispatch(showVideos()),
     });
 };
 

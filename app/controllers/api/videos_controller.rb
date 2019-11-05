@@ -1,13 +1,6 @@
 class Api::VideosController < ApplicationController
 
     def index
-        if params[:search] == ""
-                @videos = []
-        elsif @videos = Video.where([
-                'title ILIKE :query',
-                {query: "%#{params[:search]}%"}
-            ]).limit(20)
-        else
         @videos = Video.all
         render :index
     end
@@ -19,11 +12,8 @@ class Api::VideosController < ApplicationController
                 'title ILIKE :query',
                 {query: "%#{params[:search]}%"}
             ]).limit(20)
-        
-        else
-            @videos = Video.all
-        render :index
-
+        end
+        render :search
     end
 
     def create
