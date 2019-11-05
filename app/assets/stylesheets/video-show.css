@@ -100,13 +100,12 @@ video {
     font-size: 2.5em;
     font-weight: 500;
     letter-spacing: 0.1rem;
-
+}
 
 .video-description {
     font-size: 1em;
     line-height: 1em;
-        margin-bottom: 20px;
-
+    margin-bottom: 20px;
 }
 
 
