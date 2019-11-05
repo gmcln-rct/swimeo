@@ -44,7 +44,6 @@ class VideoUpload extends React.Component {
             formData.append('video[video_url]', this.state.videoFile);
         }
         
-        
         $.ajax({
             url: '/api/videos',
             method: 'POST',
@@ -53,12 +52,11 @@ class VideoUpload extends React.Component {
             processData: false
         }).then(
             (response) => {
-                
                 console.log(response);
-                this.props.history.push('/watch')
+                this.props.history.push('/watch');
             },
             (response) => {
-                console.log(response.responseJSON)
+                console.log(response.responseJSON);
             }
         );
     }
@@ -73,9 +71,12 @@ class VideoUpload extends React.Component {
                         <form onSubmit={this.handleSubmit} className="video-upload-form">
 
                             <div className='upload-header-logo'>
-                                <img src="https://swimeo-seeds.s3.amazonaws.com/video-upload.png" alt="Upload video"/>
+                                <img src="https://swimeo-seeds.s3.amazonaws.com/video-upload.png" alt="Upload video" />
                             </div>
+
                             <div className='upload-header'>Choose Video File to Upload</div>
+                            <div className='upload-subheader'>File must be .webm format</div>
+
                             <br/>
                             
                             <input
@@ -94,14 +95,8 @@ class VideoUpload extends React.Component {
                                     onChange={this.handleInput('title')}
                                     className='upload-input-label'
                                     placeholder="Enter video title"
-                                    title="Please enter a video title"
-                                     />
+                                    title="Please enter a video title" />
 
-                            {/* <input 
-                                type="text"
-                                id="video-title"
-                                value={this.state.title}
-                                onChange={this.handleInput('title')} /> */}
 
                             </label>
                             <br/>
