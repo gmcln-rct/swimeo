@@ -106,7 +106,7 @@ class SessionForm extends React.Component {
 
                         <br/>
                         {/* <input className="session-submit-demo" value='Log in as demo user' /> */}
-                    <button onClick={this.props.demoUserLogin} className='session-submit-demo'>Join as demo user</button>
+                    <button onClick={this.props.demoUserLogin} className='session-submit-demo'>{this.props.formType} as demo user</button>
 
                 </form>
 
