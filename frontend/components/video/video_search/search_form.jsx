@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from 'react-modal';
 import { Link } from 'react-router';
 import _ from 'lodash';
 
@@ -22,7 +21,7 @@ class SearchForm extends React.Component {
         };
     }
 
-    form() {
+    render() {
         return (
             <form>
                 <input type="text"
@@ -36,14 +35,7 @@ class SearchForm extends React.Component {
         )
     }
 
-    render() {
-        return (
-            <div>
-                <a href="#">Search <i className="fa fa-search" aria-hidden="true"></i></a>
-                {this.form()}
-            </div>
-        )
-    }
+
 
 }
 

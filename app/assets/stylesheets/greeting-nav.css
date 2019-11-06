@@ -157,7 +157,7 @@ a.nav-upload-button:hover {
 }
 
 
-/* Logout */
+/* LOGOUT */
 
 button.button-logout{
   width: 100px;
@@ -177,4 +177,16 @@ button.button-logout:hover {
   color: black;
   border-color: black !important;
   /* border: 5p solid blue; */
+}
+
+
+/* SEARCH */
+
+.header-search {
+  width: 150px;
+  height: 60px;
+}
+
+.header-search form {
+  border: 1px solid #00000;
 }

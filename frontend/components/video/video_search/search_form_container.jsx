@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import SearchForm from './search_form';
-import { searchQuery } from '../../actions/search_actions';
+import { searchQuery } from '../../../actions/search_actions';
 
 
 // SEARCH FORM CONTAINER
