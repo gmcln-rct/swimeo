@@ -57,7 +57,6 @@ class SessionForm extends React.Component {
             );
     }
 
-
     render() {
         // Add error classes
         const nameClass = this.props.errors['First'] ? 'login-input-session-errors' : 'login-input';

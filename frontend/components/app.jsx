@@ -11,6 +11,7 @@ import VideoShow from './video/video_show/video_show_container';
 import VideoUpload from './video/video_upload/video_upload_container';
 import VideoWatch from './video/video watch/video_watch_container';
 import Plans from './plans/plans';
+import SearchResults from './video/video_search/search_results_container';
 
 import Footer from './footer/footer';
 
@@ -33,6 +34,8 @@ const App = () => (
     <Route exact path='/watch' component={VideoWatch} />
     <Route path='/watch/:id' component={VideoShow} />
     <Route path='/upload' component={VideoUpload} />
+    <Route exact path={`/search`} component={SearchResults} />
+
     <Route path='/plans' component={Plans} />
 
 

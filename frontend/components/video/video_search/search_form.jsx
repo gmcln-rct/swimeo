@@ -22,6 +22,18 @@ class SearchForm extends React.Component {
         })
     }
 
+    // handleSearch(input) {
+    //     return e => {
+    //         e.preventDefault();
+    //         const object = { q: input }
+    //         const query = this.toQueryString(object)
+    //         this.props.search(input)
+    //             .then(data => {
+    //                 this.props.history.push(`/search?${query}`);
+    //             });
+    //     }
+    // }
+
     update(field) {
         return (e) => {
             this.setState({ [field]: e.target.value });
