@@ -17,11 +17,11 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                 <Link to="/watch" className='nav-watch-button'>Watch</Link>
                 <Link to="/plans" className='nav-watch-button'>Solutions</Link>
             </span>
-            <div className='header-search'>
-                <SearchForm />
-            </div>
-            <div  className='nav-upload'>
 
+            <div  className='nav-upload'>
+                <div className='header-search'>
+                    <SearchForm />
+                </div>
                 <Link to="/upload" className='nav-upload-button'>
                     <FontAwesomeIcon icon="cloud-upload-alt" style={{ color: 'white' }} /> Upload
                 </Link>
@@ -39,6 +39,9 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                 <Link to="/plans" className='nav-watch-button'>Solutions</Link>
             </span>
             <div className='nav-upload'>
+                <div className='header-search'>
+                    <SearchForm />
+                </div>
                 <button className="button-logout" onClick={logout}>Log Out</button>
                 <div className="nav-user-icon">
                     <FontAwesomeIcon icon="swimmer" /> 

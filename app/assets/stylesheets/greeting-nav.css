@@ -184,54 +184,40 @@ button.button-logout:hover {
 
 .header-search {
   width: 200px;
-  height: 70px;
-}
+  height: 40px;
+  margin: 15px;
 
+  color: #4E5A5E;
+}
 
 
 .search-bar-inner {
     display: flex; 
-    height: 60px;
-    width: 200px; 
-    margin: 10px 0; 
+    justify-content: space-between;
 
-    border-radius: 96px;
-    border: 1px solid #eee;
-    background-color: rgba(239, 239, 239, 1);
+    width: 100%;
+    height: auto;
+
+    border: 1px solid #4E5A5E;
 }
     
-    
+  .search-input {
+      width: 200px;
+      height: 40px; 
+      box-shadow: none; 
 
-    .search-input {
-        width: 200px;
-        height: 60px; 
-        box-shadow: none; 
-        border-right: 0;
-        border-top-left-radius: 96px; 
-        border-bottom-left-radius: 96px; 
-        font-size: 16px; 
-        background-color: rgba(239, 239, 239, 1);
-        box-shadow: none;
-        background: transparent;
-        border-color: rgba(34, 34, 34, 0.15);
-        color: #222222;
-        }
-        
+      color: #4E5A5E;
+    }
+      
 
     .search-button{   
-        height: 48px;
-        width: 61px; 
-
+        height: 32px;
+        width: 32px; 
+        color: #4E5A5E;
         box-shadow: none;
-        cursor: pointer;
         outline: none;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 96px;
-        border-bottom-right-radius: 96px;
-        border-left: 0; 
-        background-color: rgba(239, 239, 239, 1);
-        border-color: rgba(34, 34, 34, 0.15);
+        
+        cursor: pointer;
 
     }
 
