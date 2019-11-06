@@ -37,8 +37,7 @@ class SessionForm extends React.Component {
                     onChange={this.update('first_last_name')}
                     className={nameClass}
                     placeholder="First and last name"
-                    title="Please enter your name"
-                    /> 
+                    title="Please enter your name"  /> 
              );
         } else {
             return "";
