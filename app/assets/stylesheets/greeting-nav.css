@@ -182,10 +182,10 @@ button.button-logout:hover {
 
 /* SEARCH */
 
-.header-search {
-  width: 200px;
-  height: 40px;
-  margin: 15px;
+.search-bar {
+  width: 260px;
+  height: 34px;
+  margin: 18px;
 
   color: #4E5A5E;
 }
@@ -194,30 +194,42 @@ button.button-logout:hover {
 .search-bar-inner {
     display: flex; 
     justify-content: space-between;
+    align-content: center;
 
     width: 100%;
-    height: auto;
+    height: 100%;
 
     border: 1px solid #4E5A5E;
 }
     
   .search-input {
-      width: 200px;
-      height: 40px; 
-      box-shadow: none; 
+      width: 100%;
+      height: auto; 
+      padding: 10px;
+      border: none !important;
 
       color: #4E5A5E;
+    }
+
+    .search-input::placeholder {
+      color: #8A9599;
     }
       
 
     .search-button{   
-        height: 32px;
-        width: 32px; 
-        color: #4E5A5E;
-        box-shadow: none;
-        outline: none;
-        
-        cursor: pointer;
+      display: inline;
+      height: 34px;
+      width: 34px; 
+      margin: 0;
+
+      font-weight: 700;
+
+      border: none !important;
+      background: transparent;
+
+      z-index: 5;
+      
+      cursor: pointer;
 
     }
 

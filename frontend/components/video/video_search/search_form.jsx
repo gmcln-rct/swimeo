@@ -17,7 +17,7 @@ class SearchForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.setState({ query: '' })
-        this.props.searchProducts(this.state.query).then(() => {
+        this.props.searchQuery(this.state.query).then(() => {
             this.props.history.push('/search')
         })
     }
@@ -32,7 +32,7 @@ class SearchForm extends React.Component {
             <form className='search-bar' onSubmit={this.handleSubmit}>
                 <div className='search-bar-inner'>
                     <input className='search-input' type="text" onChange={this.update('query')} value={this.state.query}
-                        placeholder='Search for videos, fish and more' />
+                        placeholder='Search videos, fish and more' />
 
                     <button className='search-button' type="submit">
                         <FontAwesomeIcon icon="search" />
