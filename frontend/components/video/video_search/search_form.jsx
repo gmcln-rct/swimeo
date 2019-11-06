@@ -36,13 +36,10 @@ class SearchForm extends React.Component {
         )
     }
 
-
-
     render() {
         return (
             <div>
                 <a href="#">Search <i className="fa fa-search" aria-hidden="true"></i></a>
-
                 {this.form()}
             </div>
         )
