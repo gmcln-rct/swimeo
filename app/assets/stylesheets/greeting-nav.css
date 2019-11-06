@@ -183,10 +183,56 @@ button.button-logout:hover {
 /* SEARCH */
 
 .header-search {
-  width: 150px;
-  height: 60px;
+  width: 200px;
+  height: 70px;
 }
 
-.header-search form {
-  border: 1px solid #00000;
+
+
+.search-bar-inner {
+    display: flex; 
+    height: 60px;
+    width: 200px; 
+    margin: 10px 0; 
+
+    border-radius: 96px;
+    border: 1px solid #eee;
+    background-color: rgba(239, 239, 239, 1);
 }
+    
+    
+
+    .search-input {
+        width: 200px;
+        height: 60px; 
+        box-shadow: none; 
+        border-right: 0;
+        border-top-left-radius: 96px; 
+        border-bottom-left-radius: 96px; 
+        font-size: 16px; 
+        background-color: rgba(239, 239, 239, 1);
+        box-shadow: none;
+        background: transparent;
+        border-color: rgba(34, 34, 34, 0.15);
+        color: #222222;
+        }
+        
+
+    .search-button{   
+        height: 48px;
+        width: 61px; 
+
+        box-shadow: none;
+        cursor: pointer;
+        outline: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 96px;
+        border-bottom-right-radius: 96px;
+        border-left: 0; 
+        background-color: rgba(239, 239, 239, 1);
+        border-color: rgba(34, 34, 34, 0.15);
+
+    }
+
+

@@ -1,40 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router';
-import _ from 'lodash';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 class SearchForm extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { search: "" };
-        this.update = this.update.bind(this);
+
+        this.state = { query: '' };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.update = this.update.bind(this);
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.setState({ query: '' })
+        this.props.searchProducts(this.state.query).then(() => {
+            this.props.history.push('/search')
+        })
     }
 
     update(field) {
-        return e => {
-            this.setState({
-                [field]: e.currentTarget.value
-            })
-            this.props.searchQuery(e.target.value);
-        };
+        return (e) => {
+            this.setState({ [field]: e.target.value });
+        }
     }
-
     render() {
         return (
-            <form>
-                <input type="text"
-                    className="search-input"
-                    placeholder="Search"
-                    value={this.state.search}
-                    onInput={this.update("search")}
-                    autoFocus
-                />
+            <form className='search-bar' onSubmit={this.handleSubmit}>
+
+                <div className='search-bar-inner'>
+                    <input className='search-input' type="text" onChange={this.update('query')} value={this.state.query}
+                        placeholder='Search for videos' />
+
+
+                    <button className='search-button' type="submit">
+                        <FontAwesomeIcon icon="fa-search" />
+                    </button>
+                </div>
             </form>
+
         )
     }
-
 
 
 }
