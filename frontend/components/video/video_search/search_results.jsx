@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
 
@@ -11,25 +11,28 @@ class SearchResults extends React.Component {
     }
 
 
-    searchResults() {
+    showResults() {
         let search = this.props.search;
+        let searchResults;
         if (_.isEmpty(search) || this.state.search == "") {
-            return <h3>No videos found</h3>
-        }
+             searchResults = "No videos found";
+        } else searchResults = Object.keys(search).map(id => {
+                let video = search[id];
+
+                return (
+                    <div key={id} className="search-video">
+
+                        <div className='watch-page-main-grid-item'>
+                            <Link to={`/watch/${video.id}`} ><img src={video.image_url} className="search-page-thumb" alt="Video" /></Link>
+                            <h1>{video.title} </h1>
+                        </div>
+                    </div>
+                )
+            })
+        
         return (
             <div className="search-results">
-                {Object.keys(search).map(id => {
-                    let video = search[id];
-
-                    return (
-                        <div key={id} className="search-video">
-                            <Link to={`/videos/${video.id}`} onClick={this.closeModal}>
-                                <div className="search-image" style={divStyle}></div>
-                            </Link>
-                            <h4>{video.title}</h4>
-                        </div>
-                    )
-                })}
+                {searchResults}
             </div>
         )
     }
@@ -41,28 +44,11 @@ class SearchResults extends React.Component {
             <section className='search-page-main'>
                 <div className='search-page-main-header'>Videos</div>
                     <div className="search-results-grid">
-                        {Object.keys(videos).map(id => {
-                            let video = videos[id];
-
-                            return (
-                                <Link key={id} to={`/videos/${video.id}`} className="video-square">
-                                    <div className="video-thumb" style={divStyle}></div>
-                                    <div className="info-overlay">
-                                        <p><i className="fa fa-heart" aria-hidden="true"></i>
-                                            {video.likes}</p>
-                                        <h5>{video.title}</h5>
-                                    </div>
-                                </Link>
-                            )
-                        })}
+                        showResults();
                     </div>
-                </div>
-
-)
             </section >
-
+        )
     }
 }
-
 
 export default SearchResults;

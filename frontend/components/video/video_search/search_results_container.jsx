@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import SearchResults from './search_results';
 import { receiveSearchVideos } from '../../../actions/search_actions';
 
 
@@ -8,6 +9,8 @@ import { receiveSearchVideos } from '../../../actions/search_actions';
 const msp = (state) => {
     return ({
         videos: Object.values(state.entities.videos),
+        search: Object.values(state.entities.search)
+
     });
 };
 
