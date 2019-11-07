@@ -14,7 +14,7 @@ const msp = (state, ownProps) => {
 };
 
 const mdp = (dispatch, ownProps) => {
-    debugger
+    
     return ({
         receiveVideo: (id) => dispatch(receiveVideo(id)),
         showVideo: (id) => dispatch(showVideo(id)),

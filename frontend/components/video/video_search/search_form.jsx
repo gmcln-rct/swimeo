@@ -20,7 +20,7 @@ class SearchForm extends React.Component {
         
         if (this.state.query && this.state.query.length > 0) {
             this.props.searchVideos(this.state.query).then(() => {
-            debugger
+            
             this.props.history.push('/search');
         })
         }

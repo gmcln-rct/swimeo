@@ -7,7 +7,6 @@
 
 
 export const searchVideos = (query) => {
-    debugger
     return $.ajax({
         method: 'GET',
         url: `api/videos/${query}/search`

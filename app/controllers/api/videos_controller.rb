@@ -14,7 +14,6 @@ class Api::VideosController < ApplicationController
         #         {query: "%#{params[:search]}%"}
         #     ]).limit(20)
         # end
-        debugger
         search_query = params[:query].downcase
         if params[:query] == ""
             @videos = []

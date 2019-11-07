@@ -15,6 +15,7 @@ export const receiveSearchVideos = results => ({
 });
 
 
+// FOR SEARCH RESULTS PAGE
 export const searchVideos = (query) => dispatch => (
     SearchAPIUtil.searchVideos(query).then(results => (
         dispatch(receiveSearchVideos(results))

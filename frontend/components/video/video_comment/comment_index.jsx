@@ -35,7 +35,6 @@ class CommentIndexComponent extends React.Component {
 
 
     render() {
-        debugger
         // this.props.comments;
         const numComments = this.props.comments.length;
         const commentHeader = numComments === 1 ? "Comment" : "Comments";

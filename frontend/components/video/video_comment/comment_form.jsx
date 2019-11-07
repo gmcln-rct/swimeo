@@ -41,7 +41,6 @@ class CommentForm extends React.Component {
     }
 
     commentForm() {
-        // debugger
         if (this.props.currentUserId) {
             return (
                 <form onSubmit={this.handleSubmit}>

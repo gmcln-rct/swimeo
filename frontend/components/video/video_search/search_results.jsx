@@ -44,7 +44,7 @@ class SearchResults extends React.Component {
             <section className='search-page-main'>
                 <div className='search-page-main-header'>Videos</div>
                     <div className="search-results-grid">
-                        this.showResults();
+                        {this.showResults()};
                     </div>
             </section >
         )

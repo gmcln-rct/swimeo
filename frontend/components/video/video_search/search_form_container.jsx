@@ -12,7 +12,7 @@ import { searchVideos } from '../../../actions/search_actions';
 // });
 
 const mdp = dispatch => {
-    debugger
+    
     return {
         searchVideos: query => dispatch(searchVideos(query))
     };
