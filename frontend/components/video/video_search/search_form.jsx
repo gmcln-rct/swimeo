@@ -19,7 +19,7 @@ class SearchForm extends React.Component {
         e.stopPropagation();
         this.setState({ query: '' });
         this.props.searchQuery(this.state.query).then(() => {
-            this.props.history.push(`/search?${query}`);
+            this.props.history.push('/search')
         })
     }
 

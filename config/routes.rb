@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resource :user, only: [:create]
     resource :session, only: [:create, :destroy]
     resources :videos
+    get '/videos/search', to: 'videos#search'
+
     resources :likes, only: [:index, :create, :destroy]
     resources :comments, only: [:create, :destroy] 
   end
