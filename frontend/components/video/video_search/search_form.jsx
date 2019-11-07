@@ -16,9 +16,10 @@ class SearchForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.setState({ query: '' })
+        e.stopPropagation();
+        this.setState({ query: '' });
         this.props.searchQuery(this.state.query).then(() => {
-            this.props.history.push('/search')
+            this.props.history.push(`/search?${query}`);
         })
     }
 
@@ -39,6 +40,7 @@ class SearchForm extends React.Component {
             this.setState({ [field]: e.target.value });
         }
     }
+    
     render() {
         return (
             <form className='search-bar' onSubmit={this.handleSubmit}>
