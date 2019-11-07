@@ -7,9 +7,11 @@ import { receiveSearchVideos } from '../../../actions/search_actions';
 // SEARCH RESULTS CONTAINER
 
 const msp = (state) => {
+
+
     return ({
         videos: Object.values(state.entities.videos),
-        search: Object.values(state.entities.search)
+        search: Object.values(state.entities.search) || []
 
     });
 };

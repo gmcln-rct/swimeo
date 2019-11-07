@@ -12,18 +12,21 @@ class SearchResults extends React.Component {
     }
 
     showResults() {
-        let search = this.props.search;
-        let searchResults;
-        if (_.isEmpty(search) || this.state.search == "") {
-             searchResults = "No videos found";
-        } else searchResults = Object.keys(search).map(id => {
-                let video = search[id];
-
+        
+        let searchResults = this.props.search;
+        let searchResultsDisplay;
+        
+        if (searchResults == []) {
+             searchResultsDisplay = "No videos found";
+        } else searchResultsDisplay = Object.keys(searchResults).map(id => {
+                let vidResult = searchResults[id];
+                let vidId = Object.keys(vidResult);
+                let video = vidResult[vidId];
+                debugger
                 return (
                     <div key={id} className="search-video">
-
                         <div className='watch-page-main-grid-item'>
-                            <Link to={`/watch/${video.id}`} ><img src={video.image_url} className="search-page-thumb" alt="Video" /></Link>
+                            <Link to={`/watch/${video.id}`} ><img src={video.thumbnail} className="search-page-thumb" alt="Video" /></Link>
                             <h1>{video.title} </h1>
                         </div>
                     </div>
@@ -32,7 +35,7 @@ class SearchResults extends React.Component {
         
         return (
             <div className="search-results">
-                {searchResults}
+                {searchResultsDisplay}
             </div>
         )
     }
