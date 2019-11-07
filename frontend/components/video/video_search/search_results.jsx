@@ -8,8 +8,8 @@ class SearchResults extends React.Component {
     constructor(props) {
         super(props);
 
+        this.showResults = this.showResults.bind(this);
     }
-
 
     showResults() {
         let search = this.props.search;
@@ -44,7 +44,7 @@ class SearchResults extends React.Component {
             <section className='search-page-main'>
                 <div className='search-page-main-header'>Videos</div>
                     <div className="search-results-grid">
-                        showResults();
+                        this.showResults();
                     </div>
             </section >
         )

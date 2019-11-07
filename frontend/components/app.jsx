@@ -35,17 +35,8 @@ const App = () => (
     <Route path='/watch/:id' component={VideoShow} />
     <Route path='/upload' component={VideoUpload} />
     <Route exact path={`/search`} component={SearchResults} />
-
     <Route path='/plans' component={Plans} />
 
-
-    {/* <Route exact path="/" render={() => (
-      this.props.currentUser ? (
-        <Home />
-      ) : (
-          <Redirect to="/login" />
-        )
-    )} /> */}
 
     <Footer />
   </div>

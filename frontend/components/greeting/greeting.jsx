@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchForm from './../video/video_search/search_form';
+import SearchForm from './../video/video_search/search_form_container';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

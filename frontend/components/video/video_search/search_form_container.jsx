@@ -1,17 +1,21 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import SearchForm from './search_form';
-import { searchQuery } from './../../actions/search_actions';
+import { searchVideos } from '../../../actions/search_actions';
+
 
 
 // SEARCH FORM CONTAINER
 
-const msp = ({ search }) => ({
-    search: search
-});
+// const msp = ({ search }) => ({
+//     search: search
+// });
 
-const mdp = dispatch => ({
-    searchQuery: query => dispatch(searchQuery(query))
-});
+const mdp = dispatch => {
+    debugger
+    return {
+        searchVideos: query => dispatch(searchVideos(query))
+    };
+};
 
-export default withRouter(msp,mdp)(SearchForm);
+export default withRouter(connect(null,mdp)(SearchForm));

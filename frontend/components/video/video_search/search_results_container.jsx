@@ -19,4 +19,4 @@ const mdp = dispatch => ({
     receiveSearchVideos: () => dispatch(receiveSearchVideos())
 });
 
-export default withRouter(msp, mdp)(SearchResults);
+export default connect(msp, mdp)(SearchResults);
