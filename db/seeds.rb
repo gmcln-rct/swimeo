@@ -100,6 +100,52 @@ demoVideo18.video_url.attach(io: video18, filename: "18-dog-splash.webm")
 demoVideo19.video_url.attach(io: video19, filename: "19-tide-pretty.webm")
 demoVideo20.video_url.attach(io: video20, filename: "20-snorkel.webm")
 
+
+# ADD IMAGE URL
+
+image1 = open("https://swimeo-seeds.s3.amazonaws.com/images/1-waterfall.jpg")
+image2 = open("https://swimeo-seeds.s3.amazonaws.com/images/2-water-drops.jpg")
+image3 = open("https://swimeo-seeds.s3.amazonaws.com/images/3-tide.jpg")
+image4 = open("https://swimeo-seeds.s3.amazonaws.com/images/4-ocean-surface.jpg")
+image5 = open("https://swimeo-seeds.s3.amazonaws.com/images/5-bubbles.jpg")
+image6 = open("https://swimeo-seeds.s3.amazonaws.com/images/6-belaggio-fountain.jpg")
+image7 = open("https://swimeo-seeds.s3.amazonaws.com/images/7-belly-flops.jpg")
+image8 = open("https://swimeo-seeds.s3.amazonaws.com/images/8-marines.jpg")
+image9 = open("https://swimeo-seeds.s3.amazonaws.com/images/9-marines-2.jpg")
+image10 = open("https://swimeo-seeds.s3.amazonaws.com/images/10-michael-phelps.jpg")
+image11 = open("https://swimeo-seeds.s3.amazonaws.com/images/11-pool.jpg")
+image12 = open("https://swimeo-seeds.s3.amazonaws.com/images/12-rain-street.jpg")
+image13 = open("https://swimeo-seeds.s3.amazonaws.com/images/13-rain-window.jpg")
+image14 = open("https://swimeo-seeds.s3.amazonaws.com/images/14-trout.jpg")
+image15 = open("https://swimeo-seeds.s3.amazonaws.com/images/15-feet-water.jpg")
+image16 = open("https://swimeo-seeds.s3.amazonaws.com/images/16-kids-pool.jpg")
+image17 = open("https://swimeo-seeds.s3.amazonaws.com/images/17-snorkel-pov.jpg")
+image18 = open("https://swimeo-seeds.s3.amazonaws.com/images/18-dog-splash.jpg")
+image19 = open("https://swimeo-seeds.s3.amazonaws.com/images/19-tide-pretty.jpg")
+image20 = open("https://swimeo-seeds.s3.amazonaws.com/images/20-snorkel.jpg")
+
+demoVideo1.image_url.attach(io: image1, filename: "1-waterfall.jpg")
+demoVideo2.image_url.attach(io: image2, filename: "2-water-drops.jpg")
+demoVideo3.image_url.attach(io: image3, filename: "3-tide.jpg")
+demoVideo4.image_url.attach(io: image4, filename: "4-ocean-surface.jpg")
+demoVideo5.image_url.attach(io: image5, filename: "5-bubbles.jpg")
+demoVideo6.image_url.attach(io: image6, filename: "6-belaggio-fountain.jpg")
+demoVideo7.image_url.attach(io: image7, filename: "7-belly-flops.jpg")
+demoVideo8.image_url.attach(io: image8, filename: "8-marines.jpg")
+demoVideo9.image_url.attach(io: image9, filename: "9-marines-2.jpg")
+demoVideo10.image_url.attach(io: image10, filename: "10-michael-phelps.jpg")
+demoVideo11.image_url.attach(io: image11, filename: "11-pool.jpg")
+demoVideo12.image_url.attach(io: image12, filename: "12-rain-street.jpg")
+demoVideo13.image_url.attach(io: image13, filename: "13-rain-window.jpg")
+demoVideo14.image_url.attach(io: image14, filename: "14-trout.jpg")
+demoVideo15.image_url.attach(io: image15, filename: "15-feet-water.jpg")
+demoVideo16.image_url.attach(io: image16, filename: "16-kids-pool.jpg")
+demoVideo17.image_url.attach(io: image17, filename: "17-snorkel-pov.jpg")
+demoVideo18.image_url.attach(io: image18, filename: "18-dog-splash.jpg")
+demoVideo19.image_url.attach(io: image19, filename: "19-tide-pretty.jpg")
+demoVideo20.image_url.attach(io: image20, filename: "20-snorkel.jpg")
+
+
 # SEED LIKES
 Like.create!([
 {user_id: seedUser4.id, video_id: demoVideo10.id},

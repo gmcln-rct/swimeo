@@ -32,7 +32,7 @@ class SearchResults extends React.Component {
 
                 return (
                     <div key={id} className='watch-page-main-grid-item'>
-                        <Link to={`/watch/${video.id}`} ><img src={video.thumbnail} className="watch-page-thumb" alt={`${video.title}`} /></Link>
+                        <Link to={`/watch/${video.id}`} ><img src={video.image_url} className="watch-page-thumb" alt={`${video.title}`} /></Link>
                         <h1>{video.title} </h1>
                     </div>
                 )
