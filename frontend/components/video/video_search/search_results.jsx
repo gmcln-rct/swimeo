@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 
@@ -15,14 +17,19 @@ class SearchResults extends React.Component {
         
         let searchResults = this.props.search;
         let searchResultsDisplay;
-        
-        if (searchResults == []) {
-             searchResultsDisplay = "No videos found";
+        debugger
+        if (searchResults.length === 0) {
+             searchResultsDisplay = (
+                 <Fragment>
+                     <div>No videos found</div>
+                 </Fragment>
+             )
+
         } else searchResultsDisplay = Object.keys(searchResults).map(id => {
                 let vidResult = searchResults[id];
                 let vidId = Object.keys(vidResult);
                 let video = vidResult[vidId];
-                debugger
+                
                 return (
                     <div key={id} className="search-video">
                         <div className='watch-page-main-grid-item'>

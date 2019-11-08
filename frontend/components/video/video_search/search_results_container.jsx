@@ -8,7 +8,6 @@ import { receiveSearchVideos } from '../../../actions/search_actions';
 
 const msp = (state) => {
 
-
     return ({
         videos: Object.values(state.entities.videos),
         search: Object.values(state.entities.search) || []
