@@ -8,7 +8,6 @@ import VideoShow from './video_show';
 const msp = (state, ownProps) => {
     
     return ({
-        // video: state.videos[ownProps.match.params.id]
         video: state.entities.videos[ownProps.match.params.id]
     });
 };
