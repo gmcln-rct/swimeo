@@ -70,7 +70,9 @@ nav button {
 /* Upload Watch Link */
 
 .nav-watch-button {
-  margin-top: 10px;
+  height: 20px !important;
+  margin-top: 25px;
+  margin-bottom: 10px;
   padding: 10px 20px 10px 20px;
   background: transparent;
   text-decoration: none;
