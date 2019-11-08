@@ -42,8 +42,8 @@ class SearchResults extends React.Component {
         let countLanguage = searchCount === 1 ? "result found" : "results found"
         return (
             <div className="watch-main-grid-container">
-                <h1>{searchCount} {countLanguage}</h1> <br/> <br/>
-
+                <div className="search-grid-header">{searchCount} {countLanguage}</div>
+                <br/>
                 {searchResultsDisplay}
             </div>
         )

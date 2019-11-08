@@ -162,6 +162,11 @@
     font-weight: 400;
 }
 
+.watch-page-subheader {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 .watch-page-main-grid {
     width: 90%;
     margin: 2% 10%;
@@ -222,4 +227,16 @@
 -internal-media-controls-button-hover-background {
     background-color: pink !important;
     border-radius: 5px;
+}
+
+/* SEARCH */
+
+.search-grid-header {
+    width: 90%;
+    min-width: 200px;
+    margin: 2% 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 }

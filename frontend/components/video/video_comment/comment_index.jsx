@@ -8,9 +8,8 @@ class CommentIndexComponent extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     comments: this.props.comments,
-        // };
+        // this.addComment = this.addComment.bind(this);
+        // this.removeComment = this.removeComment.bind(this);
 
     }
 
@@ -21,7 +20,6 @@ class CommentIndexComponent extends React.Component {
     //     }
     // }
 
-   
 
     // HANDLE COMMENT UPDATE
     updateComment(e) {
@@ -56,20 +54,7 @@ class CommentIndexComponent extends React.Component {
             </div>
         )
 
-        // return (
-        //     <div className="video-comments-container">
-        //         <div className="commments-header">
-        //             {numComments} {commentHeader}
-        //         </div>
-        //         <div className="comments-group">
-        //             {this.renderComments()}
-        //             {/* Add Comment Form Here */}
-        //         </div>
-        //         <div>
-        //                 <br/>
-        //         </div>
-        //     </div>
-        // )
+
     }
 
 };

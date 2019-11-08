@@ -1,18 +1,21 @@
 import { connect } from 'react-redux';
 import VideoWatch from './video_watch';
-import {receiveVideos} from '../../../actions/video_actions'
+import {receiveVideos, showVideos} from '../../../actions/video_actions';
 
 // VIDEO WATCH CONTAINER - MULTIPLE VIDEOS
 
-const msp = (state) => {
+const msp = (state, ownProps) => {
+    const videos = Object.values(state.entities.videos); 
+    
     return ({
-        videos: Object.values(state.entities.videos),
+        videos: videos,
     });
 };
 
 const mdp = dispatch => {
     return ({
-        receiveVideos: () => dispatch(receiveVideos())
+        receiveVideos: () => dispatch(receiveVideos()),
+        showVideos: () => dispatch(showVideos())
     });
 };
 

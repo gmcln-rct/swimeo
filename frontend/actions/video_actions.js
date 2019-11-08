@@ -9,17 +9,17 @@ export const REMOVE_VIDEO = "REMOVE_VIDEO";
 // Normal Actions
 export const receiveVideos = (videos) => ({
     type: RECEIVE_VIDEOS,
-    videos,
+    videos
 });
 
 export const receiveVideo = (video) => ({
     type: RECEIVE_VIDEO,
-    video,
+    video
 });
 
 export const removeVideo = (id) => ({
     type: REMOVE_VIDEO,
-    id,
+    id
 });
 
 
