@@ -1,6 +1,6 @@
 /* ---------------------------------------------------- */
 
-/* WATCH PAGE SIDEBAR */
+/* WATCH & SEARCH RESULST PAGE SIDEBAR */
 
 /* ---------------------------------------------------- */
 
@@ -11,8 +11,10 @@
     align-content: baseline;
 
     width: 100%;
-    /* height: auto; */
+
     min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: scroll;
 
     font-size: 1em;
     color: #1A2E3B;
