@@ -32,7 +32,6 @@ class VideoShow extends React.Component {
             <div className='video-show-page'>
 
                 <div className='video-unit-wrapper'>
-                    <div className='video-player-wrapper'>
                         <div className='video-container'>
                             <span className="centered">swimeo</span>
                             
@@ -42,7 +41,7 @@ class VideoShow extends React.Component {
                                 src={this.props.video.video_url}
                                 type='video/webm' />
                         </div>
-                        <br />
+
 
                         <div className='video-footer'>
                             <div className='video-footer-container'>
@@ -96,7 +95,6 @@ class VideoShow extends React.Component {
                                     </div>
                                 </div>
 
-                            </div>
 
                         </div>
                     </div>

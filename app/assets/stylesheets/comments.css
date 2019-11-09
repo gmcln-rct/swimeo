@@ -35,6 +35,26 @@
     border-top: 1px solid #E3E8E9;
 }
 
+.comment-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    width: 100%;
+}
+
+.comment-delete-button{
+    font-size: 0.8em !important;
+    color: red !important;
+    border: none;
+}
+
+.comment-delete-button:hover{
+    color: darkred !important;
+    transition: 0.2s;
+}
+
+
 /* ------------------------------------------------ */
 
 /* COMMENT FORM */

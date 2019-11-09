@@ -13,12 +13,6 @@ class CommentIndexComponent extends React.Component {
 
     }
 
-    // componentDidUpdate(prevProps) {
-    //     if (prevProps.match.params.id !== this.props.match.params.id) {
-
-    //         this.props.showVideo(this.props.match.params.id);
-    //     }
-    // }
 
 
     // HANDLE COMMENT UPDATE
@@ -45,6 +39,8 @@ class CommentIndexComponent extends React.Component {
                     {this.props.comments.map((comment) => (
                         <CommentItem
                             comment={comment}
+                            removeComment={this.props.removeComment}
+                            currentUser={this.props.currentUser} 
                             key={`comment.${comment.id}`}
                         />
                     ))

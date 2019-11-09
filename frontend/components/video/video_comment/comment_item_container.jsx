@@ -1,29 +1,28 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import CommentItem from './comment_item';
+import { removeComment } from '../../../actions/comment_actions';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 // COMMENT ITEM CONTAINER
 
-// const msp = (state, ownProps) => {
+const msp = (state, ownProps) => {
+
+    const video = state.entities.videos[ownProps.match.params.id] || {};
+    const currentUserId = state.session ? state.session.id : null;
     
-    
-//     // const comment = ownProps.comment;
-//     // const first_last_name = state.entities.users[ownProps.comment.user_id].first_last_name;
-//     return {
-//         // first_last_name,
-//         // comment
-//     };
-// };
+    return {
+        currentUserId,
+        video
+    };
+};
 
 const mdp = dispatch => {
 
     return {
-        addComment: (comment) => dispatch(addComment(comment)),
         removeComment: (id) => dispatch(removeComment(id))
     };
 };
 
-export default withRouter(connect(null, mdp)(CommentItem));
+export default withRouter(connect(msp, mdp)(CommentItem));
