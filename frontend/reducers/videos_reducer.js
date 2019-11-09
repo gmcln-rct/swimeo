@@ -9,7 +9,7 @@ const videosReducer = (state = {}, action) => {
     switch (action.type) {
 
         case RECEIVE_VIDEOS:
-            debugger
+            
             return merge({}, state, action.videos);
         case RECEIVE_VIDEO:
             const {video} = action.video;

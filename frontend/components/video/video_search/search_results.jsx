@@ -23,7 +23,7 @@ class SearchResults extends React.Component {
         let searchResults = this.props.search;
         let searchCount = searchResults.length;
         let searchResultsDisplay;
-        debugger
+        
         if (searchResults.length !== 0) {
             searchResultsDisplay = Object.keys(searchResults).map(id => {
                 let vidResult = searchResults[id];

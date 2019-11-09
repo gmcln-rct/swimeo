@@ -24,7 +24,7 @@ class VideoWatch extends React.Component {
     //     let allVid2= this.props.showVideos();
     //     let videoCount = allVideos.length;
     //     let videoDisplay;
-    //     debugger
+    //     
     //     if (allVideos.length !== 0) {
     //         videoDisplay = Object.keys(allVideos).map(id => {
     //             let allVideos = allVideos[id];
