@@ -23,7 +23,7 @@ class CommentItem extends React.Component {
         const comment = this.props.comment;
         const username = this.props.comment.first_last_name;
         let deleteButton;
-        debugger
+        
         if (this.props.currentUserId) {
             if (this.props.currentUserId === this.props.comment.user_id) {
                 deleteButton = <button className='comment-delete-button' 
