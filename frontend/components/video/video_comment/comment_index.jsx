@@ -14,7 +14,6 @@ class CommentIndexComponent extends React.Component {
     }
 
 
-
     // HANDLE COMMENT UPDATE
     updateComment(e) {
         const { currentUserId } = this.props;
