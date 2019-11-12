@@ -1,4 +1,4 @@
-import * as CommentsAPIUtil from '../util/comment_api_util';
+import * as CommentAPIUtil from '../util/comment_api_util';
 
 export const RECEIVE_ALL_COMMENTS = "RECEIVE_ALL_COMMENTS";
 export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
@@ -16,24 +16,35 @@ const receiveAllComments = () => ({
     comments
 });
 
-const deleteComment = commentId => ({
+const removeComment = commentId => ({
     type: REMOVE_COMMENT,
     commentId
 });
 
-
 // Thunk actions
 export const getComments = (video_id) => {
-    return CommentsAPIUtil.receiveAllComments(video_id)
+    return CommentAPIUtil.receiveAllComments(video_id)
         .then(comments => dispatch(receiveAllComments(video_id)))
 };
 
 export const addComment = comment => dispatch => {
-    return CommentsAPIUtil.addComment(comment)
+    return CommentAPIUtil.addComment(comment)
         .then(comment => dispatch(receiveComment(comment)))
 };
 
-export const removeComment = id => dispatch => (
-    CommentsAPIUtil.removeComment(id)
-        .then(comment => dispatch(deleteComment(comment.id)))
-);
+export const deleteComment = commentId => dispatch => {
+    return CommentAPIUtil.deleteComment(commentId)
+        .then(comment => dispatch(removeComment(comment.id)))
+}
+
+
+// const deleteComment = commentId => ({
+//     type: REMOVE_COMMENT,
+//     commentId
+// });
+
+
+// export const removeComment = id => dispatch => (
+//     CommentsAPIUtil.removeComment(id)
+//         .then(comment => dispatch(deleteComment(comment.id)))
+// );

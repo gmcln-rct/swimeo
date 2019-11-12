@@ -19,7 +19,7 @@ class CommentIndexComponent extends React.Component {
     updateComment(e) {
         const { currentUserId } = this.props;
         if (this.props.comments.includes(currentUserId)) {
-            this.props.removeComment(this.props.video.id);
+            this.props.deleteComment(this.props.video.id);
         } else if (currentUserId) {
             this.props.addComment({ user_id: currentUserId, video_id: this.props.video.id });
         }
@@ -36,12 +36,12 @@ class CommentIndexComponent extends React.Component {
                     {numComments} {commentHeader}
                 </div>
                 <ul className='comments-index'>
-                    {this.props.comments.map((comment) => (
+                    {this.props.comments.map((comment, idx) => (
                         <CommentItem
                             comment={comment}
-                            removeComment={this.props.removeComment}
+                            deleteComment={this.props.deleteComment}
                             currentUser={this.props.currentUser} 
-                            key={`comment.${comment.id}`}
+                            key={idx}
                         />
                     ))
                     }
@@ -54,7 +54,6 @@ class CommentIndexComponent extends React.Component {
     }
 
 };
-
 
 export default CommentIndexComponent;
 

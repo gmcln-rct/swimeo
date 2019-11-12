@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import CommentItem from './comment_item';
-import { removeComment } from '../../../actions/comment_actions';
+// import { deleteComment } from '../../../actions/comment_actions';
 
 
 
@@ -21,8 +21,8 @@ const msp = (state, ownProps) => {
 const mdp = dispatch => {
 
     return {
-        removeComment: (id) => dispatch(removeComment(id))
+        // deleteComment: (id) => dispatch(deleteComment(id))
     };
 };
 
-export default withRouter(connect(msp, mdp)(CommentItem));
+export default withRouter(connect(msp, null )(CommentItem));

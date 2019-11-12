@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { removeComment, addComment } from '../../../actions/comment_actions';
+import { deleteComment, addComment } from '../../../actions/comment_actions';
 import CommentIndexComponent from './comment_index';
 import { withRouter } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ const mdp = dispatch => {
 
     return ({
         addComment: (comment) => dispatch(addComment(comment)),
-        removeComment: (id) => dispatch(removeComment(id))
+        deleteComment: (id) => dispatch(deleteComment(id))
     });
 };
 

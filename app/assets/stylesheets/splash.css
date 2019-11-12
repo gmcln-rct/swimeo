@@ -71,12 +71,6 @@
   border: 1px solid black;
 }
 
-/* .font-not-awesome {
-  height: 100px;
-  color: red;
-} */
-
-
 /* ---------------------------------------------------- */
 
 /* Splash Section 1 */
@@ -88,7 +82,7 @@
 
   width: 100%;
   max-height: 800px;
-  margin-top: 40px;
+  margin-top: 20px;
 
   color: #1A2E3B;
   background: white;
@@ -104,11 +98,7 @@
 .splash-video {
   height: auto;
 }
-/* .splash-video figure {
-  width: 400px;
-  max-width: 50%;
-  height: auto;
-} */
+
 
 
 .splash-1-sidebar {

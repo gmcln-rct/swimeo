@@ -17,11 +17,8 @@ const commentsReducer = (oldState = {}, action) => {
         case REMOVE_COMMENT:
             delete newState[action.commentId];
             return newState;
-
-
         case RECEIVE_VIDEO:
             return action.video.comments;
-
         default:
             return oldState;
     }
