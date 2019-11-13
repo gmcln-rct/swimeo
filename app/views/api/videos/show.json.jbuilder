@@ -21,7 +21,7 @@ json.comments do
     if @video.comments.present?
         @video.comments.each do |comment|
             json.set! comment.id do
-                json.extract! comment, :user_id, :video_id, :body
+                json.extract! comment, :id, :user_id, :video_id, :body
                 json.first_last_name comment.user.first_last_name
             end
         end

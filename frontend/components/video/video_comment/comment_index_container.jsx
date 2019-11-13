@@ -26,7 +26,7 @@ const mdp = dispatch => {
     return ({
         addComment: (comment) => dispatch(addComment(comment)),
         deleteComment: (id) => dispatch(deleteComment(id)),
-        getComments:  (video_id) => dispatch(getComments(video_id))
+        // getComments:  (video_id) => dispatch(getComments(video_id))
     });
 };
 

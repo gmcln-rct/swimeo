@@ -1,5 +1,14 @@
 class Api::CommentsController < ApplicationController
 
+    def index
+
+    end
+
+    def show
+        @comment = Comment.find(params[:id])
+        render :show
+    end
+
     def create
         @comment = Comment.new(comment_params)
         
@@ -23,11 +32,11 @@ class Api::CommentsController < ApplicationController
         
         
     def destroy
-        comment = Comment.find_by(user_id: current_user.id, video_id: params[:id])
-        # comment = Comment.find(params[:id])
-        if comment
-            comment.destroy
-            @video = Video.find(comment_params[:video_id])
+        
+        @comment = Comment.find(params[:id])
+        if @comment
+            @comment.destroy
+            # @video = Video.find(comment_params[:video_id])
             render :show
         end
     end

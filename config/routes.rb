@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :videos
     get 'videos/:query/search', to: 'videos#search'
     resources :likes, only: [:index, :create, :destroy]
-    resources :comments, only: [:create, :destroy] 
+    resources :comments, only: [:index, :show, :create, :destroy] 
   end
 
   

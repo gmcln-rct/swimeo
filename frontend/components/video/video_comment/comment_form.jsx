@@ -52,8 +52,9 @@ class CommentForm extends React.Component {
                         title="Please enter a password"
                     />
                     <br />
+                    <input type="submit" className="button-comment" value="Add Comment"/>
 
-                    <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button>
+                    {/* <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button> */}
                 </form>
             )
         } else {
@@ -66,6 +67,7 @@ class CommentForm extends React.Component {
     }
 
     render() {
+        debugger
         return (
             <div className="comment-form-container">
                 <h3>Add a new comment</h3>

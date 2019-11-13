@@ -22,10 +22,10 @@ const removeComment = commentId => ({
 });
 
 // Smart actions
-export const getComments = (video_id) => {
-    return CommentAPIUtil.receiveAllComments(video_id)
-        .then(comments => dispatch(receiveAllComments(video_id)))
-};
+// export const getComments = (video_id) => {
+//     return CommentAPIUtil.receiveAllComments(video_id)
+//         .then(comments => dispatch(receiveAllComments(video_id)))
+// };
 
 export const addComment = comment => dispatch => {
     return CommentAPIUtil.addComment(comment)
