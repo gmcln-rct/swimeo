@@ -14,17 +14,17 @@ class Splash extends React.Component {
                 {/* Floating Social Media Bar */}
                     <div className="float-sm">
                         <div className="fl-fl float-linkedin">
-                        <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa"/>
-                            <a href="" target="_blank"> Connect</a>
+                            <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa"/>
+                            <a href="https://www.linkedin.com/in/glennmcclanan" target="_blank"> Connect</a>
                         </div>
                         <div className="fl-fl float-github">
-                        <FontAwesomeIcon icon={['fab', 'github']} className="fa" />
-                            <a href="" target="_blank"> Git Repo</a>
+                            <FontAwesomeIcon icon={['fab', 'github']} className="fa" />
+                            <a href="https://github.com/gmcln-rct" target="_blank"> Git Repo</a>
                         </div>
-                            <div className="fl-fl float-angellist">
-                                <FontAwesomeIcon icon={['fab', 'angellist']} className="fa" />
-                                <a href="" target="_blank"> Profile</a>
-                            </div>
+                        <div className="fl-fl float-angellist">
+                            <FontAwesomeIcon icon={['fab', 'angellist']} className="fa" />
+                            <a href="https://angel.co/glennmcclanan" target="_blank"> Profile</a>
+                        </div>
 
                 </div>
                 {/* Social Media Bar End */}

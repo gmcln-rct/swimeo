@@ -173,18 +173,19 @@ a:link {
 /* Floating Social Media Bar Style Starts Here */
 
 .fl-fl {
-    width: 190px;
-    position: fixed;
-    right: -140px;
-    z-index: 1000;
+  width: 170px;
+  position: fixed;
+  right: -120px;
+  z-index: 1000;
 
-    background: #00adef;
+  background: rgb(16,111,167);  
+  border-radius: 5px;
 
-    -webkit-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    -ms-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
 .fa {
@@ -197,14 +198,19 @@ a:link {
 
 .fl-fl:hover {
   right: 0;
+  background: #00adef;
+  transition: 0.4s;
 }
 
 .fl-fl a {
-  padding-left: 1em;
+  padding-left: 8px;
+  padding-top: 2px;
 
   color: #fff !important;
   
   font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
   line-height: 50px!important;
@@ -212,7 +218,7 @@ a:link {
 }
 
 .float-linkedin {
-  top: 220px;
+  top: 240px;
 }
 
 .float-github {
