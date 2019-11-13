@@ -25,6 +25,10 @@ class Splash extends React.Component {
                             <FontAwesomeIcon icon={['fab', 'angellist']} className="fa" />
                             <a href="https://angel.co/glennmcclanan" target="_blank"> Profile</a>
                         </div>
+                    <div className="fl-fl float-portfolio">
+                        <FontAwesomeIcon icon={['fas', 'code']} className="fa" />
+                        <a href="https://www.glennmcclanan.com" target="_blank"> Portfolio </a>
+                    </div>
 
                 </div>
                 {/* Social Media Bar End */}

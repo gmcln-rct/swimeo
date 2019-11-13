@@ -173,7 +173,7 @@ a:link {
 /* Floating Social Media Bar Style Starts Here */
 
 .fl-fl {
-  width: 170px;
+  width: 180px;
   position: fixed;
   right: -120px;
   z-index: 1000;
@@ -227,6 +227,10 @@ a:link {
 
 .float-angellist {
   top: 360px;
+}
+
+.float-portfolio {
+  top: 420px;
 }
 
 
