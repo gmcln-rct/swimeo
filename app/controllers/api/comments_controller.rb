@@ -12,7 +12,7 @@ class Api::CommentsController < ApplicationController
     def create
         @comment = Comment.new(comment_params)
         
-        if @comment.save  # Not save! ?
+        if @comment.save  
             @video = Video.find(comment_params[:video_id])
             render :show
         else
@@ -36,7 +36,6 @@ class Api::CommentsController < ApplicationController
         @comment = Comment.find(params[:id])
         if @comment
             @comment.destroy
-            # @video = Video.find(comment_params[:video_id])
             render :show
         end
     end

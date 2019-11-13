@@ -12,7 +12,7 @@ class CommentItem extends React.Component {
 
 
     handleDelete() {
-        debugger
+        
         this.props.deleteComment(this.props.comment.id);
     }
 
@@ -46,6 +46,5 @@ class CommentItem extends React.Component {
         )
         };
 }
-
 
 export default CommentItem;

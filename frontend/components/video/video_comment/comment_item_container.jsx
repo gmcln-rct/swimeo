@@ -18,11 +18,5 @@ const msp = (state, ownProps) => {
     };
 };
 
-const mdp = dispatch => {
-
-    return {
-        // deleteComment: (id) => dispatch(deleteComment(id))
-    };
-};
 
 export default withRouter(connect(msp, null )(CommentItem));

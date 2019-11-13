@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
         store = configureStore();
     }
     //TESTING
-    window.getState = store.getState;
-    window.dispatch = store.dispatch;
-    window.deleteComment = deleteComment;
+    // window.getState = store.getState;
+    // window.dispatch = store.dispatch;
+    // window.deleteComment = deleteComment;
     
     ReactDOM.render(<Root store={store} />, root);
 });

@@ -16,12 +16,6 @@ class CommentForm extends React.Component {
         this.commentForm = this.commentForm.bind(this);
     }
 
-    // componentDidUpdate(prevProps, prevState) {
-    //     if (prevState.comment.body !== this.state.comment.body)
-
-    // }
-
-
     update(field) {
         return (e) => {
             this.setState({[field]: e.currentTarget.value});
@@ -54,7 +48,6 @@ class CommentForm extends React.Component {
                     <br />
                     <input type="submit" className="button-comment" value="Add Comment"/>
 
-                    {/* <button onClick={this.props.addComment()} className="button-comment" >Add Comment</button> */}
                 </form>
             )
         } else {
@@ -67,7 +60,7 @@ class CommentForm extends React.Component {
     }
 
     render() {
-        debugger
+        
         return (
             <div className="comment-form-container">
                 <h3>Add a new comment</h3>
