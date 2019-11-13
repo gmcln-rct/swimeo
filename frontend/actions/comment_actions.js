@@ -21,7 +21,7 @@ const removeComment = commentId => ({
     commentId
 });
 
-// Thunk actions
+// Smart actions
 export const getComments = (video_id) => {
     return CommentAPIUtil.receiveAllComments(video_id)
         .then(comments => dispatch(receiveAllComments(video_id)))
@@ -32,9 +32,9 @@ export const addComment = comment => dispatch => {
         .then(comment => dispatch(receiveComment(comment)))
 };
 
-export const deleteComment = commentId => dispatch => {
-    return CommentAPIUtil.deleteComment(commentId)
-        .then(comment => dispatch(removeComment(comment.id)))
+export const deleteComment = id => dispatch => {
+    return CommentAPIUtil.deleteComment(id)
+        .then(comment => dispatch(removeComment(id)))
 }
 
 

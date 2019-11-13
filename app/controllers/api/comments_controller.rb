@@ -10,6 +10,16 @@ class Api::CommentsController < ApplicationController
             render json: ["User must be logged in"], status: 422
         end
     end
+
+    def update
+        @comment = Comment.find_by(user_id: current_user.id, video_id: params[:id])
+
+        if @comment.update(comment_params)
+            render :show
+        else
+            render json: @comment.errors.full_messages, status: 422
+        end
+    end
         
         
     def destroy

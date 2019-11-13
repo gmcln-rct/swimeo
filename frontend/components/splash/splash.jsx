@@ -11,31 +11,48 @@ class Splash extends React.Component {
     render() {
         return (
             <div className='splash-container'>
-            <section className="hero-container">
-                <div className="hero-header">
-                    Swimeo can help*
+                {/* Floating Social Media Bar */}
+                    <div className="float-sm">
+                        <div className="fl-fl float-linkedin">
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} className="fa"/>
+                            <a href="" target="_blank"> Connect</a>
+                        </div>
+                        <div className="fl-fl float-github">
+                        <FontAwesomeIcon icon={['fab', 'github']} className="fa" />
+                            <a href="" target="_blank"> Git Repo</a>
+                        </div>
+                            <div className="fl-fl float-angellist">
+                                <FontAwesomeIcon icon={['fab', 'angellist']} className="fa" />
+                                <a href="" target="_blank"> Profile</a>
+                            </div>
+
                 </div>
+                {/* Social Media Bar End */}
+                <section className="hero-container">
+                    <div className="hero-header">
+                        Swimeo can help*
+                    </div>
 
-                <div className='hero-subheader'>
-                    *with video collaboration, video distribution and swim lessons.
-                </div>
-                <div className='hero-buttons'>
-                    <Link to="/plans">
-                        <button className='hero-buttons-plan'>See plans</button>
-                    </Link>
+                    <div className='hero-subheader'>
+                        *with video collaboration, video distribution and swim lessons.
+                    </div>
+                    <div className='hero-buttons'>
+                        <Link to="/plans">
+                            <button className='hero-buttons-plan'>See plans</button>
+                        </Link>
 
-                    <button onClick={this.props.heroSignup} className='hero-buttons-join'>Join for free</button>
+                        <button onClick={this.props.heroSignup} className='hero-buttons-join'>Join for free</button>
 
-                </div>
-            </section>
-            <section className='splash-1'>
-                <div className='splash-1-main'>
+                    </div>
+                </section>
+                <section className='splash-1'>
+                    <div className='splash-1-main'>
 
-                        <figure>
-                            <video
-                                autoPlay
-                                loop
-                                className='splash-video'
+                            <figure>
+                                <video
+                                    autoPlay
+                                    loop
+                                    className='splash-video'
                                 src="https://swimeo-seeds.s3.amazonaws.com/swimeo-intro.webm"
                                 type='video/webm' 
                                 src="https://swimeo-seeds.s3.amazonaws.com/swimeo-intro.mp4"

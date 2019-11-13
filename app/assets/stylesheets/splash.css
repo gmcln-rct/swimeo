@@ -170,6 +170,62 @@ a:link {
 
 /* ---------------------------------------------------- */
 
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+    width: 190px;
+    position: fixed;
+    right: -140px;
+    z-index: 1000;
+
+    background: #00adef;
+
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.fa {
+  font-size: 2em;
+  color: #fff;
+  padding: 10px 2px;
+  width: 50px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  padding-left: 1em;
+
+  color: #fff !important;
+  
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px!important;
+  vertical-align: top!important;
+}
+
+.float-linkedin {
+  top: 220px;
+}
+
+.float-github {
+  top: 300px;
+}
+
+.float-angellist {
+  top: 360px;
+}
+
+
+/* Floating Social Media Bar Style Ends Here */
+
 
 /* ---------------------------------------------------- */
 
