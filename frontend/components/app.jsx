@@ -37,7 +37,6 @@ const App = () => (
     <Route exact path={`/search`} component={SearchResults} />
     <Route path='/plans' component={Plans} />
 
-
     <Footer />
   </div>
 );

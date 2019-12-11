@@ -21,11 +21,6 @@ const removeComment = commentId => ({
     commentId
 });
 
-// Smart actions
-// export const getComments = (video_id) => {
-//     return CommentAPIUtil.receiveAllComments(video_id)
-//         .then(comments => dispatch(receiveAllComments(video_id)))
-// };
 
 export const addComment = comment => dispatch => {
     return CommentAPIUtil.addComment(comment)
@@ -38,13 +33,3 @@ export const deleteComment = id => dispatch => {
 }
 
 
-// const deleteComment = commentId => ({
-//     type: REMOVE_COMMENT,
-//     commentId
-// });
-
-
-// export const removeComment = id => dispatch => (
-//     CommentsAPIUtil.removeComment(id)
-//         .then(comment => dispatch(deleteComment(comment.id)))
-// );
