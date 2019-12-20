@@ -15,7 +15,6 @@ import SearchResults from './video/video_search/search_results_container';
 
 import Footer from './footer/footer';
 
-import ReactDOM from 'react-dom';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';

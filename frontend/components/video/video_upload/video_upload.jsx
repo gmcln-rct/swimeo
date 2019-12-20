@@ -112,9 +112,6 @@ class VideoUpload extends React.Component {
                                 </textarea>
                             </label>
 
-
-                            {/* <h3>Thumbnail preview </h3> */}
-                            {/* {preview} */}
                             <button onClick={this.props.upload} className='upload-form-upload-button'>Upload Video</button>
                         </form>
                     </div>
@@ -145,7 +142,6 @@ class VideoUpload extends React.Component {
                         </div>
                         <br />
 
-
                         <div className='video-upload-right-sidebar-buttons'>
 
                             <button className='video-upload-fake-button'>
@@ -154,7 +150,6 @@ class VideoUpload extends React.Component {
                             <button className='video-upload-fake-button'>
                                 <span><FontAwesomeIcon icon={['fab', 'google-drive']} style={{ color: 'black' }} /> GoogleDried</span>
                             </button>
-                            {/* <button className='video-upload-fake-button'>GoogleDrop</button> */}
                             <button className='video-upload-fake-button'>And More</button>
 
                         </div>
