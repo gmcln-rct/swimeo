@@ -17,7 +17,6 @@ const mdp = (dispatch, ownProps) => {
     return ({
         receiveVideo: (id) => dispatch(receiveVideo(id)),
         showVideo: (id) => dispatch(showVideo(id)),
-        // showVideos: () => dispatch(showVideos()),
     });
 };
 

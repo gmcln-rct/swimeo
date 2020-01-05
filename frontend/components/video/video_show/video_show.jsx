@@ -24,7 +24,6 @@ class VideoShow extends React.Component {
     }
 
     render() {
-        // const videoId = this.props.video.id;
 
         if (!this.props.video) { return null };
 
@@ -94,7 +93,6 @@ class VideoShow extends React.Component {
                                         </span>
                                     </div>
                                 </div>
-
 
                         </div>
                     </div>
