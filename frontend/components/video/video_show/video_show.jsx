@@ -46,7 +46,6 @@ class VideoShow extends React.Component {
                             <div className='video-footer-container'>
 
                                 <div className='video-info'>
-
                                     <div className='video-title'>{this.props.video.title}</div>
                                     <br />
                                     <div className='video-description'>
