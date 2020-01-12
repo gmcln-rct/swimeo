@@ -10,12 +10,9 @@ class CommentItem extends React.Component {
         this.handleDelete = this.handleDelete.bind(this);
     }
 
-
     handleDelete() {
-        
         this.props.deleteComment(this.props.comment.id);
     }
-
 
     render() {
         const comment = this.props.comment;

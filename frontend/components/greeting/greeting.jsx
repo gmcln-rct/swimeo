@@ -34,7 +34,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         <nav className="header-nav">
             <span className='login-nav'>
                 <Link to='/' className='header-logo'>swimeo</Link>
-
                 <Link to="/watch" className='nav-watch-button'>Watch</Link>
                 <Link to="/plans" className='nav-watch-button'>Solutions</Link>
             </span>
