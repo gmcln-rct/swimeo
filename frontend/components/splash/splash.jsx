@@ -10,7 +10,6 @@ class Splash extends React.Component {
 
     render() {
         let loggedIn = this.props.currentUser;
-        debugger
         return (
             <div className='splash-container'>
                 {/* Floating Social Media Bar */}
