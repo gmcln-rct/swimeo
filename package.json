@@ -24,8 +24,8 @@
     "y18n": "^4.0.1"
   },
   "engines": {
-    "node": "10.13.0",
-    "npm": "6.4.1"
+    "node": "14.6.1",
+    "npm": "7.10.0"
   },
   "scripts": {
     "postinstall": "webpack",
